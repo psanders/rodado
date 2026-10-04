@@ -8,7 +8,6 @@ Names and docs are in English; audience-facing copy (site, ads, posts) is in Spa
 | Path | What |
 | --- | --- |
 | `index.html`, `privacy.html`, `css/`, `js/`, `assets/` | The website (static, no build) |
-| `privacidad.html` | Redirect to `privacy.html` (old URL used in Meta's message templates; keep it) |
 | `design/` | Pencil files (`rodado.pen`, `templates/storyboards.pen`) and their images |
 | `ads/` | Rodado's own ad creatives (statics, videos, LATAM set) |
 | `offer/` | Offer PDF |
