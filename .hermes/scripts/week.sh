@@ -5,7 +5,19 @@
 set -euo pipefail
 WEEK="${1:?Usage: week.sh YYYY-Wnn}"
 WS="${RODADO_WS:-/workspace/rodado}"
-PY="$(head -1 "$(command -v hermes)" | sed 's/^#!//')"; [ -x "$PY" ] || PY=python3
+# Find a Python that has PyYAML (Hermes' own venv first). The `hermes` command may be a
+# shell wrapper, so its shebang is not a reliable way to find Python.
+find_py () {
+  local c
+  for c in "$(head -1 "$(command -v hermes)" | sed 's/^#!//')" \
+           /opt/hermes/.venv/bin/python /opt/hermes/venv/bin/python /opt/venv/bin/python \
+           "$(dirname "$(readlink -f "$(command -v hermes)")")/python" python3 python; do
+    [ -n "$c" ] && command -v "$c" >/dev/null 2>&1 || continue
+    "$c" -c 'import yaml, json' >/dev/null 2>&1 && { echo "$c"; return; }
+  done
+  echo "No Python with PyYAML found inside the container" >&2; exit 1
+}
+PY="$(find_py)"
 PREV="$("$PY" -c "import datetime,sys; y,w=map(int,'$WEEK'.split('-W')); d=datetime.date.fromisocalendar(y,w,1)-datetime.timedelta(days=7); i=d.isocalendar(); print(f'{i[0]}-W{i[1]:02d}')")"
 
 card () {  # title skill parent body

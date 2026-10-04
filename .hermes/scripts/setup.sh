@@ -5,7 +5,19 @@ set -euo pipefail
 WS="${RODADO_WS:-/workspace/rodado}"
 H="$WS/.hermes"
 MODEL="${RODADO_MODEL:-claude-sonnet-5}"
-PY="$(head -1 "$(command -v hermes)" | sed 's/^#!//')"; [ -x "$PY" ] || PY=python3
+# Find a Python that has PyYAML (Hermes' own venv first). The `hermes` command may be a
+# shell wrapper, so its shebang is not a reliable way to find Python.
+find_py () {
+  local c
+  for c in "$(head -1 "$(command -v hermes)" | sed 's/^#!//')" \
+           /opt/hermes/.venv/bin/python /opt/hermes/venv/bin/python /opt/venv/bin/python \
+           "$(dirname "$(readlink -f "$(command -v hermes)")")/python" python3 python; do
+    [ -n "$c" ] && command -v "$c" >/dev/null 2>&1 || continue
+    "$c" -c 'import yaml, json' >/dev/null 2>&1 && { echo "$c"; return; }
+  done
+  echo "No Python with PyYAML found inside the container" >&2; exit 1
+}
+PY="$(find_py)"
 
 set_cfg () {  # config.yaml: Anthropic provider + model, skills from .hermes/skills, start in the repo
   "$PY" - "$1" "$MODEL" "$H/skills" "$WS" <<'PYEOF'
