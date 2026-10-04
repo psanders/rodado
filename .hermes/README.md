@@ -27,15 +27,25 @@ git clone <rodado repo> && cd rodado/.hermes
 cp .env.example .env            # dashboard login + ANTHROPIC_API_KEY
 openssl rand -hex 32            # paste into HERMES_DASHBOARD_BASIC_AUTH_SECRET
 docker compose up -d
-docker compose exec hermes bash /workspace/rodado/.hermes/scripts/setup.sh
+docker compose exec -u hermes hermes bash /workspace/rodado/.hermes/scripts/setup.sh
 ```
 
 Dashboard: http://localhost:9119. On a server it's bound to localhost: use Tailscale or `ssh -L 9119:localhost:9119 user@server`.
 
+## On a server
+
+- Hermes runs inside the container as the `hermes` user (uid 10000), so that user must own the repo (including `data/`). After cloning, and if a card ever says "permission denied":
+  ```bash
+  chown -R 10000:10000 /opt/rodado
+  git config --global --add safe.directory /opt/rodado   # so root can still use git on it
+  ```
+- Run commands in the container as that user: `docker compose exec -u hermes hermes …`. Plain `exec` runs as root and leaves files Hermes can't write later.
+- API keys live only in `.hermes/.env`. After changing it: `docker compose up -d --force-recreate`.
+
 ## Run a week
 
 ```bash
-docker compose exec hermes bash /workspace/rodado/.hermes/scripts/week.sh 2026-W42
+docker compose exec -u hermes hermes bash /workspace/rodado/.hermes/scripts/week.sh 2026-W42
 ```
 
 | Card | Skill | Ends in |
