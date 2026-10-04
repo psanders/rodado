@@ -13,3 +13,5 @@ Purpose: teach one Meta creative idea a manager wants to save. One idea per caro
 Rules: max. 30 words per slide; number slides 01/08 in JetBrains Mono; concrete numbers beat adjectives (frequency > 3, 2 s, 3 durations).
 Good topics: ad fatigue, the first 2 seconds, why 30/20/15 s, safe zones, testing creatives vs. changing the media plan.
 Default CTA: Save (or Conversation when the topic is about our offer).
+
+Media: 1–3 atoms. Usually a clip or image on the cover and one image per example slide (03–06). Variety comes from the designer's layouts; give it material: a figure for a number slide, a before/after for a compare slide.

@@ -33,7 +33,8 @@ This repo holds the website, design files, the content system and the agent setu
 | --- | --- | --- |
 | `rodado-strategist` | Strategist | Daily idea pitch on WhatsApp, idea bank, Sunday plan, creates the week's cards |
 | `rodado-copywriter` | Copywriter | Writes one post (hook, structure, CTA, caption) in any of the 6 formats |
-| `rodado-designer` | Designer | Renders approved carousels and statics to PNG |
+| `rodado-producer` | Producer | Makes images and clips (Seedance) for a post; library of approved media |
+| `rodado-designer` | Designer | Composes approved copy + media into varied slides (PNG/MP4) |
 | `rodado-copy`, `rodado-audit`, `rodado-retro` | — | Repo-based weekly flow (copy all 7, audit, retro) |
 
 Next roles: editor (Reels), publisher, analyst.

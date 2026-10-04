@@ -1,25 +1,40 @@
-# Render spec (JSON)
+# Compose spec (JSON)
 
 ```json
 {
-  "name": "2026-10-08-carousel-faq-jefe",   // file name prefix: YYYY-MM-DD-<format>-<topic>
-  "theme": "paper",                          // "ink" (dark) or "paper" (light); can be overridden per slide
-  "slides": [ { "type": "...", ... } ]
+  "name": "2026-10-13-carousel-framework-2-segundos",
+  "theme": "paper",
+  "max_seconds": 12,
+  "slides": [ { "layout": "cover", "media": "../../library/A012.mp4", "title": "...", "kicker": "..." } ]
 }
 ```
 
-## Slide types
-| type | fields | use |
-| --- | --- | --- |
-| `quote` | `text`, `attribution`? | static-quote. Max ~15 words. |
-| `cover` | `title`, `kicker`?, `subtitle`? | first carousel slide; shows "Desliza" |
-| `point` | `title`, `body`?, `label`? | one idea or one FAQ question per slide; `label` like "Pregunta 2" or "Señal 1" |
-| `list` | `title`, `items` (3–4 strings) | summary slide |
-| `cta` | `title`, `button`?, `note`? | last slide; `button` like "Escribe ANUNCIO por WhatsApp", `note` for offer facts |
+- `name`: file prefix. One slide → `<name>.png`; carousels → `<name>-01.png …`.
+- `theme`: default for all slides; any slide can override. `ink` (dark), `paper` (cream), `sand` (warm beige), `red` (brand red).
+- `media`: a path (or a list, for `compare`) relative to the spec file. Images: png/jpg/webp. Videos: mp4/mov/webm.
+- A slide with a video becomes `<stem>.mp4` (1080 × 1350, H.264, no sound, length = the clip, capped by `max_seconds`) plus `<stem>-poster.png` to review. Instagram accepts mixed photo/video carousels.
+- `focus` (0–1, optional): where to crop media vertically. 0 = keep the top, 0.5 = center, 1 = keep the bottom.
 
-Any slide can set `"theme": "ink"` or `"paper"` (e.g. a dark CTA at the end of a light carousel).
+## Layouts
+
+| layout | media | fields | good for |
+| --- | --- | --- | --- |
+| `quote` | – | `text`, `attribution`? | static one-liner, classic |
+| `statement` | – | `text`, `highlight`? (words drawn in red), `label`? | static one-liner, poster-size type; 3–8 words |
+| `number` | – | `number` ("2 s", "US$299", "7"), `text`, `label`? | one striking figure |
+| `quote-media` | 1 | `text`, `attribution`? | one-liner over a photo or clip |
+| `media` | 1 | `caption`?, `label`? | the picture/clip is the point (show the work) |
+| `cover` | 0–1 | `title`, `kicker`?, `subtitle`? | first carousel slide; with media it's full-bleed |
+| `point` | – | `title`, `body`?, `label`? | one idea, text only |
+| `point-media` | 1 | `title`, `body`?, `label`?, `media_height`? (default 660) | one idea with its example on top |
+| `compare` | 2 | `title`?, `labels` (default ["Antes","Después"]) | before/after, A/B directions |
+| `list` | – | `title`, `items` (3–5) | summary |
+| `cta` | 0–1 | `title`, `button`?, `note`? | last slide; with media it's full-bleed |
+
+The renderer adds the slide counter (01/08), the bottom rule and the roda.do wordmark. Old specs with `"type"` instead of `"layout"` still work.
 
 ## Limits that keep slides readable
-- Titles: up to ~12 words. Bodies: up to ~30 words. List items: up to ~10 words each.
-- Carousels: 4–8 slides. The renderer numbers them (01/08) and adds the roda.do wordmark.
+- Titles ~12 words, bodies ~30 words, list items ~10 words, statements 3–8 words.
+- Carousels 4–10 slides. Video clips 3–15 s.
 - Spanish accents and ¿¡ are fine; emoji and arrows are not (not in the font).
+- Text auto-shrinks; if it gets small, the text is too long for that layout.

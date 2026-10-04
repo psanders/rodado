@@ -10,3 +10,5 @@ Purpose: remove the "will my boss approve it?" doubt with plain answers and proo
 
 Base questions: ¿Se ve falso? · ¿Es nuestro producto real? · ¿Cuánto tarda? · ¿Y si no nos gusta? · ¿Sirve para Meta? · ¿Quién tiene los derechos?
 Answers must use the offer facts exactly. CTA is always Conversation.
+
+Media: 0–2 atoms. A before/after (phone photo vs finished frame) answers "does it look fake?" better than words.

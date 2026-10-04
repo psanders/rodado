@@ -74,11 +74,14 @@ When Pedro approves the plan (in the reply):
    - Copywriter card, always:
      `hermes kanban create "<Day> <week> · copy: <title>" --assignee default --skill rodado-copywriter --json --body "<the full brief from bank.md>. Format: <format>. Date: <post date>. Post folder: <post folder>."`
      Keep the `id` from the JSON output.
-   - Designer card, only for `carousel-framework`, `carousel-faq` and `static-quote`, waiting on the copy:
-     `hermes kanban create "<Day> <week> · design: <title>" --assignee default --skill rodado-designer --parent <copywriter card id> --body "Design the approved post. Post folder: <post folder>."`
-   - Reels (`reel-storyboard`, `reel-category`, `reel-cta`) get only the copywriter card for now; Pedro produces the video.
+   - Producer card, only for `carousel-framework`, `carousel-faq` and `static-quote`, waiting on the copy (makes the images/clips the post lists; finishes on its own if none):
+     `hermes kanban create "<Day> <week> · media: <title>" --assignee default --skill rodado-producer --parent <copywriter card id> --json --body "Make the media for the approved post. Post folder: <post folder>."`
+     Keep its `id`.
+   - Designer card, same formats, waiting on the media:
+     `hermes kanban create "<Day> <week> · design: <title>" --assignee default --skill rodado-designer --parent <producer card id> --body "Compose the approved post. Post folder: <post folder>."`
+   - Reels (`reel-storyboard`, `reel-category`, `reel-cta`) get the copywriter card and a producer card (clips for the Reel); Pedro edits the video for now.
    Add `--board <name>` only if Pedro uses a named board.
-3. Reply with one line: "<N> cards in Kanban. Copy lands in Review first; once you approve it, the designer makes the images."
+3. Reply with one line: "<N> cards in Kanban. You approve in order: copy, then media, then the finished slides."
 
 After a week is published, Pedro may say "W42 is out": set those ideas to `status: used <week>`.
 
