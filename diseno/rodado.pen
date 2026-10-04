@@ -12387,7 +12387,6 @@
           "type": "frame",
           "id": "rK2ZO",
           "name": "Fila · Estáticos",
-          "layout": "horizontal",
           "gap": 100,
           "children": [
             {
@@ -12402,8 +12401,6 @@
               "gap": 30,
               "padding": [
                 280,
-                72,
-                280,
                 72
               ],
               "justifyContent": "center",
@@ -12412,7 +12409,6 @@
                   "type": "frame",
                   "id": "R1Lt9",
                   "name": "Kicker · solo ads",
-                  "layout": "horizontal",
                   "gap": 14,
                   "alignItems": "center",
                   "children": [
@@ -12442,48 +12438,48 @@
                   "id": "vMSNR",
                   "name": "Para quién",
                   "fill": "$tinta",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
                   "content": "¿Tienes una marca de comida o bebida?",
                   "fontFamily": "$font-texto",
                   "fontSize": 42,
-                  "fontWeight": "600",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container"
+                  "fontWeight": "600"
                 },
                 {
                   "type": "frame",
                   "id": "z6AHQ",
                   "name": "Titular",
-                  "layout": "vertical",
                   "width": "fill_container",
+                  "layout": "vertical",
                   "children": [
                     {
                       "type": "text",
                       "id": "dGf6U",
                       "name": "1 anuncio.",
                       "fill": "$tinta",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
                       "content": "1 anuncio.",
+                      "lineHeight": 0.95,
                       "fontFamily": "$font-titulo",
                       "fontSize": 136,
                       "fontWeight": "normal",
-                      "lineHeight": 0.95,
-                      "letterSpacing": -2,
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container"
+                      "letterSpacing": -2
                     },
                     {
                       "type": "text",
                       "id": "EvQv4",
                       "name": "3 duraciones.",
                       "fill": "$rec",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
                       "content": "3 duraciones.",
+                      "lineHeight": 0.95,
                       "fontFamily": "$font-titulo",
                       "fontSize": 136,
                       "fontWeight": "normal",
-                      "fontStyle": "italic",
-                      "lineHeight": 0.95,
                       "letterSpacing": -2,
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container"
+                      "fontStyle": "italic"
                     }
                   ]
                 },
@@ -12492,36 +12488,35 @@
                   "id": "u05S7",
                   "name": "Bajada",
                   "fill": "$humo",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
                   "content": "Para que pruebes cuál funciona mejor.",
                   "fontFamily": "$font-texto",
                   "fontSize": 36,
-                  "fontWeight": "normal",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container"
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
                   "id": "loK9F",
                   "name": "Ejemplo",
+                  "width": "fill_container",
                   "layout": "vertical",
                   "gap": 18,
-                  "width": "fill_container",
                   "children": [
                     {
                       "type": "frame",
                       "id": "s1ktc",
                       "name": "Cortes",
-                      "layout": "horizontal",
-                      "gap": 24,
                       "width": "fill_container",
+                      "gap": 24,
                       "children": [
                         {
                           "type": "frame",
                           "id": "6ab9N",
                           "name": "Corte 30 S",
+                          "width": 296,
                           "layout": "vertical",
                           "gap": 18,
-                          "width": 296,
                           "children": [
                             {
                               "type": "frame",
@@ -12592,7 +12587,7 @@
                                     {
                                       "type": "frame",
                                       "id": "4hxgc",
-                                      "x": 102.0,
+                                      "x": 102,
                                       "y": 9,
                                       "name": "Dynamic Island",
                                       "width": 80,
@@ -12608,7 +12603,6 @@
                                       "name": "Sombra inferior",
                                       "width": 284,
                                       "height": 152,
-                                      "layout": "none",
                                       "fill": {
                                         "type": "gradient",
                                         "gradientType": "linear",
@@ -12628,28 +12622,26 @@
                                           }
                                         ]
                                       },
-                                      "children": []
+                                      "layout": "none"
                                     },
                                     {
                                       "type": "frame",
                                       "id": "jTYGN",
-                                      "name": "Cuenta · Ad (estilo Instagram)",
-                                      "layout": "horizontal",
-                                      "gap": 9,
-                                      "alignItems": "center",
                                       "layoutPosition": "absolute",
                                       "x": 12,
                                       "y": 449,
+                                      "name": "Cuenta · Ad (estilo Instagram)",
+                                      "gap": 9,
+                                      "alignItems": "center",
                                       "children": [
                                         {
                                           "type": "frame",
                                           "id": "VqRWF",
                                           "name": "Avatar",
-                                          "layout": "horizontal",
                                           "width": 30,
                                           "height": 30,
                                           "fill": "#1F3B2D",
-                                          "cornerRadius": 15.0,
+                                          "cornerRadius": 15,
                                           "stroke": "#FFFFFFCC",
                                           "strokeWidth": 1.6666666666666667,
                                           "justifyContent": "center",
@@ -12719,9 +12711,9 @@
                           "type": "frame",
                           "id": "mtJ0D",
                           "name": "Corte 20 S",
+                          "width": 296,
                           "layout": "vertical",
                           "gap": 18,
-                          "width": 296,
                           "children": [
                             {
                               "type": "frame",
@@ -12792,7 +12784,7 @@
                                     {
                                       "type": "frame",
                                       "id": "5Oa40",
-                                      "x": 102.0,
+                                      "x": 102,
                                       "y": 9,
                                       "name": "Dynamic Island",
                                       "width": 80,
@@ -12808,7 +12800,6 @@
                                       "name": "Sombra inferior",
                                       "width": 284,
                                       "height": 152,
-                                      "layout": "none",
                                       "fill": {
                                         "type": "gradient",
                                         "gradientType": "linear",
@@ -12828,28 +12819,26 @@
                                           }
                                         ]
                                       },
-                                      "children": []
+                                      "layout": "none"
                                     },
                                     {
                                       "type": "frame",
                                       "id": "S6wqm",
-                                      "name": "Cuenta · Ad (estilo Instagram)",
-                                      "layout": "horizontal",
-                                      "gap": 9,
-                                      "alignItems": "center",
                                       "layoutPosition": "absolute",
                                       "x": 12,
                                       "y": 449,
+                                      "name": "Cuenta · Ad (estilo Instagram)",
+                                      "gap": 9,
+                                      "alignItems": "center",
                                       "children": [
                                         {
                                           "type": "frame",
                                           "id": "jNmNt",
                                           "name": "Avatar",
-                                          "layout": "horizontal",
                                           "width": 30,
                                           "height": 30,
                                           "fill": "#1F3B2D",
-                                          "cornerRadius": 15.0,
+                                          "cornerRadius": 15,
                                           "stroke": "#FFFFFFCC",
                                           "strokeWidth": 1.6666666666666667,
                                           "justifyContent": "center",
@@ -12919,9 +12908,9 @@
                           "type": "frame",
                           "id": "Zt1p7",
                           "name": "Corte 15 S",
+                          "width": 296,
                           "layout": "vertical",
                           "gap": 18,
-                          "width": 296,
                           "children": [
                             {
                               "type": "frame",
@@ -12992,7 +12981,7 @@
                                     {
                                       "type": "frame",
                                       "id": "QdfCQ",
-                                      "x": 102.0,
+                                      "x": 102,
                                       "y": 9,
                                       "name": "Dynamic Island",
                                       "width": 80,
@@ -13008,7 +12997,6 @@
                                       "name": "Sombra inferior",
                                       "width": 284,
                                       "height": 152,
-                                      "layout": "none",
                                       "fill": {
                                         "type": "gradient",
                                         "gradientType": "linear",
@@ -13028,28 +13016,26 @@
                                           }
                                         ]
                                       },
-                                      "children": []
+                                      "layout": "none"
                                     },
                                     {
                                       "type": "frame",
                                       "id": "SvU8S",
-                                      "name": "Cuenta · Ad (estilo Instagram)",
-                                      "layout": "horizontal",
-                                      "gap": 9,
-                                      "alignItems": "center",
                                       "layoutPosition": "absolute",
                                       "x": 12,
                                       "y": 449,
+                                      "name": "Cuenta · Ad (estilo Instagram)",
+                                      "gap": 9,
+                                      "alignItems": "center",
                                       "children": [
                                         {
                                           "type": "frame",
                                           "id": "X98v0",
                                           "name": "Avatar",
-                                          "layout": "horizontal",
                                           "width": 30,
                                           "height": 30,
                                           "fill": "#1F3B2D",
-                                          "cornerRadius": 15.0,
+                                          "cornerRadius": 15,
                                           "stroke": "#FFFFFFCC",
                                           "strokeWidth": 1.6666666666666667,
                                           "justifyContent": "center",
@@ -13123,7 +13109,6 @@
                   "type": "frame",
                   "id": "I44Y6",
                   "name": "Precio + CTA",
-                  "layout": "horizontal",
                   "width": "fill_container",
                   "justifyContent": "space_between",
                   "alignItems": "center",
@@ -13140,10 +13125,10 @@
                           "name": "US$",
                           "fill": "$tinta",
                           "content": "US$299",
+                          "lineHeight": 0.9,
                           "fontFamily": "$font-titulo",
                           "fontSize": 104,
                           "fontWeight": "normal",
-                          "lineHeight": 0.9,
                           "letterSpacing": -2
                         }
                       ]
@@ -13152,7 +13137,6 @@
                       "type": "frame",
                       "id": "yDrAZ",
                       "name": "CTA · DM",
-                      "layout": "horizontal",
                       "fill": "$rec",
                       "cornerRadius": 999,
                       "gap": 16,
@@ -13234,8 +13218,6 @@
               "gap": 30,
               "padding": [
                 280,
-                72,
-                280,
                 72
               ],
               "justifyContent": "center",
@@ -13244,7 +13226,6 @@
                   "type": "frame",
                   "id": "G32bJ",
                   "name": "Kicker · solo ads",
-                  "layout": "horizontal",
                   "gap": 14,
                   "alignItems": "center",
                   "children": [
@@ -13274,48 +13255,48 @@
                   "id": "2Idda",
                   "name": "Para quién",
                   "fill": "$tinta",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
                   "content": "¿Tienes una marca de comida o bebida?",
                   "fontFamily": "$font-texto",
                   "fontSize": 42,
-                  "fontWeight": "600",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container"
+                  "fontWeight": "600"
                 },
                 {
                   "type": "frame",
                   "id": "xxUqx",
                   "name": "Titular",
-                  "layout": "vertical",
                   "width": "fill_container",
+                  "layout": "vertical",
                   "children": [
                     {
                       "type": "text",
                       "id": "A8eFV",
                       "name": "Ves tu anuncio",
                       "fill": "$tinta",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
                       "content": "Ves tu anuncio",
+                      "lineHeight": 0.95,
                       "fontFamily": "$font-titulo",
                       "fontSize": 110,
                       "fontWeight": "normal",
-                      "lineHeight": 0.95,
-                      "letterSpacing": -2,
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container"
+                      "letterSpacing": -2
                     },
                     {
                       "type": "text",
                       "id": "XtVMp",
                       "name": "antes de producirlo.",
                       "fill": "$rec",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
                       "content": "antes de producirlo.",
+                      "lineHeight": 0.95,
                       "fontFamily": "$font-titulo",
                       "fontSize": 110,
                       "fontWeight": "normal",
-                      "fontStyle": "italic",
-                      "lineHeight": 0.95,
                       "letterSpacing": -2,
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container"
+                      "fontStyle": "italic"
                     }
                   ]
                 },
@@ -13323,17 +13304,16 @@
                   "type": "frame",
                   "id": "Fuy3W",
                   "name": "Comparación",
-                  "layout": "horizontal",
-                  "gap": 32,
                   "width": "fill_container",
+                  "gap": 32,
                   "children": [
                     {
                       "type": "frame",
                       "id": "9ckI2",
                       "name": "Columna 01 · TU DIRECCIÓN",
+                      "width": 452,
                       "layout": "vertical",
                       "gap": 16,
-                      "width": 452,
                       "children": [
                         {
                           "type": "text",
@@ -13350,12 +13330,12 @@
                           "type": "frame",
                           "id": "NtDS7",
                           "name": "Tarjeta storyboard",
-                          "layout": "vertical",
+                          "width": 452,
                           "fill": "$papel",
                           "cornerRadius": 22,
-                          "padding": 14,
+                          "layout": "vertical",
                           "gap": 14,
-                          "width": 452,
+                          "padding": 14,
                           "children": [
                             {
                               "type": "frame",
@@ -13376,17 +13356,16 @@
                                 {
                                   "type": "frame",
                                   "id": "Ua91m",
+                                  "layoutPosition": "absolute",
+                                  "x": 14,
+                                  "y": 14,
                                   "name": "Código de tiempo",
-                                  "layout": "horizontal",
                                   "fill": "#16130FB3",
                                   "cornerRadius": 999,
                                   "padding": [
                                     8,
                                     14
                                   ],
-                                  "layoutPosition": "absolute",
-                                  "x": 14,
-                                  "y": 14,
                                   "children": [
                                     {
                                       "type": "text",
@@ -13407,6 +13386,7 @@
                               "type": "frame",
                               "id": "LQTEu",
                               "name": "Escena",
+                              "width": "fill_container",
                               "layout": "vertical",
                               "gap": 12,
                               "padding": [
@@ -13415,13 +13395,11 @@
                                 8,
                                 8
                               ],
-                              "width": "fill_container",
                               "children": [
                                 {
                                   "type": "frame",
                                   "id": "B3EKl",
                                   "name": "Título escena",
-                                  "layout": "horizontal",
                                   "gap": 12,
                                   "alignItems": "end",
                                   "children": [
@@ -13431,10 +13409,10 @@
                                       "name": "A",
                                       "fill": "$rec",
                                       "content": "A",
+                                      "lineHeight": 0.95,
                                       "fontFamily": "$font-titulo",
                                       "fontSize": 40,
                                       "fontWeight": "normal",
-                                      "lineHeight": 0.95,
                                       "letterSpacing": -2
                                     },
                                     {
@@ -13443,10 +13421,10 @@
                                       "name": "Gancho",
                                       "fill": "$tinta",
                                       "content": "Gancho",
+                                      "lineHeight": 0.95,
                                       "fontFamily": "$font-titulo",
                                       "fontSize": 40,
                                       "fontWeight": "normal",
-                                      "lineHeight": 0.95,
                                       "letterSpacing": -2
                                     }
                                   ]
@@ -13456,13 +13434,13 @@
                                   "id": "2RaTm",
                                   "name": "Texto en pantalla",
                                   "fill": "$tinta",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
                                   "content": "“¿Sabes de dónde viene tu chocolate?”",
+                                  "lineHeight": 1.3,
                                   "fontFamily": "$font-texto",
                                   "fontSize": 25,
-                                  "fontWeight": "500",
-                                  "lineHeight": 1.3,
-                                  "textGrowth": "fixed-width",
-                                  "width": "fill_container"
+                                  "fontWeight": "500"
                                 }
                               ]
                             }
@@ -13474,9 +13452,9 @@
                       "type": "frame",
                       "id": "aIyAI",
                       "name": "Columna 02 · ANUNCIO FINAL",
+                      "width": 452,
                       "layout": "vertical",
                       "gap": 16,
-                      "width": 452,
                       "children": [
                         {
                           "type": "text",
@@ -13513,7 +13491,6 @@
                               "name": "Sombra inferior",
                               "width": 452,
                               "height": 216,
-                              "layout": "none",
                               "fill": {
                                 "type": "gradient",
                                 "gradientType": "linear",
@@ -13533,28 +13510,26 @@
                                   }
                                 ]
                               },
-                              "children": []
+                              "layout": "none"
                             },
                             {
                               "type": "frame",
                               "id": "HsvLA",
-                              "name": "Cuenta · Ad (estilo Instagram)",
-                              "layout": "horizontal",
-                              "gap": 13,
-                              "alignItems": "center",
                               "layoutPosition": "absolute",
                               "x": 20,
                               "y": 642,
+                              "name": "Cuenta · Ad (estilo Instagram)",
+                              "gap": 13,
+                              "alignItems": "center",
                               "children": [
                                 {
                                   "type": "frame",
                                   "id": "ONrQc",
                                   "name": "Avatar",
-                                  "layout": "horizontal",
                                   "width": 44,
                                   "height": 44,
                                   "fill": "#1F3B2D",
-                                  "cornerRadius": 22.0,
+                                  "cornerRadius": 22,
                                   "stroke": "#FFFFFFCC",
                                   "strokeWidth": 2.4444444444444446,
                                   "justifyContent": "center",
@@ -13613,7 +13588,6 @@
                   "type": "frame",
                   "id": "O91g3",
                   "name": "Precio + CTA",
-                  "layout": "horizontal",
                   "width": "fill_container",
                   "justifyContent": "space_between",
                   "alignItems": "center",
@@ -13630,10 +13604,10 @@
                           "name": "US$",
                           "fill": "$tinta",
                           "content": "US$299",
+                          "lineHeight": 0.9,
                           "fontFamily": "$font-titulo",
                           "fontSize": 104,
                           "fontWeight": "normal",
-                          "lineHeight": 0.9,
                           "letterSpacing": -2
                         }
                       ]
@@ -13642,7 +13616,6 @@
                       "type": "frame",
                       "id": "65fRH",
                       "name": "CTA · DM",
-                      "layout": "horizontal",
                       "fill": "$rec",
                       "cornerRadius": 999,
                       "gap": 16,
@@ -13724,8 +13697,6 @@
               "gap": 34,
               "padding": [
                 280,
-                72,
-                280,
                 72
               ],
               "justifyContent": "center",
@@ -13734,7 +13705,6 @@
                   "type": "frame",
                   "id": "5gWQ1",
                   "name": "Kicker · solo ads",
-                  "layout": "horizontal",
                   "gap": 14,
                   "alignItems": "center",
                   "children": [
@@ -13764,62 +13734,62 @@
                   "id": "H387S",
                   "name": "Para quién",
                   "fill": "$papel",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
                   "content": "¿Tienes una marca de comida o bebida?",
                   "fontFamily": "$font-texto",
                   "fontSize": 42,
-                  "fontWeight": "600",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container"
+                  "fontWeight": "600"
                 },
                 {
                   "type": "frame",
                   "id": "dHyUt",
                   "name": "Titular",
-                  "layout": "vertical",
                   "width": "fill_container",
+                  "layout": "vertical",
                   "children": [
                     {
                       "type": "text",
                       "id": "sOU7H",
                       "name": "2 direcciones.",
                       "fill": "$papel",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
                       "content": "2 direcciones.",
+                      "lineHeight": 0.95,
                       "fontFamily": "$font-titulo",
                       "fontSize": 140,
                       "fontWeight": "normal",
-                      "lineHeight": 0.95,
-                      "letterSpacing": -2,
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container"
+                      "letterSpacing": -2
                     },
                     {
                       "type": "text",
                       "id": "3yAOl",
                       "name": "Eliges 1.",
                       "fill": "$papel",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
                       "content": "Eliges 1.",
+                      "lineHeight": 0.95,
                       "fontFamily": "$font-titulo",
                       "fontSize": 140,
                       "fontWeight": "normal",
-                      "lineHeight": 0.95,
-                      "letterSpacing": -2,
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container"
+                      "letterSpacing": -2
                     },
                     {
                       "type": "text",
                       "id": "CoZTU",
                       "name": "Garantía 100%.",
                       "fill": "$rec",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
                       "content": "Garantía 100%.",
+                      "lineHeight": 0.95,
                       "fontFamily": "$font-titulo",
                       "fontSize": 140,
                       "fontWeight": "normal",
-                      "fontStyle": "italic",
-                      "lineHeight": 0.95,
                       "letterSpacing": -2,
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container"
+                      "fontStyle": "italic"
                     }
                   ]
                 },
@@ -13828,36 +13798,35 @@
                   "id": "dDO9A",
                   "name": "Sin rodaje",
                   "fill": "#F5EFE4B3",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
                   "content": "Sin rodaje: solo fotos de tu producto.",
+                  "lineHeight": 1.3,
                   "fontFamily": "$font-texto",
                   "fontSize": 36,
-                  "fontWeight": "normal",
-                  "lineHeight": 1.3,
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container"
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
                   "id": "uFrSi",
                   "name": "Política",
-                  "layout": "vertical",
                   "width": "fill_container",
+                  "layout": "vertical",
                   "children": [
                     {
                       "type": "frame",
                       "id": "8KDZ0",
                       "name": "Paso 01",
-                      "layout": "horizontal",
-                      "gap": 28,
-                      "padding": [
-                        22,
-                        0
-                      ],
                       "width": "fill_container",
                       "stroke": "#F5EFE42E",
                       "strokeWidth": {
                         "top": 1
                       },
+                      "gap": 28,
+                      "padding": [
+                        22,
+                        0
+                      ],
                       "children": [
                         {
                           "type": "text",
@@ -13874,33 +13843,33 @@
                           "type": "frame",
                           "id": "BD8b7",
                           "name": "Texto",
+                          "width": "fill_container",
                           "layout": "vertical",
                           "gap": 4,
-                          "width": "fill_container",
                           "children": [
                             {
                               "type": "text",
                               "id": "U9FHQ",
                               "name": "¿Te gustan las dos?",
                               "fill": "$papel",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
                               "content": "¿Te gustan las dos?",
                               "fontFamily": "$font-texto",
                               "fontSize": 32,
-                              "fontWeight": "600",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container"
+                              "fontWeight": "600"
                             },
                             {
                               "type": "text",
                               "id": "3rqri",
                               "name": "Suma la segunda por US$60.",
                               "fill": "#F5EFE4B3",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
                               "content": "Suma la segunda por US$60.",
                               "fontFamily": "$font-texto",
                               "fontSize": 30,
-                              "fontWeight": "normal",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container"
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -13910,17 +13879,16 @@
                       "type": "frame",
                       "id": "m9Ngd",
                       "name": "Paso 02",
-                      "layout": "horizontal",
-                      "gap": 28,
-                      "padding": [
-                        22,
-                        0
-                      ],
                       "width": "fill_container",
                       "stroke": "#F5EFE42E",
                       "strokeWidth": {
                         "top": 1
                       },
+                      "gap": 28,
+                      "padding": [
+                        22,
+                        0
+                      ],
                       "children": [
                         {
                           "type": "text",
@@ -13937,33 +13905,33 @@
                           "type": "frame",
                           "id": "DudiE",
                           "name": "Texto",
+                          "width": "fill_container",
                           "layout": "vertical",
                           "gap": 4,
-                          "width": "fill_container",
                           "children": [
                             {
                               "type": "text",
                               "id": "wAJQD",
                               "name": "¿No te convence ninguna?",
                               "fill": "$papel",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
                               "content": "¿No te convence ninguna?",
                               "fontFamily": "$font-texto",
                               "fontSize": 32,
-                              "fontWeight": "600",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container"
+                              "fontWeight": "600"
                             },
                             {
                               "type": "text",
                               "id": "tI0vv",
                               "name": "Te hacemos una tercera.",
                               "fill": "#F5EFE4B3",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
                               "content": "Te hacemos una tercera.",
                               "fontFamily": "$font-texto",
                               "fontSize": 30,
-                              "fontWeight": "normal",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container"
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -13973,17 +13941,16 @@
                       "type": "frame",
                       "id": "fHkc8",
                       "name": "Paso 03",
-                      "layout": "horizontal",
-                      "gap": 28,
-                      "padding": [
-                        22,
-                        0
-                      ],
                       "width": "fill_container",
                       "stroke": "#F5EFE42E",
                       "strokeWidth": {
                         "top": 1
                       },
+                      "gap": 28,
+                      "padding": [
+                        22,
+                        0
+                      ],
                       "children": [
                         {
                           "type": "text",
@@ -14000,33 +13967,33 @@
                           "type": "frame",
                           "id": "tDZvO",
                           "name": "Texto",
+                          "width": "fill_container",
                           "layout": "vertical",
                           "gap": 4,
-                          "width": "fill_container",
                           "children": [
                             {
                               "type": "text",
                               "id": "fC3qA",
                               "name": "¿Tampoco te convence?",
                               "fill": "$papel",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
                               "content": "¿Tampoco te convence?",
                               "fontFamily": "$font-texto",
                               "fontSize": 32,
-                              "fontWeight": "600",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container"
+                              "fontWeight": "600"
                             },
                             {
                               "type": "text",
                               "id": "anctK",
                               "name": "Te devolvemos el 100%.",
                               "fill": "#F5EFE4B3",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
                               "content": "Te devolvemos el 100%.",
                               "fontFamily": "$font-texto",
                               "fontSize": 30,
-                              "fontWeight": "normal",
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container"
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -14038,7 +14005,6 @@
                   "type": "frame",
                   "id": "FpyIm",
                   "name": "Precio + CTA",
-                  "layout": "horizontal",
                   "width": "fill_container",
                   "justifyContent": "space_between",
                   "alignItems": "center",
@@ -14055,10 +14021,10 @@
                           "name": "US$",
                           "fill": "$papel",
                           "content": "US$299",
+                          "lineHeight": 0.9,
                           "fontFamily": "$font-titulo",
                           "fontSize": 104,
                           "fontWeight": "normal",
-                          "lineHeight": 0.9,
                           "letterSpacing": -2
                         }
                       ]
@@ -14067,7 +14033,6 @@
                       "type": "frame",
                       "id": "ABkB4",
                       "name": "CTA · DM",
-                      "layout": "horizontal",
                       "fill": "$rec",
                       "cornerRadius": 999,
                       "gap": 16,
@@ -14154,14 +14119,12 @@
           "type": "frame",
           "id": "PbvVq",
           "name": "Fila · Video",
-          "layout": "horizontal",
           "gap": 100,
           "children": [
             {
               "type": "frame",
               "id": "FBfwX",
               "name": "Previa apertura",
-              "layout": "none",
               "width": 1080,
               "height": 1920,
               "fill": {
@@ -14170,10 +14133,13 @@
                 "url": "imagenes/guaraguao/corte-15s-gancho.jpg",
                 "mode": "fill"
               },
+              "layout": "none",
               "children": [
                 {
                   "type": "frame",
                   "id": "BrIE7",
+                  "x": 0,
+                  "y": 0,
                   "name": "C1 · Demo · Apertura (0–3 s, transparente)",
                   "clip": true,
                   "width": 1080,
@@ -14189,7 +14155,6 @@
                       "name": "Degradado inferior",
                       "width": 1080,
                       "height": 860,
-                      "layout": "none",
                       "fill": {
                         "type": "gradient",
                         "gradientType": "linear",
@@ -14213,66 +14178,66 @@
                           }
                         ]
                       },
-                      "children": []
+                      "layout": "none"
                     },
                     {
                       "type": "frame",
                       "id": "5pijh",
-                      "name": "Texto apertura",
-                      "layout": "vertical",
-                      "gap": 22,
-                      "width": 936,
                       "layoutPosition": "absolute",
                       "x": 72,
                       "y": 1220,
+                      "name": "Texto apertura",
+                      "width": 936,
+                      "layout": "vertical",
+                      "gap": 22,
                       "children": [
                         {
                           "type": "text",
                           "id": "clNZZ",
                           "name": "Para quién",
                           "fill": "$papel",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
                           "content": "¿Tienes una marca de comida o bebida?",
                           "fontFamily": "$font-texto",
                           "fontSize": 40,
-                          "fontWeight": "600",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container"
+                          "fontWeight": "600"
                         },
                         {
                           "type": "frame",
                           "id": "XRblh",
                           "name": "Titular",
-                          "layout": "vertical",
                           "width": "fill_container",
+                          "layout": "vertical",
                           "children": [
                             {
                               "type": "text",
                               "id": "yG1uL",
                               "name": "Esto es lo que",
                               "fill": "$papel",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
                               "content": "Esto es lo que",
+                              "lineHeight": 0.95,
                               "fontFamily": "$font-titulo",
                               "fontSize": 130,
                               "fontWeight": "normal",
-                              "lineHeight": 0.95,
-                              "letterSpacing": -2,
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container"
+                              "letterSpacing": -2
                             },
                             {
                               "type": "text",
                               "id": "l6MEr",
                               "name": "recibes.",
                               "fill": "$rec",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
                               "content": "recibes.",
+                              "lineHeight": 0.95,
                               "fontFamily": "$font-titulo",
                               "fontSize": 130,
                               "fontWeight": "normal",
-                              "fontStyle": "italic",
-                              "lineHeight": 0.95,
                               "letterSpacing": -2,
-                              "textGrowth": "fixed-width",
-                              "width": "fill_container"
+                              "fontStyle": "italic"
                             }
                           ]
                         },
@@ -14280,7 +14245,6 @@
                           "type": "frame",
                           "id": "nCWe9",
                           "name": "Chip precio",
-                          "layout": "horizontal",
                           "fill": "$papel",
                           "cornerRadius": 999,
                           "padding": [
@@ -14344,7 +14308,6 @@
               "type": "frame",
               "id": "d6rpH",
               "name": "Previa etiqueta",
-              "layout": "none",
               "width": 1080,
               "height": 1920,
               "fill": {
@@ -14353,10 +14316,13 @@
                 "url": "imagenes/guaraguao/corte-20s-oficio.jpg",
                 "mode": "fill"
               },
+              "layout": "none",
               "children": [
                 {
                   "type": "frame",
                   "id": "0tffF",
+                  "x": 0,
+                  "y": 0,
                   "name": "C1 · Demo · Etiqueta (3–15 s, transparente)",
                   "clip": true,
                   "width": 1080,
@@ -14372,7 +14338,6 @@
                       "name": "Degradado inferior",
                       "width": 1080,
                       "height": 670,
-                      "layout": "none",
                       "fill": {
                         "type": "gradient",
                         "gradientType": "linear",
@@ -14392,30 +14357,28 @@
                           }
                         ]
                       },
-                      "children": []
+                      "layout": "none"
                     },
                     {
                       "type": "frame",
                       "id": "tfrSp",
-                      "name": "Cuenta · Ad (estilo Instagram)",
-                      "layout": "horizontal",
-                      "gap": 22,
-                      "alignItems": "center",
                       "layoutPosition": "absolute",
                       "x": 72,
                       "y": 1530,
+                      "name": "Cuenta · Ad (estilo Instagram)",
+                      "gap": 22,
+                      "alignItems": "center",
                       "children": [
                         {
                           "type": "frame",
                           "id": "dcp2C",
                           "name": "Avatar",
-                          "layout": "horizontal",
                           "width": 72,
                           "height": 72,
                           "fill": "#1F3B2D",
-                          "cornerRadius": 36.0,
+                          "cornerRadius": 36,
                           "stroke": "#FFFFFFCC",
-                          "strokeWidth": 4.0,
+                          "strokeWidth": 4,
                           "justifyContent": "center",
                           "alignItems": "center",
                           "children": [
@@ -14512,8 +14475,6 @@
               "gap": 40,
               "padding": [
                 280,
-                72,
-                280,
                 72
               ],
               "justifyContent": "center",
@@ -14552,7 +14513,6 @@
                   "type": "frame",
                   "id": "BkBQM",
                   "name": "Kicker · solo ads",
-                  "layout": "horizontal",
                   "gap": 14,
                   "alignItems": "center",
                   "children": [
@@ -14582,48 +14542,48 @@
                   "id": "IqtNU",
                   "name": "Para quién",
                   "fill": "$papel",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
                   "content": "¿Tienes una marca de comida o bebida?",
                   "fontFamily": "$font-texto",
                   "fontSize": 42,
-                  "fontWeight": "600",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container"
+                  "fontWeight": "600"
                 },
                 {
                   "type": "frame",
                   "id": "6vfH2",
                   "name": "Titular",
-                  "layout": "vertical",
                   "width": "fill_container",
+                  "layout": "vertical",
                   "children": [
                     {
                       "type": "text",
                       "id": "VOtXg",
                       "name": "1 anuncio.",
                       "fill": "$papel",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
                       "content": "1 anuncio.",
+                      "lineHeight": 0.95,
                       "fontFamily": "$font-titulo",
                       "fontSize": 170,
                       "fontWeight": "normal",
-                      "lineHeight": 0.95,
-                      "letterSpacing": -2,
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container"
+                      "letterSpacing": -2
                     },
                     {
                       "type": "text",
                       "id": "U8XJp",
                       "name": "3 duraciones.",
                       "fill": "$rec",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
                       "content": "3 duraciones.",
+                      "lineHeight": 0.95,
                       "fontFamily": "$font-titulo",
                       "fontSize": 170,
                       "fontWeight": "normal",
-                      "fontStyle": "italic",
-                      "lineHeight": 0.95,
                       "letterSpacing": -2,
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container"
+                      "fontStyle": "italic"
                     }
                   ]
                 },
@@ -14644,17 +14604,16 @@
                   "name": "US$",
                   "fill": "$papel",
                   "content": "US$299",
+                  "lineHeight": 0.9,
                   "fontFamily": "$font-titulo",
                   "fontSize": 210,
                   "fontWeight": "normal",
-                  "lineHeight": 0.9,
                   "letterSpacing": -3
                 },
                 {
                   "type": "frame",
                   "id": "m8iC9",
                   "name": "CTA · DM",
-                  "layout": "horizontal",
                   "fill": "$rec",
                   "cornerRadius": 999,
                   "gap": 16,
