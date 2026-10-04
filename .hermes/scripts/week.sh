@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Creates one week's card chain on the rodado board:
 #   Retro (previous week) → Ideas → Briefs & copy → Audit
-#   docker compose exec hermes bash /workspace/rodado/.hermes/scripts/week.sh 2026-W42
+#   docker compose exec -u hermes hermes bash /workspace/rodado/.hermes/scripts/week.sh 2026-W42
 set -euo pipefail
 WEEK="${1:?Usage: week.sh YYYY-Wnn}"
 WS="${RODADO_WS:-/workspace/rodado}"

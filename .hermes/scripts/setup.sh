@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Configures Hermes for this repo. Safe to re-run after editing profiles/, skills/ or themes/.
-#   docker compose exec hermes bash /workspace/rodado/.hermes/scripts/setup.sh
+#   docker compose exec -u hermes hermes bash /workspace/rodado/.hermes/scripts/setup.sh
 set -euo pipefail
 WS="${RODADO_WS:-/workspace/rodado}"
 H="$WS/.hermes"
@@ -75,6 +75,12 @@ for p in default $(for d in "$H"/profiles/*/; do basename "$d"; done); do
   fi
   hermes "${flag[@]}" project use rodado >/dev/null 2>&1 || true
 done
+
+# Hermes runs as the "hermes" user (uid 10000). If this script ran as root, hand back
+# anything it created in Hermes' state folder so the service can still write there.
+if [ "$(id -u)" = 0 ] && id hermes >/dev/null 2>&1; then
+  chown -R hermes:hermes "$HOME_DIR" 2>/dev/null || true
+fi
 
 PROFILES="$(for d in "$H"/profiles/*/; do printf "%s " "$(basename "$d")"; done)"
 echo "Done: profiles [ $PROFILES], model $MODEL (Anthropic), theme rodado, board rodado."
