@@ -84,17 +84,16 @@ Post at 12:00 or 19:00 Santo Domingo time; test which wins in weeks 1–2, then 
 
 ## Idea system
 
-Ideas go into one idea bank (`content/ideas/bank.csv`) and never get created on the day. The bank needs about 15 ideas waiting at all times.
+Ideas are never made up on the day. Hermes runs this with the skill `rodado-director`:
 
-Five sources refill the bank:
+1. **Daily pitch (9:00, WhatsApp):** Hermes pitches one idea at a time; Pedro answers sí / no / a tweak, until 3 are approved. Each pitch says what the post looks like, where the idea came from, why it works, why it fits Rodado, and its format and slot.
+2. **Bank:** approved ideas go to the idea bank in Hermes (`$HERMES_HOME/rodado/director/bank.md`). Every pitch and every "no" is logged so nothing is pitched twice.
+3. **Sunday plan (17:00, WhatsApp):** Hermes picks next week's 7 from the bank, one per slot. Pedro approves; Hermes creates 7 Kanban cards (skill `rodado-content`), each ending in Review.
+4. **Inbox:** anything Pedro sends Hermes (an idea, a link, a screenshot, a client's question) is saved and pitched first.
 
-1. Every client project yields 3 posts: storyboard-to-ad, 3 cuts, and one lesson learned.
-2. Meta Ad Library: check 3 brands on the target list each week, note categories, hooks and how often they change creatives. Each category becomes a Wednesday concept.
-3. Questions from marketing managers in WhatsApp, DMs and sales calls: each question becomes a carousel.
-4. Comments on our own posts: the most-asked follow-up becomes next week's post.
-5. Production notes: anything surprising while making an ad.
+Sources, rotated by weekday: inbox, ad watch (Meta Ad Library), DR calendar, manager questions, Meta changes, category scan, production notes, objections, craft and format, our own results. Details in `skills/rodado-director/references/sources.md`.
 
-Each idea gets one row: idea, pillar, format, hook (first line or first 2 s), source, score 1–3 (relevance to marketing managers × ease to make).
+`content/ideas/bank.csv` is the W41 history; the live bank is in Hermes.
 
 ## Measurement
 

@@ -16,7 +16,7 @@ content/
   instagram-profile.md    Bio, highlights and pinned posts
   publishing.md           How to schedule the week in Meta Business Suite
   templates/              One template per format + caption + post brief
-  ideas/bank.csv          Idea bank (always ~15 waiting)
+  ideas/bank.csv          W41 idea history (the live bank is in Hermes, skill rodado-director)
   calendar/YYYY-Wnn/      One folder per week, one subfolder per post
   metrics/log.csv         One row per published post (private)
   prospects/              Target brands for outbound (private)
@@ -28,9 +28,9 @@ content/
 | When | What | Time |
 | --- | --- | --- |
 | Friday | Fill `metrics/log.csv` with the week that's ending | 15 min |
-| Friday | Add new ideas to `ideas/bank.csv` | 15 min |
-| Friday | `scripts/new-week.sh 2026-W42` and pick 7 ideas from the bank | 20 min |
-| Friday | Write the 7 hooks and CTAs in each `post.md` | 10 min |
+| Daily, 9:00 | Answer Hermes' idea pitches on WhatsApp until 3 are approved | 5 min |
+| Sunday, 17:00 | Approve next week's 7 (Hermes picks from the bank) | 5 min |
+| Sunday–Monday | Approve the 7 briefs in Kanban (Review column) | 20 min |
 | Monday | Batch-produce Tuesday to Sunday (Pencil + video) | 3–4 h |
 | Monday | Schedule everything in Meta Business Suite (`publishing.md`) | 30 min |
 | Daily | Reply to comments and DMs; 10+ outbound messages | 30 min |

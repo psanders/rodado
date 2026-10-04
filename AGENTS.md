@@ -12,7 +12,7 @@ This repo holds the website, design files, the content system and the agent setu
 | `content/strategy-full.md`, `content/strategy.md` | Strategy (source of truth) | Only with Pedro's approval |
 | `content/voice.md` | Voice and copy rules | Propose changes in a retro |
 | `content/templates/` | One template per post format | Propose changes in a retro |
-| `content/ideas/bank.csv` | Idea bank | Yes |
+| `content/ideas/bank.csv` | W41 idea history (live bank: Hermes, `rodado-director`) | No |
 | `content/calendar/<week>/` | The week's posts (`post.md`), `selection.md`, `audit.md`, `retro.md` | Yes |
 | `content/metrics/log.csv` | One row per published post (git-ignored) | Publisher only |
 | `content/prospects/` | Target brands (git-ignored) | Yes (research) |
