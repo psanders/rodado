@@ -6,7 +6,7 @@ description: Fills the week's 7 post.md files for Rodado (hook, structure, CTA, 
 # Weekly briefs and copy
 
 ## Read first
-- `content/calendar/<week>/selection.md` (approved ideas). If it doesn't exist, block the card with `kanban_block` and explain.
+- `content/calendar/<week>/selection.md` (approved ideas). If it doesn't exist, stop and say so (on a Kanban board: `kanban_block`).
 - `content/voice.md`, `content/templates/caption.md` and each format's template in `content/templates/`.
 - Quality reference: `content/calendar/2026-W41/*/post.md`.
 
@@ -18,4 +18,4 @@ description: Fills the week's 7 post.md files for Rodado (hook, structure, CTA, 
 5. Change `status: idea` to `status: production` in each post.md.
 
 ## Finish
-`kanban_complete` with a summary: the 7 hooks, one per line.
+Report back (on a Kanban board: `kanban_complete`) with a summary: the 7 hooks, one per line.

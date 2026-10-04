@@ -14,3 +14,6 @@
 
 # Local downloads (client zips)
 /_downloads/
+
+# Leftover local Hermes state from the old setup (delete once the container is stopped)
+/.hermes/

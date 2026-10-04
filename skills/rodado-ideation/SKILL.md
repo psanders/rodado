@@ -5,7 +5,7 @@ description: Proposes and selects the week's 7 Instagram content ideas for Rodad
 
 # Weekly ideation
 
-Input: the week (e.g. `2026-W42`) comes in the card. You work inside the rodado repo.
+Input: the week (e.g. `2026-W42`), from the request or the card. You work inside the rodado repo.
 
 ## Read first
 1. `content/strategy.md` (audience, pillars, fixed slot per day)
@@ -23,4 +23,4 @@ Input: the week (e.g. `2026-W42`) comes in the card. You work inside the rodado 
 4. Don't change `status` in `bank.csv`; that happens after Pedro approves.
 
 ## Finish
-Call `kanban_request_review` with a 3-line summary: how many new ideas, the selection in one line, and the week's bet (which variable is being tested).
+Ask Pedro to review (on a Kanban board: `kanban_request_review`) with a 3-line summary: how many new ideas, the selection in one line, and the week's bet (which variable is being tested).

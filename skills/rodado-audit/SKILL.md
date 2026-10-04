@@ -25,4 +25,4 @@ Check each `content/calendar/<week>/*/post.md` against this checklist:
 - Write `content/calendar/<week>/audit.md`: a table `| Post | Result (ok / fixed / review) | Note |` and, at the end, "For Pedro:" with at most 3 decisions he needs to make.
 
 ## Finish
-`kanban_request_review` with the summary: how many ok, fixed and for review.
+Ask Pedro to review (on a Kanban board: `kanban_request_review`) with the summary: how many ok, fixed and for review.

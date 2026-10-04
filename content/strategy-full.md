@@ -130,7 +130,9 @@ Rank posts by qualified chats first, then saves + shares.
 | Website | Update the "Ideal para" list later. |
 | Publishing | Meta Business Suite for now; API publishing later via `rodado-publisher`. |
 
-## Automation (Hermes)
+## Automation (agents)
+
+Recurring jobs are written as skills in `skills/` at the repo root (agentskills format), so any agent can run them. The agent setup itself lives outside this repo.
 
 | Profile | Job | Access | Never |
 | --- | --- | --- | --- |

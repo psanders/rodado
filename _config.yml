@@ -2,7 +2,7 @@
 # never the content system, agent setup or design files.
 exclude:
   - content
-  - .hermes
+  - skills
   - design
   - ads
   - offer

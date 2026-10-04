@@ -2,7 +2,7 @@
 
 Tool: Meta Business Suite (free, official) on desktop: business.facebook.com → Planner.
 Fallback: the Instagram app (Create → Advanced settings → Schedule post; up to 75 days ahead).
-Later: `rodado-publisher` in `.hermes/` does this through the API.
+Later: an agent can do this through the API.
 
 ## Requirements (once)
 - [ ] Instagram is a professional account (Business or Creator).

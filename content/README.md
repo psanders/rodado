@@ -35,7 +35,7 @@ content/
 | Monday | Schedule everything in Meta Business Suite (`publishing.md`) | 30 min |
 | Daily | Reply to comments and DMs; 10+ outbound messages | 30 min |
 
-With the Hermes agents (`.hermes/`), ideas, copy and audit run on the board and you approve them in review.
+Agents (Hermes, Claude) can run ideas, copy and audit with the skills in `../skills/`; you review and commit.
 
 ## File names
 

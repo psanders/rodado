@@ -12,7 +12,7 @@ Names and docs are in English; audience-facing copy (site, ads, posts) is in Spa
 | `ads/` | Rodado's own ad creatives (statics, videos, LATAM set) |
 | `offer/` | Offer PDF |
 | `content/` | Content system: strategy, voice, templates, idea bank, weekly calendar |
-| `.hermes/` | Hermes agents: compose, profiles, skills, theme, scripts |
+| `skills/` | Reusable skills (agentskills format) any agent can use: ideation, copy, audit, retro |
 | `projects/` | Client work (git-ignored; the repo is public) |
 | `_downloads/` | Local downloads, not committed |
 
@@ -30,4 +30,4 @@ Frequent changes:
 
 ## Content and agents
 
-See `content/README.md` for the weekly content system and `.hermes/README.md` to run the agents.
+See `content/README.md` for the weekly content system and `skills/` for the procedures agents follow.
