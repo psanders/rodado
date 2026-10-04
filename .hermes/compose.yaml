@@ -13,6 +13,7 @@ services:
     environment:
       - HERMES_DASHBOARD=1
       - TERMINAL_CWD=/workspace/rodado          # where every session starts (chat, gateway, kanban)
+      - HERMES_WRITE_SAFE_ROOT=/opt/data:/workspace/rodado   # file tools may write to Hermes state and the repo
     ports:
       - "127.0.0.1:${HERMES_PORT:-9119}:9119" # localhost only; use Tailscale or an SSH tunnel
     volumes:
