@@ -48,6 +48,15 @@ for dir in "$H"/profiles/*/; do
   printf '%s\n\n%s\n' "$SHARED" "$(cat "$dir/SOUL.md")" > "$(dirname "$cfg")/SOUL.md"
 done
 
+# Hermes loads its own .env files (one per profile, in .hermes/data) with override, so an
+# empty "ANTHROPIC_API_KEY=" there would hide the real key coming from .hermes/.env.
+# Drop empty provider-key lines so the container environment is the single source.
+for p in default $(for d in "$H"/profiles/*/; do basename "$d"; done); do
+  flag=(); [ "$p" != default ] && flag=(-p "$p")
+  envf="$(hermes "${flag[@]}" config env-path 2>/dev/null || true)"
+  [ -f "$envf" ] && sed -i -E '/^(ANTHROPIC_API_KEY|ANTHROPIC_TOKEN|OPENAI_API_KEY|OPENROUTER_API_KEY)=[[:space:]]*$/d' "$envf"
+done
+
 # The default profile (what the dashboard chat uses unless you switch) gets the same instructions as rodado
 printf '%s\n\n%s\n' "$SHARED" "$(cat "$H/profiles/rodado/SOUL.md")" > "$HOME_DIR/SOUL.md"
 
