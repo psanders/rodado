@@ -40,11 +40,12 @@ docker compose exec hermes bash /workspace/rodado/.hermes/scripts/week.sh 2026-W
 
 | Card | Skill | Ends in |
 | --- | --- | --- |
+| Retro (previous week) | rodado-retro | **Review**: you approve the rule changes it made (`retro.md` + diff) |
 | Ideas | rodado-ideation | **Review**: you approve the 7 ideas (`selection.md`) |
 | Briefs & copy | rodado-copy | Done |
 | Audit | rodado-audit | **Review**: you approve copy + `audit.md` |
 
-All three run on the `rodado` profile. Agents only write files in the repo; review with `git diff`, commit yourself.
+All four run on the `rodado` profile. Agents only write files in the repo; review with `git diff`, commit yourself.
 
 ## Profiles
 
@@ -53,6 +54,12 @@ All three run on the `rodado` profile. Agents only write files in the repo; revi
 | `rodado` | Ideas, briefs, copy, audit, weekly report, prospect research | Repo only | Spend money, publish, message anyone |
 | `rodado-studio` | Carousels, statics, Reels, image/video generation | Generation keys (later, with a spending cap) | Change strategy or copy, publish |
 | `rodado-publisher` | Schedule approved posts, pull Instagram metrics | Meta token (later) | Write or edit content |
+
+## How it knows the repo and gets better
+
+- Every session starts in `/workspace/rodado` (`terminal.cwd`), so Hermes loads `AGENTS.md` from the repo root: the map of what's where and what agents may edit.
+- Skills live in `.hermes/skills/` (git). Hermes' background curator never edits them; changes happen in the weekly retro, which compares the agents' drafts with your edits and the metrics, edits the skill/template/voice files, and asks for review. You commit what you accept.
+- In the dashboard chat, pick the `rodado` profile (or use the default one, which gets the same instructions).
 
 ## Growing it
 

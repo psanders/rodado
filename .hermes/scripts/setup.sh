@@ -7,13 +7,14 @@ H="$WS/.hermes"
 MODEL="${RODADO_MODEL:-claude-sonnet-5}"
 PY="$(head -1 "$(command -v hermes)" | sed 's/^#!//')"; [ -x "$PY" ] || PY=python3
 
-set_cfg () {  # config.yaml: Anthropic provider + model, skills from .hermes/skills
-  "$PY" - "$1" "$MODEL" "$H/skills" <<'PYEOF'
+set_cfg () {  # config.yaml: Anthropic provider + model, skills from .hermes/skills, start in the repo
+  "$PY" - "$1" "$MODEL" "$H/skills" "$WS" <<'PYEOF'
 import sys, yaml, pathlib
 p = pathlib.Path(sys.argv[1]); c = (yaml.safe_load(p.read_text()) if p.exists() else {}) or {}
 m = c.get("model") if isinstance(c.get("model"), dict) else {}
 m.update({"provider": "anthropic", "default": sys.argv[2]}); c["model"] = m
 c.setdefault("skills", {})["external_dirs"] = [sys.argv[3]]
+c.setdefault("terminal", {})["cwd"] = sys.argv[4]   # sessions start in the repo, so AGENTS.md loads
 p.write_text(yaml.safe_dump(c, sort_keys=False, allow_unicode=True))
 PYEOF
 }
@@ -34,6 +35,12 @@ for dir in "$H"/profiles/*/; do
   set_cfg "$cfg"
   printf '%s\n\n%s\n' "$SHARED" "$(cat "$dir/SOUL.md")" > "$(dirname "$cfg")/SOUL.md"
 done
+
+# The default profile (what the dashboard chat uses unless you switch) gets the same instructions as rodado
+printf '%s\n\n%s\n' "$SHARED" "$(cat "$H/profiles/rodado/SOUL.md")" > "$HOME_DIR/SOUL.md"
+
+# Let agents read git history (the retro compares drafts with Pedro's edits)
+command -v git >/dev/null && git config --global --add safe.directory "$WS" 2>/dev/null || true
 
 hermes kanban init >/dev/null 2>&1 || true
 [ -d "$HOME_DIR/kanban/boards/rodado" ] || \
