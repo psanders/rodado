@@ -1,0 +1,12 @@
+# GitHub Pages (Jekyll) config. The site is plain HTML/CSS/JS: publish only the website,
+# never the content system, agent setup or design files.
+exclude:
+  - content
+  - .hermes
+  - design
+  - ads
+  - offer
+  - projects
+  - _downloads
+  - README.md
+  - AGENTS.md

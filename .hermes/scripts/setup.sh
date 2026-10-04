@@ -46,5 +46,14 @@ hermes kanban init >/dev/null 2>&1 || true
 [ -d "$HOME_DIR/kanban/boards/rodado" ] || \
   hermes kanban boards create rodado --name "Rodado" --description "Rodado Creativo content" >/dev/null
 hermes kanban boards switch rodado >/dev/null
+# A Hermes "project" pointing at the repo: chats and board cards start there
+for p in default $(for d in "$H"/profiles/*/; do basename "$d"; done); do
+  flag=(); [ "$p" != default ] && flag=(-p "$p")
+  if ! hermes "${flag[@]}" project list 2>/dev/null | grep -Eq '^[* ] +rodado +'; then
+    hermes "${flag[@]}" project create "Rodado" "$WS" --slug rodado --board rodado --use >/dev/null 2>&1 || true
+  fi
+  hermes "${flag[@]}" project use rodado >/dev/null 2>&1 || true
+done
+
 PROFILES="$(for d in "$H"/profiles/*/; do printf "%s " "$(basename "$d")"; done)"
 echo "Done: profiles [ $PROFILES], model $MODEL (Anthropic), theme rodado, board rodado."

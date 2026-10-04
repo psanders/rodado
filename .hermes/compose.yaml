@@ -7,6 +7,7 @@ services:
     image: nousresearch/hermes-agent:latest
     container_name: rodado-hermes
     restart: unless-stopped
+    working_dir: /workspace/rodado            # Hermes starts in the repo, not in its own source folder
     command: gateway run                      # runs the kanban dispatcher and cron jobs
     env_file: .env
     environment:
