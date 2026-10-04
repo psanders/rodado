@@ -16,7 +16,7 @@ content/
   instagram-profile.md    Bio, highlights and pinned posts
   publishing.md           How to schedule the week in Meta Business Suite
   templates/              One template per format + caption + post brief
-  ideas/bank.csv          W41 idea history (the live bank is in Hermes, skill rodado-director)
+  ideas/bank.csv          W41 idea history (the live bank is in Hermes, skill rodado-strategist)
   calendar/YYYY-Wnn/      One folder per week, one subfolder per post
   metrics/log.csv         One row per published post (private)
   prospects/              Target brands for outbound (private)

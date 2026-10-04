@@ -12,7 +12,7 @@ This repo holds the website, design files, the content system and the agent setu
 | `content/strategy-full.md`, `content/strategy.md` | Strategy (source of truth) | Only with Pedro's approval |
 | `content/voice.md` | Voice and copy rules | Propose changes in a retro |
 | `content/templates/` | One template per post format | Propose changes in a retro |
-| `content/ideas/bank.csv` | W41 idea history (live bank: Hermes, `rodado-director`) | No |
+| `content/ideas/bank.csv` | W41 idea history (live bank: Hermes, `rodado-strategist`) | No |
 | `content/calendar/<week>/` | The week's posts (`post.md`), `selection.md`, `audit.md`, `retro.md` | Yes |
 | `content/metrics/log.csv` | One row per published post (git-ignored) | Publisher only |
 | `content/prospects/` | Target brands (git-ignored) | Yes (research) |
@@ -27,4 +27,15 @@ This repo holds the website, design files, the content system and the agent setu
 - Client brands only with their logo replaced; category ideas use invented brands.
 
 ## How the system improves
+## Roles (skills)
+
+| Skill | Role | Does |
+| --- | --- | --- |
+| `rodado-strategist` | Strategist | Daily idea pitch on WhatsApp, idea bank, Sunday plan, creates the week's cards |
+| `rodado-copywriter` | Copywriter | Writes one post (hook, structure, CTA, caption) in any of the 6 formats |
+| `rodado-designer` | Designer | Renders approved carousels and statics to PNG |
+| `rodado-copy`, `rodado-audit`, `rodado-retro` | — | Repo-based weekly flow (copy all 7, audit, retro) |
+
+Next roles: editor (Reels), publisher, analyst.
+
 Every week starts with a **retro** (skill `rodado-retro`): compare what agents drafted with what Pedro changed and with the metrics, then edit the skills, templates or `voice.md` so next week's first draft is closer. Those edits go to Pedro for review; once he commits them, they're the new rules.

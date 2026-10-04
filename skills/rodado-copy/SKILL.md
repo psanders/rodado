@@ -12,7 +12,7 @@ description: Fills the week's 7 post.md files for Rodado (hook, structure, CTA, 
 
 ## Do
 1. If the week's folders don't exist, run `bash content/scripts/new-week.sh <week>`.
-2. For each of the 7 `post.md`, follow the `rodado-content` skill for that post's format (it holds the brand rules, the format templates and the checklist).
+2. For each of the 7 `post.md`, follow the `rodado-copywriter` skill for that post's format (it holds the brand rules, the format templates and the checklist).
 3. Update the Hook column in `week.md` and mark the 7 ideas in `bank.csv` as `status=used` with `used_in=<week>`.
 4. Change `status: idea` to `status: production` in each post.md.
 

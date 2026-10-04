@@ -1,9 +1,9 @@
 ---
-name: rodado-content
+name: rodado-copywriter
 description: Creates a ready-to-produce Instagram post for Rodado Creativo (roda.do) in any of its 6 formats (reel-storyboard, carousel-framework, reel-category, carousel-faq, static-quote, reel-cta). Use when asked to write, draft or plan a Rodado post, hook, carousel, Reel script or caption.
 ---
 
-# Rodado content: one post, any format
+# Rodado copywriter: one post, any format
 
 Produces one complete post brief (hook, structure, CTA, caption, assets, checklist) that a designer or a rendering step can build without asking questions. Audience-facing copy is always in Spanish; notes for the team are in English.
 
@@ -31,9 +31,17 @@ Produces one complete post brief (hook, structure, CTA, caption, assets, checkli
 5. Self-check against the checklist at the end of `references/brand.md`. Fix anything that fails before answering.
 
 ## Output
-- Return the filled post as one markdown block, ready to save as `post.md`.
-- If you have a workspace with the rodado repo, save it to `content/calendar/<YYYY-Wnn>/<NN>-<day>-<format>/post.md` (create folders as needed); otherwise just return it.
-- End with one line: what the human must provide or decide (e.g. "need the Cacao Mae frames with the logo replaced").
+Save the filled post as `post.md` in the post folder:
+- If the request or card gives a post folder, use it (create it if needed).
+- Else, with the rodado repo as workspace: `content/calendar/<YYYY-Wnn>/<NN>-<day>-<format>/post.md`.
+- Else: `$HERMES_HOME/rodado/posts/<YYYY-Wnn or today's date>/<NN>-<day>-<format>/post.md`.
+
+Then reply (in a chat) or finish the card (on a Kanban board, ask for review) with:
+1. The post folder path, on its own line, as `Post folder: <path>`. The designer reads the post from there.
+2. The chosen hook and the CTA, one line each.
+3. One line: what the human must provide or decide (e.g. "need the Cacao Mae frames with the logo replaced"), or "Nothing needed."
+
+If Pedro asks for changes, edit `post.md` in place and finish again the same way.
 
 ## Never
 - Use a real brand without "logo replaced"; category concepts always use an invented brand.
