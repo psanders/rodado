@@ -1,9 +1,11 @@
-# Reel · Mejor corte + CTA (Oferta) · 15–20 s · 9:16
+# Reel · Best cut + CTA (Offer) · 15–20 s · 9:16
 
-| Tiempo | Pantalla | Texto |
+On-screen text is in Spanish.
+
+| Time | Screen | Text |
 | --- | --- | --- |
-| 0–2 s | Plano más fuerte de la semana | "Un anuncio, tres duraciones, en 7 días hábiles. Sin rodaje." |
-| 2–13 s | Corte de 15 s del anuncio con mejor retención de la semana | — |
-| 13–20 s | Fondo marca: 3 bullets de la oferta (2 direcciones, 3 duraciones, garantía) | "Escribe ANUNCIO por WhatsApp" |
+| 0–2 s | The week's strongest shot | "Un anuncio, tres duraciones, en 7 días hábiles. Sin rodaje." |
+| 2–13 s | 15 s cut of the ad with the best retention this week | — |
+| 13–20 s | Brand background: 3 offer bullets (2 directions, 3 durations, guarantee) | "Escribe ANUNCIO por WhatsApp" |
 
-El domingo no se cancela nunca.
+Sunday is never cancelled.

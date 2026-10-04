@@ -9,28 +9,28 @@ status: idea                    # idea | production | ready | scheduled | publis
 test:                         # the one variable being tested
 ---
 
-# Título interno
+# Internal title
 
-## Gancho (primeros 2 s o primera lámina)
+## Hook (first 2 s or first slide, in Spanish)
 "..."
 
-## Desarrollo
-(seguir la plantilla del formato)
+## Structure
+(follow the format template)
 
 ## CTA
 ...
 
 ## Caption
-(ver templates/caption.md)
+(see templates/caption.md)
 
 ## Assets
 - [ ] sources/ …
 - [ ] final/ …
 
-## Checklist antes de programar
-- [ ] Gancho en los primeros 2 s / primera lámina se entiende sin sonido
-- [ ] Textos fuera de zona segura
-- [ ] Logos de clientes reemplazados por logos inventados
-- [ ] Subtítulos en video
-- [ ] Caption con CTA y palabra clave
-- [ ] Portada del Reel (1080 × 1920, título legible en la cuadrícula 3:4)
+## Checklist before scheduling
+- [ ] Hook in the first 2 s / first slide works without sound
+- [ ] Text outside the unsafe zones
+- [ ] Client logos replaced by invented ones
+- [ ] Subtitles on video
+- [ ] Caption with CTA and keyword
+- [ ] Reel cover (1080 × 1920, title readable in the 3:4 grid)

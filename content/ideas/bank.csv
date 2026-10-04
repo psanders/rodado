@@ -1,19 +1,19 @@
 id,idea,pillar,format,hook,source,score,status,used_in
-I001,Guaraguao: del storyboard al anuncio,proof,reel-storyboard,Este anuncio no tuvo rodaje.,project,3,used,2026-W41
-I002,Por qué tu público se cansa de tu anuncio,strategy,carousel-framework,Tu anuncio no se cansó. Tu público se cansó de verlo.,production,3,used,2026-W41
-I003,Café dominicano en 15 s (marca inventada),category,reel-category,Así venderíamos un café dominicano en 15 segundos.,ad-library,3,used,2026-W41
-I004,5 preguntas de tu jefe sobre anuncios con IA,trust,carousel-faq,5 preguntas que te hará tu jefe antes de aprobar un anuncio hecho con IA,objection,3,used,2026-W41
-I005,Cacao Mae: del brief al anuncio (logo reemplazado),proof,reel-storyboard,Del brief al anuncio en 7 días hábiles.,project,3,used,2026-W41
-I006,Sin sonido también vende,open,static-quote,"Si tu anuncio necesita sonido para entenderse, ya perdió.",production,2,used,2026-W41
-I007,Oferta: un anuncio tres duraciones,offer,reel-cta,"Un anuncio, tres duraciones, en 7 días hábiles. Sin rodaje.",offer,3,used,2026-W41
-I008,Por qué entregamos 30 20 y 15 s,strategy,carousel-framework,Tu marca no necesita un anuncio. Necesita tres.,production,3,bank,
-I009,CeRa: dos direcciones para el mismo chocolate (logo reemplazado),proof,reel-storyboard,"Dos historias, un mismo chocolate. ¿Cuál eliges?",project,3,bank,
-I010,Skincare dominicano en 15 s,category,reel-category,Así venderíamos una crema dominicana en 15 segundos.,ad-library,3,bank,
-I011,Ron artesanal en 15 s,category,reel-category,Así venderíamos un ron dominicano en 15 segundos.,ad-library,2,bank,
-I012,Los 2 primeros segundos,strategy,carousel-framework,Tienes 2 segundos. Así los usamos.,production,3,bank,
-I013,¿Es mi producto real o uno inventado?,trust,carousel-faq,No inventamos tu producto. Partimos de tus fotos.,objection,3,bank,
-I014,Zonas seguras de Instagram,strategy,carousel-framework,La mitad de tu texto lo tapa Instagram.,production,2,bank,
-I015,Una sesión de fotos no es una campaña,open,static-quote,Una sesión de fotos no es una campaña.,production,2,bank,
-I016,Cuánto cuesta un rodaje vs. un anuncio sin rodaje,trust,carousel-framework,Lo que cuesta un día de rodaje en RD (y lo que no necesitas).,objection,2,bank,
-I017,Snacks en 15 s,category,reel-category,Así venderíamos un snack dominicano en 15 segundos.,ad-library,2,bank,
-I018,Proceso en 5 pasos,trust,carousel-framework,De tu brief a tu anuncio en 5 pasos.,offer,2,bank,
+I001,Guaraguao: from storyboard to ad,proof,reel-storyboard,Este anuncio no tuvo rodaje.,project,3,used,2026-W41
+I002,Why your audience gets tired of your ad,strategy,carousel-framework,Tu anuncio no se cansó. Tu público se cansó de verlo.,production,3,used,2026-W41
+I003,Dominican coffee in 15 s (invented brand),category,reel-category,Así venderíamos un café dominicano en 15 segundos.,ad-library,3,used,2026-W41
+I004,5 questions your boss asks about AI ads,trust,carousel-faq,5 preguntas que te hará tu jefe antes de aprobar un anuncio hecho con IA,objection,3,used,2026-W41
+I005,Cacao Mae: from brief to ad (logo replaced),proof,reel-storyboard,Del brief al anuncio en 7 días hábiles.,project,3,used,2026-W41
+I006,Sound-off still sells,open,static-quote,"Si tu anuncio necesita sonido para entenderse, ya perdió.",production,2,used,2026-W41
+I007,"Offer: one ad, three durations",offer,reel-cta,"Un anuncio, tres duraciones, en 7 días hábiles. Sin rodaje.",offer,3,used,2026-W41
+I008,"Why we deliver 30, 20 and 15 s",strategy,carousel-framework,Tu marca no necesita un anuncio. Necesita tres.,production,3,bank,
+I009,CeRa: two directions for the same chocolate (logo replaced),proof,reel-storyboard,"Dos historias, un mismo chocolate. ¿Cuál eliges?",project,3,bank,
+I010,Dominican skincare in 15 s,category,reel-category,Así venderíamos una crema dominicana en 15 segundos.,ad-library,3,bank,
+I011,Craft rum in 15 s,category,reel-category,Así venderíamos un ron dominicano en 15 segundos.,ad-library,2,bank,
+I012,The first 2 seconds,strategy,carousel-framework,Tienes 2 segundos. Así los usamos.,production,3,bank,
+I013,Is it my real product or an invented one?,trust,carousel-faq,No inventamos tu producto. Partimos de tus fotos.,objection,3,bank,
+I014,Instagram safe zones,strategy,carousel-framework,La mitad de tu texto lo tapa Instagram.,production,2,bank,
+I015,A photo shoot is not a campaign,open,static-quote,Una sesión de fotos no es una campaña.,production,2,bank,
+I016,Cost of a shoot vs. an ad without a shoot,trust,carousel-framework,Lo que cuesta un día de rodaje en RD (y lo que no necesitas).,objection,2,bank,
+I017,Snacks in 15 s,category,reel-category,Así venderíamos un snack dominicano en 15 segundos.,ad-library,2,bank,
+I018,The process in 5 steps,trust,carousel-framework,De tu brief a tu anuncio en 5 pasos.,offer,2,bank,

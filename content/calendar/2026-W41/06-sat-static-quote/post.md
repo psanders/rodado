@@ -9,13 +9,13 @@ status: idea                    # idea | production | ready | scheduled | publis
 test: time 12:00 vs 19:00       # the one variable being tested
 ---
 
-# Sin sonido también vende
+# It sells without sound too
 
-## Gancho (primeros 2 s o primera lámina)
+## Hook (first 2 s or first slide, in Spanish)
 "Si tu anuncio necesita sonido para entenderse, ya perdió."
 
-## Desarrollo
-Una lámina 4:5. Frase en Instrument Serif, firma roda.do.
+## Structure
+One 4:5 slide. Quote in Instrument Serif, "roda.do" signature.
 
 ## CTA
 Compártelo con quien maneja tus anuncios.
@@ -36,13 +36,13 @@ Rodado Creativo · Videos para anuncios en Instagram y Facebook, hechos con IA a
 ## Assets
 - [ ] final/ 2026-10-10-static-quote.png (1080 × 1350)
 
-## Checklist antes de programar
-- [ ] Gancho en los primeros 2 s / primera lámina se entiende sin sonido
-- [ ] Textos fuera de zona segura
-- [ ] Logos de clientes reemplazados por logos inventados
-- [ ] Subtítulos en video
-- [ ] Caption con CTA y palabra clave
-- [ ] Portada del Reel (1080 × 1920, título legible en la cuadrícula 3:4)
+## Checklist before scheduling
+- [ ] Hook in the first 2 s / first slide works without sound
+- [ ] Text outside the unsafe zones
+- [ ] Client logos replaced by invented ones
+- [ ] Subtitles on video
+- [ ] Caption with CTA and keyword
+- [ ] Reel cover (1080 × 1920, title readable in the 3:4 grid)
 
 
 Format template: ../../../templates/static-quote.md

@@ -1,26 +1,34 @@
-# Sitio web de Rodado Creativo
+# Rodado Creativo
 
-Sitio estático (HTML + CSS + JS, sin dependencias ni build).
+Repo for roda.do: the website, the design files, the content system and the agents that run it.
+Names and docs are in English; audience-facing copy (site, ads, posts) is in Spanish.
 
-## Estructura
-- `index.html`: la página completa (escritorio y móvil).
-- `css/styles.css`: colores de marca, tipografía y responsive.
-- `js/main.js`: reproductor del hero, cortes 30/20/15 y enlaces de WhatsApp.
-- `assets/fonts`: Instrument Serif, Inter y JetBrains Mono (woff2, locales).
-- `assets/img`: escenas del storyboard de Guaraguao.
-- `assets/video`: anuncio de ejemplo (versión limpia para el hero y cortes de 30, 20 y 15 s con sonido).
-- `assets/brand`: favicon y logos.
+## Layout
 
-## Probarlo en tu computadora
+| Path | What |
+| --- | --- |
+| `index.html`, `privacy.html`, `css/`, `js/`, `assets/` | The website (static, no build) |
+| `privacidad.html` | Redirect to `privacy.html` (old URL used in Meta's message templates; keep it) |
+| `design/` | Pencil files (`rodado.pen`, `templates/storyboards.pen`) and their images |
+| `ads/` | Rodado's own ad creatives (statics, videos, LATAM set) |
+| `offer/` | Offer PDF |
+| `content/` | Content system: strategy, voice, templates, idea bank, weekly calendar |
+| `.hermes/` | Hermes agents: compose, profiles, skills, theme, scripts |
+| `projects/` | Client work (git-ignored; the repo is public) |
+| `_downloads/` | Local downloads, not committed |
+
+## Website
+
 ```
-cd web
-python3 -m http.server 8080
+python3 -m http.server 8080      # from the repo root, then open http://localhost:8080
 ```
-Luego abre http://localhost:8080
 
-## Publicarlo
-Sube la carpeta `web/` tal cual a cualquier hosting estático (Netlify, Vercel, Cloudflare Pages o GitHub Pages) y apunta el dominio roda.do.
+Published with GitHub Pages at roda.do (`CNAME`).
 
-## Cambios frecuentes
-- Número de WhatsApp y mensaje prellenado: al inicio de `js/main.js` (`WA_NUMBER`, `WA_TEXT`).
-- Precio y textos: directamente en `index.html`.
+Frequent changes:
+- WhatsApp number and prefilled message: top of `js/main.js` (`WA_NUMBER`, `WA_TEXT`).
+- Price and copy: directly in `index.html`.
+
+## Content and agents
+
+See `content/README.md` for the weekly content system and `.hermes/README.md` to run the agents.

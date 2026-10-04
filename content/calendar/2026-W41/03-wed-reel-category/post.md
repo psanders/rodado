@@ -9,13 +9,13 @@ status: idea                    # idea | production | ready | scheduled | publis
 test: time 12:00 vs 19:00       # the one variable being tested
 ---
 
-# Café dominicano en 15 s (marca inventada)
+# Dominican coffee in 15 s (invented brand)
 
-## Gancho (primeros 2 s o primera lámina)
+## Hook (first 2 s or first slide, in Spanish)
 "Así venderíamos un café dominicano en 15 segundos."
 
-## Desarrollo
-Marca inventada de café (nombre y logo nuevos, anotarlos en ideas/bank.csv). 4 escenas: taza humeante al amanecer en la montaña · granos rojos en la mata · tueste con sonido ASMR · bolsa del producto en una cocina dominicana. Cierre: "¿Tu categoría es la próxima?"
+## Structure
+Invented coffee brand (new name and logo; log them in ideas/bank.csv). 4 scenes: steaming cup at sunrise in the mountains · red cherries on the plant · roasting with ASMR sound · the product bag in a Dominican kitchen. Close: "¿Tu categoría es la próxima?"
 
 ## CTA
 Comenta tu categoría y te decimos qué haríamos.
@@ -34,16 +34,16 @@ Rodado Creativo · Videos para anuncios en Instagram y Facebook, hechos con IA a
 ```
 
 ## Assets
-- [ ] sources/ concepto y escenas generadas
-- [ ] final/ 2026-10-07-reel-category-cafe.mp4 + portada
+- [ ] sources/ concept and generated scenes
+- [ ] final/ 2026-10-07-reel-category-coffee.mp4 + cover
 
-## Checklist antes de programar
-- [ ] Gancho en los primeros 2 s / primera lámina se entiende sin sonido
-- [ ] Textos fuera de zona segura
-- [ ] Logos de clientes reemplazados por logos inventados
-- [ ] Subtítulos en video
-- [ ] Caption con CTA y palabra clave
-- [ ] Portada del Reel (1080 × 1920, título legible en la cuadrícula 3:4)
+## Checklist before scheduling
+- [ ] Hook in the first 2 s / first slide works without sound
+- [ ] Text outside the unsafe zones
+- [ ] Client logos replaced by invented ones
+- [ ] Subtitles on video
+- [ ] Caption with CTA and keyword
+- [ ] Reel cover (1080 × 1920, title readable in the 3:4 grid)
 
 
 Format template: ../../../templates/reel-category.md

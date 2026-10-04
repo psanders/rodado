@@ -1,16 +1,16 @@
-# Perfil de Instagram · @rodado.creativo
+# Instagram profile · @rodado.creativo
 
-Objetivo: que un gerente de marketing entienda en 3 segundos qué hacemos, para quién, y cómo escribirnos.
-(No pude ver el perfil actual desde aquí; comparar con esta propuesta punto por punto.)
+Goal: a marketing manager understands in 3 seconds what we do, for whom, and how to reach us.
+Profile text stays in Spanish; the notes around it are in English. Compare the live profile with this proposal point by point.
 
-## Nombre (campo buscable, máx. 64)
+## Name (searchable field, max. 64)
 `Rodado · Videos para anuncios en Meta`
-El campo "Nombre" aparece en la búsqueda: incluir "videos" y "anuncios".
+The "Name" field shows up in search: include "videos" and "anuncios".
 
-## Categoría
-Productor de video (o "Servicio de publicidad/marketing"). Mostrar categoría: sí.
+## Category
+Video producer (or "Advertising/marketing service"). Show category: yes.
 
-## Bio (máx. 150, esta tiene 149)
+## Bio (max. 150; this one is 149)
 ```
 Videos para tus anuncios en Instagram y Facebook.
 Tu producto real, sin rodaje. 3 duraciones en 7 días hábiles.
@@ -18,42 +18,42 @@ Marcas dominicanas.
 Escribe ANUNCIO 👇
 ```
 
-## Enlaces (en este orden)
-1. **WhatsApp** · título "Escríbenos: ANUNCIO"
+## Links (in this order)
+1. **WhatsApp** · title "Escríbenos: ANUNCIO"
    `https://wa.me/17853178070?text=Hola%2C%20vengo%20de%20Instagram%20y%20quiero%20un%20anuncio%20para%20mi%20marca.%20ANUNCIO`
-   El texto prellenado es la atribución: todo chat que empiece así viene del perfil.
-2. **Web** · título "Ver ejemplo y precio" · `https://roda.do/?utm_source=instagram`
-   (el sitio ya agrega "vía Instagram" al mensaje de WhatsApp con este parámetro).
+   The prefilled text is the attribution: every chat that starts this way came from the profile.
+2. **Website** · title "Ver ejemplo y precio" · `https://roda.do/?utm_source=instagram`
+   (the site already adds "vía Instagram" to the WhatsApp message with this parameter).
 
-## Botones de contacto (cuenta profesional)
-- Botón WhatsApp conectado al +1 (785) 317-8070.
-- Correo de contacto.
-- Quitar botones que no usemos (llamar, cómo llegar).
+## Contact buttons (professional account)
+- WhatsApp button connected to +1 (785) 317-8070.
+- Contact email.
+- Remove buttons we don't use (call, directions).
 
-## Foto de perfil
-Isotipo de Rodado sobre color de marca, centrado (se recorta en círculo de 110 px). Nada de texto.
+## Profile photo
+Rodado's icon on the brand color, centered (cropped to a 110 px circle). No text.
 
-## Destacadas (portadas iguales, ícono + una palabra)
-| Destacada | Contenido |
+## Highlights (matching covers, icon + one word, in Spanish)
+| Highlight | Content |
 | --- | --- |
-| Ejemplos | Guaraguao 30/20/15 s, Reels de "storyboard a anuncio" |
-| Proceso | Los 5 pasos: brief, 2 direcciones en 48 h, elección, producción, entrega |
-| Precio | US$299 · qué incluye · segunda dirección +US$60 |
-| Preguntas | Las respuestas del carrusel de preguntas frecuentes |
-| Garantía | Garantía 100% explicada en una historia |
+| Ejemplos | Guaraguao 30/20/15 s, "storyboard to ad" Reels |
+| Proceso | The 5 steps: brief, 2 directions in 48 h, choice, production, delivery |
+| Precio | US$299 · what's included · second direction +US$60 |
+| Preguntas | The answers from the FAQ carousel |
+| Garantía | The 100% guarantee explained in one story |
 
-## Publicaciones fijadas (3)
-1. Reel de oferta (domingo): qué es, precio, cómo pedir.
-2. Carrusel "5 preguntas que te hará tu jefe" (jueves).
-3. Reel "Este anuncio no tuvo rodaje" (lunes).
-Hasta publicarlos, fijar lo más fuerte que ya exista en la cuenta.
+## Pinned posts (3)
+1. Offer Reel (Sunday): what it is, price, how to order.
+2. Carousel "5 preguntas que te hará tu jefe" (Thursday).
+3. Reel "Este anuncio no tuvo rodaje" (Monday).
+Until those are live, pin the strongest posts already on the account.
 
-## Cuadrícula
-- Portadas de Reels con título en Instrument Serif dentro de la zona 3:4 central (la cuadrícula recorta 1080 × 1440).
-- Alternar Reel / carrusel para que la cuadrícula no se vea repetida.
+## Grid
+- Reel covers with an Instrument Serif title inside the central 3:4 area (the grid crops to 1080 × 1440).
+- Alternate Reel / carousel so the grid doesn't look repetitive.
 
-## Revisar en la app (5 min)
-- [ ] Configuración → Tipo de cuenta y herramientas: confirmar cuenta profesional (Empresa o Creador).
-- [ ] Centro de cuentas: confirmar que está conectada a la página de Facebook de Rodado (necesario para Meta Business Suite).
-- [ ] Bio, nombre, enlaces y botones de arriba.
-- [ ] Anotar seguidores de hoy en `metrics/baseline.md`.
+## Check in the app (5 min)
+- [ ] Settings → Account type and tools: confirm a professional account (Business or Creator).
+- [ ] Accounts Center: confirm it's connected to Rodado's Facebook Page (needed for Meta Business Suite).
+- [ ] Bio, name, links and buttons above.
+- [ ] Write today's follower count in `metrics/baseline.md`.

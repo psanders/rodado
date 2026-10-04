@@ -9,13 +9,13 @@ status: idea                    # idea | production | ready | scheduled | publis
 test: time 12:00 vs 19:00       # the one variable being tested
 ---
 
-# Oferta: un anuncio, tres duraciones
+# Offer: one ad, three durations
 
-## Gancho (primeros 2 s o primera lámina)
+## Hook (first 2 s or first slide, in Spanish)
 "Un anuncio, tres duraciones, en 7 días hábiles. Sin rodaje."
 
-## Desarrollo
-Corte de 15 s de Guaraguao (o el Reel con mejor retención de la semana) + lámina final: 2 direcciones · 3 duraciones · garantía 100%.
+## Structure
+15 s cut of Guaraguao (or the Reel with the best retention this week) + end slide (Spanish): 2 direcciones · 3 duraciones · garantía 100%.
 
 ## CTA
 Escribe ANUNCIO por WhatsApp (link en la bio).
@@ -34,16 +34,16 @@ Rodado Creativo · Videos para anuncios en Instagram y Facebook, hechos con IA a
 ```
 
 ## Assets
-- [ ] sources/ anuncios/rodado-15s-9x16.mp4
-- [ ] final/ 2026-10-11-reel-cta.mp4 + portada
+- [ ] sources/ ads/rodado-15s-9x16.mp4
+- [ ] final/ 2026-10-11-reel-cta.mp4 + cover
 
-## Checklist antes de programar
-- [ ] Gancho en los primeros 2 s / primera lámina se entiende sin sonido
-- [ ] Textos fuera de zona segura
-- [ ] Logos de clientes reemplazados por logos inventados
-- [ ] Subtítulos en video
-- [ ] Caption con CTA y palabra clave
-- [ ] Portada del Reel (1080 × 1920, título legible en la cuadrícula 3:4)
+## Checklist before scheduling
+- [ ] Hook in the first 2 s / first slide works without sound
+- [ ] Text outside the unsafe zones
+- [ ] Client logos replaced by invented ones
+- [ ] Subtitles on video
+- [ ] Caption with CTA and keyword
+- [ ] Reel cover (1080 × 1920, title readable in the 3:4 grid)
 
 
 Format template: ../../../templates/reel-cta.md

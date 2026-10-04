@@ -1,30 +1,31 @@
-# Voz de Rodado
+# Rodado voice
 
-Hablamos como un director creativo que respeta el tiempo de un gerente de marketing ocupado.
+We sound like a creative director who respects a busy marketing manager's time.
+All audience-facing copy is in Spanish; the rules below describe how that Spanish should sound.
 
-## Tono
-- Directo, seguro, sin exagerar. Frases cortas. Tuteo.
-- Español dominicano neutro: claro para un gerente, sin jerga de agencia ni anglicismos innecesarios ("gancho", no "hook"; "anuncio", no "ad").
-- Hablamos de resultados en Meta (ventas, pruebas, ROAS), no de "magia de la IA".
-- La IA es el cómo, no el qué. El qué es: tu producto real, en video, sin rodaje, en 7 días hábiles.
+## Tone
+- Direct, confident, no hype. Short sentences. Informal "tú".
+- Neutral Dominican Spanish: clear to a manager, no agency jargon or unnecessary anglicisms (write "gancho", not "hook"; "anuncio", not "ad").
+- Talk about results on Meta (sales, tests, ROAS), not "AI magic".
+- AI is the how, not the what. The what is: your real product, on video, no shoot, in 7 business days.
 
-## Palabras que sí
+## Words to use (Spanish)
 anuncio · gancho · 3 duraciones (30, 20, 15 s) · sin rodaje · tu producto real · listo para Meta · 7 días hábiles · garantía
 
-## Palabras que no
-"revolucionario", "increíble", "viral garantizado", "contenido orgánico", "barato", emojis en exceso (máx. 1 por caption).
+## Words to avoid (Spanish)
+"revolucionario", "increíble", "viral garantizado", "contenido orgánico", "barato", too many emojis (max. 1 per caption).
 
-## CTAs (rotar, uno por post)
-| Objetivo | CTA |
+## CTAs (rotate, one per post; the CTA text stays in Spanish)
+| Goal | CTA |
 | --- | --- |
-| Conversación | Escribe ANUNCIO por WhatsApp (link en la bio) |
-| Guardado | Guárdalo para tu próxima campaña |
-| Compartido | Compártelo con quien maneja tus anuncios |
-| Comentario | Comenta tu categoría y te decimos qué haríamos |
-| Seguir | Síguenos: cada lunes, un anuncio de principio a fin |
+| Conversation | Escribe ANUNCIO por WhatsApp (link en la bio) |
+| Save | Guárdalo para tu próxima campaña |
+| Share | Compártelo con quien maneja tus anuncios |
+| Comment | Comenta tu categoría y te decimos qué haríamos |
+| Follow | Síguenos: cada lunes, un anuncio de principio a fin |
 
-## Reglas visuales (ver diseno/rodado.pen)
-- Tipografías: Instrument Serif (títulos), Inter (texto), JetBrains Mono (etiquetas y tiempos).
-- 1080 × 1920 para Reels y portadas, 1080 × 1350 (4:5) para carruseles y estáticos.
-- Texto fuera de la zona segura de Instagram (130 px arriba, 320 px abajo en 9:16).
-- Marca de agua pequeña "roda.do" en la esquina inferior de cada pieza.
+## Visual rules (see design/rodado.pen)
+- Typefaces: Instrument Serif (titles), Inter (body), JetBrains Mono (labels and timings).
+- 1080 × 1920 for Reels and covers, 1080 × 1350 (4:5) for carousels and statics.
+- Keep text out of Instagram's unsafe zones (130 px top, 320 px bottom in 9:16).
+- Small "roda.do" watermark in the bottom corner of every piece.

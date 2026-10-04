@@ -9,13 +9,13 @@ status: idea                    # idea | production | ready | scheduled | publis
 test: time 12:00 vs 19:00       # the one variable being tested
 ---
 
-# Guaraguao: del storyboard al anuncio
+# Guaraguao: from storyboard to ad
 
-## Gancho (primeros 2 s o primera lámina)
+## Hook (first 2 s or first slide, in Spanish)
 "Este anuncio no tuvo rodaje."
 
-## Desarrollo
-Pantalla dividida, escenas A–D de Guaraguao: storyboard arriba, plano final abajo. Etiquetas: "Escena 1 · Gancho", "Escena 2 · Origen", "Escena 3 · Proceso", "Escena 4 · Oficio". Cierra con el corte de 15 s y la lámina "Tu producto, tal cual. 7 días hábiles."
+## Structure
+Split screen, Guaraguao scenes A–D: storyboard on top, final shot below. Labels (Spanish): "Escena 1 · Gancho", "Escena 2 · Origen", "Escena 3 · Proceso", "Escena 4 · Oficio". Closes with the 15 s cut and the slide "Tu producto, tal cual. 7 días hábiles."
 
 ## CTA
 Síguenos: cada lunes, un anuncio de principio a fin.
@@ -34,17 +34,17 @@ Rodado Creativo · Videos para anuncios en Instagram y Facebook, hechos con IA a
 ```
 
 ## Assets
-- [ ] sources/ assets/img/escena-a.jpg … escena-f.jpg (storyboard)
-- [ ] sources/ assets/video/guaraguao-30s-720p.mp4 y anuncios/rodado-15s-9x16.mp4
-- [ ] final/ 2026-10-05-reel-storyboard-guaraguao.mp4 + portada
+- [ ] sources/ assets/img/scene-a.jpg … scene-f.jpg (storyboard)
+- [ ] sources/ assets/video/guaraguao-30s-720p.mp4 and ads/rodado-15s-9x16.mp4
+- [ ] final/ 2026-10-05-reel-storyboard-guaraguao.mp4 + cover
 
-## Checklist antes de programar
-- [ ] Gancho en los primeros 2 s / primera lámina se entiende sin sonido
-- [ ] Textos fuera de zona segura
-- [ ] Logos de clientes reemplazados por logos inventados
-- [ ] Subtítulos en video
-- [ ] Caption con CTA y palabra clave
-- [ ] Portada del Reel (1080 × 1920, título legible en la cuadrícula 3:4)
+## Checklist before scheduling
+- [ ] Hook in the first 2 s / first slide works without sound
+- [ ] Text outside the unsafe zones
+- [ ] Client logos replaced by invented ones
+- [ ] Subtitles on video
+- [ ] Caption with CTA and keyword
+- [ ] Reel cover (1080 × 1920, title readable in the 3:4 grid)
 
 
 Format template: ../../../templates/reel-storyboard.md

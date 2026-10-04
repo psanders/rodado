@@ -9,13 +9,13 @@ status: idea                    # idea | production | ready | scheduled | publis
 test: time 12:00 vs 19:00       # the one variable being tested
 ---
 
-# Por qué tu público se cansa de tu anuncio
+# Why your audience gets tired of your ad
 
-## Gancho (primeros 2 s o primera lámina)
+## Hook (first 2 s or first slide, in Spanish)
 "Tu anuncio no se cansó. Tu público se cansó de verlo."
 
-## Desarrollo
-01 Gancho · 02 "Después de 3–4 vistas, la gente deja de mirar." · 03 Señal 1: sube el costo por resultado · 04 Señal 2: baja el CTR · 05 Señal 3: frecuencia > 3 · 06 Solución: rotar creativos cada 2–4 semanas, no cambiar la pauta · 07 Atajo: una historia en 3 duraciones = 3 creativos para probar · 08 CTA
+## Structure
+Slides (copy in Spanish): 01 Hook · 02 "Después de 3–4 vistas, la gente deja de mirar." · 03 Signal 1: cost per result goes up · 04 Signal 2: CTR drops · 05 Signal 3: frequency > 3 · 06 Fix: rotate creatives every 2–4 weeks, don't change the media plan · 07 Shortcut: one story in 3 durations = 3 creatives to test · 08 CTA
 
 ## CTA
 Guárdalo para tu próxima campaña.
@@ -34,16 +34,16 @@ Rodado Creativo · Videos para anuncios en Instagram y Facebook, hechos con IA a
 ```
 
 ## Assets
-- [ ] sources/ fotogramas de Guaraguao (30, 20, 15 s)
-- [ ] final/ 2026-10-06-carrusel-01.png … -08.png (1080 × 1350)
+- [ ] sources/ Guaraguao frames (30, 20, 15 s)
+- [ ] final/ 2026-10-06-carousel-01.png … -08.png (1080 × 1350)
 
-## Checklist antes de programar
-- [ ] Gancho en los primeros 2 s / primera lámina se entiende sin sonido
-- [ ] Textos fuera de zona segura
-- [ ] Logos de clientes reemplazados por logos inventados
-- [ ] Subtítulos en video
-- [ ] Caption con CTA y palabra clave
-- [ ] Portada del Reel (1080 × 1920, título legible en la cuadrícula 3:4)
+## Checklist before scheduling
+- [ ] Hook in the first 2 s / first slide works without sound
+- [ ] Text outside the unsafe zones
+- [ ] Client logos replaced by invented ones
+- [ ] Subtitles on video
+- [ ] Caption with CTA and keyword
+- [ ] Reel cover (1080 × 1920, title readable in the 3:4 grid)
 
 
 Format template: ../../../templates/carousel-framework.md

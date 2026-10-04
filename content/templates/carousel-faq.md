@@ -1,11 +1,12 @@
-# Carrusel · Preguntas frecuentes (Confianza) · 6–7 láminas · 4:5
+# Carousel · FAQ (Trust) · 6–7 slides · 4:5
 
-Fuente de preguntas: WhatsApp, DMs, llamadas de venta, objeciones del outbound. Anotar cada pregunta en `ideas/bank.csv` con fuente "pregunta".
+Question sources: WhatsApp, DMs, sales calls, outbound objections. Log each question in `ideas/bank.csv` with source `question`.
+Slide text is in Spanish.
 
-| Lámina | Contenido |
+| Slide | Content |
 | --- | --- |
-| 1 | "5 preguntas que te hará tu jefe antes de aprobar un anuncio hecho con IA" (o similar) |
-| 2–6 | Pregunta (grande) + respuesta clara en 2 líneas + prueba (fotograma, garantía, plazo) |
-| 7 | CTA a WhatsApp con ANUNCIO |
+| 1 | "5 preguntas que te hará tu jefe antes de aprobar un anuncio hecho con IA" (or similar) |
+| 2–6 | Question (large) + clear 2-line answer + proof (frame, guarantee, deadline) |
+| 7 | CTA to WhatsApp with ANUNCIO |
 
-Preguntas base: ¿Se ve falso? · ¿Es mi producto real? · ¿Cuánto tarda? · ¿Y si no me gusta? (garantía) · ¿Sirve para Meta? (zonas seguras, 3 duraciones) · ¿Quién tiene los derechos?
+Base questions: ¿Se ve falso? · ¿Es mi producto real? · ¿Cuánto tarda? · ¿Y si no me gusta? (guarantee) · ¿Sirve para Meta? (safe zones, 3 durations) · ¿Quién tiene los derechos?

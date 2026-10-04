@@ -1,12 +1,13 @@
-# Reel · Concepto por categoría (Ideas por categoría) · 15 s · 9:16
+# Reel · Category concept (Category ideas) · 15 s · 9:16
 
-Para qué: que un gerente imagine SU producto en nuestro formato. Siempre con una marca inventada (como Guaraguao).
+Purpose: make a manager picture THEIR product in our format. Always with an invented brand (like Guaraguao).
+On-screen text is in Spanish.
 
-| Tiempo | Pantalla | Texto |
+| Time | Screen | Text |
 | --- | --- | --- |
-| 0–2 s | Producto inventado en su mejor plano | "Así venderíamos un [categoría] dominicano en 15 segundos." |
-| 2–12 s | El anuncio de 15 s (4–5 escenas) | Textos del anuncio |
-| 12–15 s | Fondo marca | "¿Tu categoría es la próxima? Comenta cuál." |
+| 0–2 s | Invented product in its best shot | "Así venderíamos un [categoría] dominicano en 15 segundos." |
+| 2–12 s | The 15 s ad (4–5 scenes) | The ad's text |
+| 12–15 s | Brand background | "¿Tu categoría es la próxima? Comenta cuál." |
 
-Banco de categorías: café, ron, chocolate, salsas, snacks, jugos, lácteos, cuidado del cabello, skincare, perfume, suplementos, mascotas, ropa de baño.
-Marca inventada: nombre + logo simple en Pencil (`diseno/plantillas/storyboards.pen`). Anotar en `ideas/bank.csv` para no repetir.
+Category bank: coffee, rum, chocolate, sauces, snacks, juices, dairy, hair care, skincare, perfume, supplements, pet food, swimwear.
+Invented brand: name + simple logo in Pencil (`design/templates/storyboards.pen`). Log it in `ideas/bank.csv` so it isn't repeated.

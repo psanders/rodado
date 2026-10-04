@@ -1,32 +1,33 @@
-# Publicar · programar la semana en Meta Business Suite
+# Publishing · schedule the week in Meta Business Suite
 
-Herramienta: Meta Business Suite (gratis, oficial) en computadora: business.facebook.com → Planificador.
-Respaldo: la app de Instagram (Crear → Configuración avanzada → Programar publicación; hasta 75 días antes).
+Tool: Meta Business Suite (free, official) on desktop: business.facebook.com → Planner.
+Fallback: the Instagram app (Create → Advanced settings → Schedule post; up to 75 days ahead).
+Later: `rodado-publisher` in `.hermes/` does this through the API.
 
-## Requisitos (una sola vez)
-- [ ] Instagram como cuenta profesional (Empresa o Creador).
-- [ ] Instagram conectado a la página de Facebook de Rodado y a Business Suite (Configuración → Cuentas comerciales / Activos).
-- [ ] Confirmar en el Planificador que se puede elegir "Reel de Instagram" y "Publicación de Instagram" con varias imágenes.
+## Requirements (once)
+- [ ] Instagram is a professional account (Business or Creator).
+- [ ] Instagram is connected to Rodado's Facebook Page and to Business Suite (Settings → Business assets).
+- [ ] Confirm in the Planner that "Instagram Reel" and "Instagram post" with multiple images are available.
 
-## Cada lunes (30 min)
-Para cada carpeta de `calendar/YYYY-Wnn/` con `status: ready`:
-1. Planificador → Crear → Reel (o Publicación para carrusel/estático).
-2. Elegir solo Instagram (desmarcar Facebook si no queremos duplicar).
-3. Subir lo que hay en `final/`: el video + portada, o las láminas en orden (01, 02…).
-4. Pegar el caption del `post.md`.
-5. Programar con `fecha` y `hora` del `post.md` (hora RD).
-6. Cambiar `status: scheduled` en el `post.md` y en `week.md`.
+## Every Monday (30 min)
+For every folder in `calendar/YYYY-Wnn/` with `status: ready`:
+1. Planner → Create → Reel (or Post for carousels/statics).
+2. Pick Instagram only (untick Facebook unless we want it duplicated).
+3. Upload what's in `final/`: the video + cover, or the slides in order (01, 02…).
+4. Paste the caption from `post.md`.
+5. Schedule with the `date` and `time` from `post.md` (Santo Domingo time).
+6. Set `status: scheduled` in `post.md` and in `week.md`.
 
-Al terminar, abrir la vista de calendario del Planificador y comprobar los 7.
+When done, open the Planner's calendar view and check all 7.
 
-## Datos útiles
-- Reels: 9:16, 1080 × 1920, hasta 90 s para que cuenten como Reel. Portada aparte.
-- Carruseles: hasta 10 láminas (usamos 4:5, 1080 × 1350). Mismo tamaño en todas.
-- Business Suite no tiene carga masiva: son 7 publicaciones, una por una (~3 min cada una).
-- Lo no verificado aún (confirmar la primera vez): límite de días hacia adelante en Business Suite y si exige página de Facebook.
+## Useful facts
+- Reels: 9:16, 1080 × 1920, up to 90 s to count as a Reel. Separate cover.
+- Carousels: up to 10 slides (we use 4:5, 1080 × 1350). Same size on every slide.
+- Business Suite has no bulk upload: 7 posts, one by one (~3 min each).
+- Not verified yet (confirm the first time): how many days ahead Business Suite allows, and whether it requires a Facebook Page.
 
-## Automatizar del todo (más adelante, opcional)
-La API de Instagram (Content Publishing) publica Reels y carruseles pero no programa: haría falta un script con cron,
-una app de Meta con permiso `instagram_business_content_publish` y los archivos en una URL pública.
-Tiene sentido cuando el sistema esté estable (semana 8+). Herramientas de terceros (Buffer, Metricool) cobran
-o limitan el plan gratis por debajo de 7 posts por semana.
+## Full automation (later, optional)
+Instagram's Content Publishing API publishes Reels and carousels but doesn't schedule: it needs a script on a timer,
+a Meta app with the `instagram_business_content_publish` permission, and the files at a public URL.
+Worth it once the system is stable (week 8+). Third-party tools (Buffer, Metricool) charge
+or cap their free plans below 7 posts a week.

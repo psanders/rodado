@@ -1,13 +1,14 @@
-# Reel · Storyboard a anuncio (Prueba) · 15–30 s · 9:16
+# Reel · Storyboard to ad (Proof) · 15–30 s · 9:16
 
-Para qué: mostrar que planificamos cada escena y que el resultado es premium y con el producto real.
+Purpose: show that we plan every scene and that the result is premium and uses the real product.
+On-screen text is in Spanish.
 
-| Tiempo | Pantalla | Texto en pantalla | Audio |
+| Time | Screen | On-screen text | Audio |
 | --- | --- | --- | --- |
-| 0–2 s | El anuncio final, su mejor plano | Gancho ("Este anuncio no tuvo rodaje.") | Golpe del anuncio |
-| 2–12 s | Pantalla dividida: escena del storyboard arriba, plano final abajo, 3–4 escenas | "Escena 1 · Gancho", "Escena 2 · Origen"… | Música del anuncio |
-| 12–25 s | Anuncio final completo (corte de 15 s) | — | Audio del anuncio |
-| 25–30 s | Fondo marca Rodado | "Tu producto, tal cual. 7 días hábiles." + CTA | Cierre |
+| 0–2 s | The final ad, its best shot | Hook ("Este anuncio no tuvo rodaje.") | The ad's hit |
+| 2–12 s | Split screen: storyboard scene on top, final shot below, 3–4 scenes | "Escena 1 · Gancho", "Escena 2 · Origen"… | The ad's music |
+| 12–25 s | Full final ad (15 s cut) | — | The ad's audio |
+| 25–30 s | Rodado brand background | "Tu producto, tal cual. 7 días hábiles." + CTA | Outro |
 
-Fuentes: `proyectos/<cliente>/storyboards-*.pen`, videos de `anuncios/` o `proyectos/<cliente>/entrega/`.
-Cliente real → reemplazar logo antes de exportar.
+Sources: `projects/<client>/storyboards-*.pen`, videos from `ads/` or `projects/<client>/delivery/`.
+Real client → replace the logo before exporting.

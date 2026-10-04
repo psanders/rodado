@@ -1,48 +1,51 @@
 # Content · Rodado Creativo
 
-Sistema para producir 7 publicaciones por semana en Instagram (@rodado.creativo), rápido y consistente.
-Todo nace de una plantilla, todo vive en una carpeta, nada se inventa el mismo día.
+System for producing 7 Instagram posts a week (@rodado.creativo), fast and consistent.
+Everything starts from a template, everything lives in a folder, nothing is invented on the day.
 
-> Ojo: este repo es público y se publica en roda.do. `prospects/` y `metrics/` están en `.gitignore`.
+> Note: this repo is public and published at roda.do. `prospects/` and `metrics/` are in `.gitignore`.
+> Language: file names, structure and instructions are in English. Audience-facing copy (hooks, captions, slides, CTAs) is in Spanish.
 
-## Estructura
+## Structure
 
 ```
 content/
-  strategy-full.md        Estrategia completa (importada del doc), en inglés
-  strategy.md             Resumen operativo: audiencia, meta, pilares, formatos, cadencia, decisiones
-  voice.md                Cómo hablamos: tono, palabras, CTAs, reglas de copy
-  instagram-profile.md    Bio, destacadas y publicaciones fijadas
-  publishing.md           Cómo programar la semana en Meta Business Suite
-  templates/              Una plantilla por formato + caption + brief de post
-  ideas/bank.csv          Banco de ideas (siempre ~15 esperando)
-  calendar/YYYY-Wnn/      Una carpeta por semana, una subcarpeta por post
-  metrics/log.csv         Una fila por post publicado (privado)
-  prospects/              Marcas objetivo para outbound (privado)
-  scripts/new-week.sh     Crea la carpeta de la semana desde las plantillas
+  strategy-full.md        Full strategy (imported from the doc)
+  strategy.md             Operating summary: audience, goal, pillars, formats, cadence, decisions
+  voice.md                How we sound: tone, words, CTAs, copy rules
+  instagram-profile.md    Bio, highlights and pinned posts
+  publishing.md           How to schedule the week in Meta Business Suite
+  templates/              One template per format + caption + post brief
+  ideas/bank.csv          Idea bank (always ~15 waiting)
+  calendar/YYYY-Wnn/      One folder per week, one subfolder per post
+  metrics/log.csv         One row per published post (private)
+  prospects/              Target brands for outbound (private)
+  scripts/new-week.sh     Creates the week's folders from the templates
 ```
 
-## Ritual semanal
+## Weekly ritual
 
-| Cuándo | Qué | Tiempo |
+| When | What | Time |
 | --- | --- | --- |
-| Viernes | Llenar `metrics/log.csv` con la semana que termina | 15 min |
-| Viernes | Agregar ideas nuevas a `ideas/bank.csv` | 15 min |
-| Viernes | `scripts/new-week.sh 2026-W42` y elegir 7 ideas del banco | 20 min |
-| Viernes | Escribir los 7 ganchos y CTAs en cada `post.md` | 10 min |
-| Lunes | Producir martes a domingo en lote (Pencil + video) | 3-4 h |
-| Lunes | Programar todo en Meta Business Suite (`publishing.md`) | 30 min |
-| Diario | Responder comentarios y DMs; 10+ mensajes de outbound | 30 min |
+| Friday | Fill `metrics/log.csv` with the week that's ending | 15 min |
+| Friday | Add new ideas to `ideas/bank.csv` | 15 min |
+| Friday | `scripts/new-week.sh 2026-W42` and pick 7 ideas from the bank | 20 min |
+| Friday | Write the 7 hooks and CTAs in each `post.md` | 10 min |
+| Monday | Batch-produce Tuesday to Sunday (Pencil + video) | 3–4 h |
+| Monday | Schedule everything in Meta Business Suite (`publishing.md`) | 30 min |
+| Daily | Reply to comments and DMs; 10+ outbound messages | 30 min |
 
-## Nombres de archivo
+With the Hermes agents (`.hermes/`), ideas, copy and audit run on the board and you approve them in review.
 
-`calendar/2026-W41/01-mon-reel-storyboard/` → `post.md` (brief + copy), `final/` (lo que se sube), `sources/` (archivos de trabajo).
-Archivos finales: `2026-10-05-reel-storyboard-guaraguao.mp4`, `2026-10-06-carrusel-01.png` … `-08.png`.
+## File names
 
-## Reglas que ahorran tiempo
+`calendar/2026-W41/01-mon-reel-storyboard/` → `post.md` (brief + copy), `final/` (what gets uploaded), `sources/` (working files).
+Final files: `2026-10-05-reel-storyboard-guaraguao.mp4`, `2026-10-06-carousel-01.png` … `-08.png`.
 
-1. Un post = una idea = un gancho. Si necesita dos ideas, son dos posts.
-2. Reusar antes que crear: cada proyecto de cliente da 3 posts (storyboard a anuncio, 3 cortes, una lección).
-3. Clientes reales solo con logo reemplazado por uno inventado parecido. Nunca su marca real sin permiso.
-4. Formato fijo por día (ver `strategy.md`) para comparar resultados semana a semana.
-5. Cambiar una sola variable a la vez y anotarla en `log.csv` (columna `test`).
+## Rules that save time
+
+1. One post = one idea = one hook. If it needs two ideas, it's two posts.
+2. Reuse before creating: every client project yields 3 posts (storyboard to ad, 3 cuts, one lesson).
+3. Real clients only with their logo replaced by an invented look-alike. Never their real brand without permission.
+4. Fixed format per day (see `strategy.md`) so results compare week to week.
+5. Change one variable at a time and note it in `log.csv` (`test` column).

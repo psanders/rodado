@@ -1,8 +1,8 @@
-# Estático · Frase (Libre) · 1 lámina · 4:5
+# Static · One-liner (Open) · 1 slide · 4:5
 
-Una opinión fuerte, verdadera y útil para un gerente de marketing. Fondo de marca, Instrument Serif grande, firma "roda.do".
-Prueba: ¿la compartiría un gerente con su equipo? Si no, no va.
-Ejemplos:
+A strong, true and useful opinion for a marketing manager. Brand background, large Instrument Serif, "roda.do" signature. Text in Spanish.
+Test: would a manager share it with their team? If not, it doesn't go out.
+Examples:
 - "Si tu anuncio necesita sonido para entenderse, ya perdió."
 - "Tu anuncio no se cansó. Tu público se cansó de verlo."
 - "Una sesión de fotos no es una campaña."

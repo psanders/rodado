@@ -1470,7 +1470,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/A_gancho.jpg",
+                            "url": "images/scenes/A_gancho.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 38,
@@ -1900,7 +1900,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/E_momento.jpg",
+                            "url": "images/scenes/E_momento.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 14
@@ -1954,7 +1954,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/D_oficio.jpg",
+                            "url": "images/scenes/D_oficio.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 14
@@ -2008,7 +2008,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/A_gancho.jpg",
+                            "url": "images/scenes/A_gancho.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 14
@@ -3474,7 +3474,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/A_gancho.jpg",
+                        "url": "images/scenes/A_gancho.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 12,
@@ -3639,7 +3639,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/B_origen.jpg",
+                        "url": "images/scenes/B_origen.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 12,
@@ -3804,7 +3804,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/C_proceso.jpg",
+                        "url": "images/scenes/C_proceso.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 12,
@@ -3969,7 +3969,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/D_oficio.jpg",
+                        "url": "images/scenes/D_oficio.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 12,
@@ -4134,7 +4134,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/E_momento.jpg",
+                        "url": "images/scenes/E_momento.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 12,
@@ -4299,7 +4299,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/F_cierre.jpg",
+                        "url": "images/scenes/F_closing.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 12,
@@ -5530,7 +5530,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/A_gancho.jpg",
+                        "url": "images/scenes/A_gancho.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 35.6,
@@ -5945,7 +5945,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/E_momento.jpg",
+                        "url": "images/scenes/E_momento.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 10
@@ -5999,7 +5999,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/D_oficio.jpg",
+                        "url": "images/scenes/D_oficio.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 10
@@ -6053,7 +6053,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/A_gancho.jpg",
+                        "url": "images/scenes/A_gancho.jpg",
                         "mode": "fill"
                       },
                       "cornerRadius": 10
@@ -7368,7 +7368,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/A_gancho.jpg",
+                            "url": "images/scenes/A_gancho.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 10,
@@ -7500,7 +7500,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/B_origen.jpg",
+                            "url": "images/scenes/B_origen.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 10,
@@ -7641,7 +7641,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/C_proceso.jpg",
+                            "url": "images/scenes/C_proceso.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 10,
@@ -7773,7 +7773,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/D_oficio.jpg",
+                            "url": "images/scenes/D_oficio.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 10,
@@ -7914,7 +7914,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/E_momento.jpg",
+                            "url": "images/scenes/E_momento.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 10,
@@ -8046,7 +8046,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/F_cierre.jpg",
+                            "url": "images/scenes/F_closing.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 10,
@@ -8940,7 +8940,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "imagenes/escenas/F_cierre.jpg",
+                    "url": "images/scenes/F_closing.jpg",
                     "mode": "fill"
                   },
                   "cornerRadius": 38,
@@ -9344,7 +9344,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "imagenes/escenas/D_oficio.jpg",
+                    "url": "images/scenes/D_oficio.jpg",
                     "mode": "fill"
                   },
                   "layout": "vertical",
@@ -9718,7 +9718,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/B_origen.jpg",
+                            "url": "images/scenes/B_origen.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 18,
@@ -9749,7 +9749,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/D_oficio.jpg",
+                            "url": "images/scenes/D_oficio.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 18,
@@ -9780,7 +9780,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/E_momento.jpg",
+                            "url": "images/scenes/E_momento.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 18,
@@ -10295,7 +10295,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "imagenes/escenas/B_origen.jpg",
+                                "url": "images/scenes/B_origen.jpg",
                                 "mode": "fill"
                               },
                               "cornerRadius": 22
@@ -10350,7 +10350,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "imagenes/escenas/D_oficio.jpg",
+                                "url": "images/scenes/D_oficio.jpg",
                                 "mode": "fill"
                               },
                               "cornerRadius": 22
@@ -10405,7 +10405,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "imagenes/escenas/A_gancho.jpg",
+                                "url": "images/scenes/A_gancho.jpg",
                                 "mode": "fill"
                               },
                               "cornerRadius": 22
@@ -10503,7 +10503,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/escenas/F_cierre.jpg",
+                        "url": "images/scenes/F_closing.jpg",
                         "mode": "fill"
                       }
                     },
@@ -10891,7 +10891,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/B_origen.jpg",
+                            "url": "images/scenes/B_origen.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 24,
@@ -10921,7 +10921,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/D_oficio.jpg",
+                            "url": "images/scenes/D_oficio.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 24,
@@ -10951,7 +10951,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/escenas/E_momento.jpg",
+                            "url": "images/scenes/E_momento.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 24,
@@ -11573,7 +11573,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "imagenes/escenas/B_origen.jpg",
+                                "url": "images/scenes/B_origen.jpg",
                                 "mode": "fill"
                               },
                               "cornerRadius": 22
@@ -11628,7 +11628,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "imagenes/escenas/D_oficio.jpg",
+                                "url": "images/scenes/D_oficio.jpg",
                                 "mode": "fill"
                               },
                               "cornerRadius": 22
@@ -11683,7 +11683,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "imagenes/escenas/A_gancho.jpg",
+                                "url": "images/scenes/A_gancho.jpg",
                                 "mode": "fill"
                               },
                               "cornerRadius": 22
@@ -11810,7 +11810,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "imagenes/escenas/E_momento.jpg",
+                    "url": "images/scenes/E_momento.jpg",
                     "mode": "fill"
                   },
                   "layout": "vertical",
@@ -12578,7 +12578,7 @@
                                   "fill": {
                                     "type": "image",
                                     "enabled": true,
-                                    "url": "imagenes/guaraguao/corte-30s-origen.jpg",
+                                    "url": "images/guaraguao/corte-30s-origen.jpg",
                                     "mode": "fill"
                                   },
                                   "cornerRadius": 34,
@@ -12775,7 +12775,7 @@
                                   "fill": {
                                     "type": "image",
                                     "enabled": true,
-                                    "url": "imagenes/guaraguao/corte-20s-oficio.jpg",
+                                    "url": "images/guaraguao/corte-20s-oficio.jpg",
                                     "mode": "fill"
                                   },
                                   "cornerRadius": 34,
@@ -12972,7 +12972,7 @@
                                   "fill": {
                                     "type": "image",
                                     "enabled": true,
-                                    "url": "imagenes/guaraguao/corte-15s-gancho.jpg",
+                                    "url": "images/guaraguao/corte-15s-gancho.jpg",
                                     "mode": "fill"
                                   },
                                   "cornerRadius": 34,
@@ -13347,7 +13347,7 @@
                               "fill": {
                                 "type": "image",
                                 "enabled": true,
-                                "url": "imagenes/escenas/A_gancho.jpg",
+                                "url": "images/scenes/A_gancho.jpg",
                                 "mode": "fill"
                               },
                               "cornerRadius": 14,
@@ -13477,7 +13477,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/guaraguao/corte-15s-gancho.jpg",
+                            "url": "images/guaraguao/corte-15s-gancho.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 22,
@@ -14130,7 +14130,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "imagenes/guaraguao/corte-15s-gancho.jpg",
+                "url": "images/guaraguao/corte-15s-gancho.jpg",
                 "mode": "fill"
               },
               "layout": "none",
@@ -14313,7 +14313,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "imagenes/guaraguao/corte-20s-oficio.jpg",
+                "url": "images/guaraguao/corte-20s-oficio.jpg",
                 "mode": "fill"
               },
               "layout": "none",
@@ -15399,7 +15399,7 @@
                                 {
                                   "type": "image",
                                   "enabled": true,
-                                  "url": "imagenes/escenas/A_gancho.jpg",
+                                  "url": "images/scenes/A_gancho.jpg",
                                   "mode": "fill"
                                 },
                                 {
@@ -15519,7 +15519,7 @@
                                 {
                                   "type": "image",
                                   "enabled": true,
-                                  "url": "imagenes/escenas/B_origen.jpg",
+                                  "url": "images/scenes/B_origen.jpg",
                                   "mode": "fill"
                                 },
                                 {
@@ -15724,7 +15724,7 @@
                                 {
                                   "type": "image",
                                   "enabled": true,
-                                  "url": "imagenes/escenas/C_proceso.jpg",
+                                  "url": "images/scenes/C_proceso.jpg",
                                   "mode": "fill"
                                 },
                                 {
@@ -15844,7 +15844,7 @@
                                 {
                                   "type": "image",
                                   "enabled": true,
-                                  "url": "imagenes/escenas/D_oficio.jpg",
+                                  "url": "images/scenes/D_oficio.jpg",
                                   "mode": "fill"
                                 },
                                 {
@@ -16049,7 +16049,7 @@
                                 {
                                   "type": "image",
                                   "enabled": true,
-                                  "url": "imagenes/escenas/E_momento.jpg",
+                                  "url": "images/scenes/E_momento.jpg",
                                   "mode": "fill"
                                 },
                                 {
@@ -16169,7 +16169,7 @@
                                 {
                                   "type": "image",
                                   "enabled": true,
-                                  "url": "imagenes/escenas/F_cierre.jpg",
+                                  "url": "images/scenes/F_closing.jpg",
                                   "mode": "fill"
                                 },
                                 {
@@ -16324,7 +16324,7 @@
                     {
                       "type": "image",
                       "enabled": true,
-                      "url": "imagenes/escenas/D_oficio.jpg",
+                      "url": "images/scenes/D_oficio.jpg",
                       "mode": "fill"
                     },
                     {
@@ -16495,7 +16495,7 @@
                     {
                       "type": "image",
                       "enabled": true,
-                      "url": "imagenes/escenas/A_gancho.jpg",
+                      "url": "images/scenes/A_gancho.jpg",
                       "mode": "fill"
                     },
                     {
@@ -16702,7 +16702,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/ig/ig-01.png",
+                        "url": "images/ig/ig-01.png",
                         "mode": "fill"
                       },
                       "layout": "vertical",
@@ -17149,7 +17149,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/ig/ig-03.png",
+                        "url": "images/ig/ig-03.png",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -17226,7 +17226,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/ig/ig-04.png",
+                        "url": "images/ig/ig-04.png",
                         "mode": "fill"
                       },
                       "layout": "vertical",
@@ -17519,7 +17519,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/ig/ig-05-antes.jpg",
+                            "url": "images/ig/ig-05-antes.jpg",
                             "mode": "fill"
                           },
                           "cornerRadius": 28,
@@ -17572,7 +17572,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "imagenes/ig/ig-05.png",
+                            "url": "images/ig/ig-05.png",
                             "mode": "fill"
                           },
                           "cornerRadius": 28,
@@ -18612,7 +18612,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "imagenes/ig/ig-10.png",
+                        "url": "images/ig/ig-10.png",
                         "mode": "fill"
                       },
                       "width": "fill_container",

@@ -35,7 +35,7 @@
                 {
                   "type": "image",
                   "enabled": true,
-                  "url": "img/ph-escena.png",
+                  "url": "img/ph-scene.png",
                   "mode": "cover"
                 },
                 {
@@ -590,7 +590,7 @@
                     {
                       "type": "image",
                       "enabled": true,
-                      "url": "img/ph-escena.png",
+                      "url": "img/ph-scene.png",
                       "mode": "cover"
                     },
                     {
@@ -673,7 +673,7 @@
                     {
                       "type": "image",
                       "enabled": true,
-                      "url": "img/ph-escena.png",
+                      "url": "img/ph-scene.png",
                       "mode": "cover"
                     },
                     {
@@ -2347,7 +2347,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -2423,7 +2423,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -2500,7 +2500,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -2577,7 +2577,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -2654,7 +2654,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -2731,7 +2731,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -3392,7 +3392,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -3468,7 +3468,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -3545,7 +3545,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -3622,7 +3622,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -3699,7 +3699,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -3776,7 +3776,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "img/ph-escena.png",
+                          "url": "img/ph-scene.png",
                           "mode": "fill"
                         },
                         {
@@ -4652,7 +4652,7 @@
               "fill": "#1A1A1A",
               "textGrowth": "fixed-width",
               "width": "fill_container",
-              "content": "Copia esta plantilla a proyectos/<cliente>-<aaaa-mm>/ en la raíz del repo (ignorada por git: el repo es público), junto con img/ph-*.png. Nunca trabajes un cliente sobre este archivo.",
+              "content": "Copy this template to projects/<client>-<yyyy-mm>/ at the repo root (git-ignored: the repo is public), along with img/ph-*.png. Never work on a client inside this file.",
               "lineHeight": 1.5,
               "fontFamily": "Inter",
               "fontSize": 17,

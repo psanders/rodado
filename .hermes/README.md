@@ -7,7 +7,8 @@ It lives inside the repo, so cloning the repo is the whole setup. (Hermes also t
 rodado/
   index.html, css/, js/, assets/   website (roda.do)
   content/                         what the agents work on: strategy, templates, calendar, ideas
-  proyectos/                       client work (not in git)
+  projects/                        client work (not in git)
+  design/, ads/, offer/            Pencil files, ad creatives, offer PDF
   .hermes/                         how the agents run (this folder)
     compose.yaml                   Hermes container; mounts the repo at /workspace/rodado
     .env.example → .env            dashboard login + ANTHROPIC_API_KEY (.env is never committed)
