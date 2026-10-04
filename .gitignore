@@ -1,2 +1,13 @@
 .DS_Store
 *.log
+
+# Proyectos de clientes: archivos .pen, fotos y PDFs privados (el repo es público)
+/proyectos/
+
+# Restos de la prueba de CeRa dentro de la plantilla (mover a proyectos/)
+/diseno/plantillas/img/cera/
+/diseno/plantillas/images/
+
+# Content: private data (prospects and metrics)
+/content/prospects/
+/content/metrics/
