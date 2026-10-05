@@ -14,19 +14,15 @@ Write prompts in English, in this order: subject → action/moment → setting �
 | One half of a `compare` | 16:9 | Same framing for both halves |
 | Reel shot (editor, later) | 9:16 | Product centered; keep 130 px top and 320 px bottom calm |
 
-## Clips (Seedance)
-- Animate an approved still when you can: the prompt then describes only motion and camera ("slow push-in, steam rising, a drop of condensation runs down the bottle, 5 seconds").
-- One motion per clip. Slow, smooth, commercial: push-in, orbit, pour, splash, reveal, light sweep. No cuts, no people talking.
-- 4–6 s, no audio. Loops nicely if the last second is calm.
+## Clips (Seedance 2.5)
+- Animate an approved still when you can (`image-to-video`): the prompt then describes only motion and camera ("slow push-in, steam rising, a drop of condensation runs down the bottle").
+- Several angles of the same product, or the avatar → `reference-to-video` and name the refs in the prompt (`@Image1`, `@Image2`).
+- One motion per clip. Slow, smooth, commercial: push-in, orbit, pour, splash, reveal, light sweep. No cuts unless asked.
+- Product clips: 4–6 s, `generate_audio: false`. Loops nicely if the last second is calm.
 
-## Ideas that work for Rodado
-- The product doing something: pouring, opening, falling into frame, unwrapping.
-- Before → after: a flat phone photo of a product vs. the same product in a styled scene (make the "before" look like a real, plain phone photo).
-- Category moments in the DR: breakfast with café, a colmado counter, a beach at golden hour, a family table, a salon mirror. Avoid postcard clichés.
+## Images (Seedream 5)
+- Same product in a new scene → `edit` with the product photo(s) as `image_urls`, prompt: "The product from @Image1 on …". Keep label, shape and color exact.
+- Before/after: make the "before" a deliberately plain phone photo (flat light, cluttered counter), the "after" a styled scene, same product refs for both.
 
-## Costs (estimates, Oct 2026; verify on fal.ai)
-| What | Approx. |
-| --- | --- |
-| Image (flux-2 / nano-banana class) | US$0.03–0.15 each |
-| Clip, Seedance 2.0, 720p | ~US$0.20–0.30 per second → 5 s ≈ US$1–1.50 |
-| Clip, cheaper tier (LTX, Pixverse) | ~US$0.05–0.10 per second |
+## Costs
+See `references/models.md`.

@@ -29,7 +29,7 @@ Other options considered: "<option 2>" · "<option 3>" — <why the chosen one w
 
 ## Media
 <Atoms the producer makes or finds; the designer composes them. One line each, or "None (text only)".>
-- M1 · clip | image · what it shows (one concrete sentence) · goes on: slide 01 cover | slide 03 | full static · source: generate | library | client
+- M1 · clip | image · what it shows (one concrete sentence) · goes on: slide 01 cover | slide 03 | full static · source: generate | library | client | host
 - M2 · …
 
 ## Assets

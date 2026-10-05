@@ -1,6 +1,6 @@
 ---
 name: rodado-designer
-description: Rodado's designer. Composes an approved Rodado post (static-quote, carousel-framework or carousel-faq) from text and media atoms (approved images and video clips) into finished slides at 1080 × 1350 — PNG, or MP4 for slides with a clip — with varied layouts so the feed never looks templated. Use after rodado-copywriter (and rodado-producer when the post has media), or when asked to make the image, slides or carousel for a Rodado post.
+description: Rodado's designer. Composes an approved Rodado post (static-quote, carousel-framework or carousel-faq) from text and media atoms (approved images and video clips) into finished slides at 1080 × 1350 — PNG, or MP4 for slides with a clip — with varied layouts, and designs hero pieces (statics, covers) with Pen (pen.dev), so the feed never looks templated. Use after rodado-copywriter (and rodado-producer when the post has media), or when asked to make the image, slides or carousel for a Rodado post.
 ---
 
 # Rodado designer: approved post + atoms → slides
@@ -16,15 +16,16 @@ Reels are not covered (that's the editor, later). You never publish or send file
 1. Find the post. On a Kanban card: the post folder is in the card body or in a parent's result (`Post folder: <path>`). Read `<post folder>/post.md`. No post.md → stop and say so (on a Kanban board: block the card).
 2. If the format is a Reel, stop: not a designer job.
 3. Read the design log `$HERMES_HOME/rodado/design-log.md` (create it from `assets/design-log.md` if missing): the last 6 entries tell you what to avoid.
-4. Plan the slides: pick a layout per slide from `references/spec.md` following the variety rules below. Write the plan as one line per slide before building (`01 cover+media A012 · 02 number sand · …`).
+4. Plan the slides: decide which slide (if any) is a Pen hero piece (`references/pen.md` → When), then pick a layout per other slide from `references/spec.md` following the variety rules below. Write the plan as one line per slide before building (`01 cover+media A012 · 02 number sand · …`).
 5. Write `<post folder>/final/spec.json` (examples: `examples/carousel.json`, `examples/quote.json`, sample image `examples/media/gift-box.jpg`). Media paths are relative to the spec file.
 6. Render with a Python that has Pillow (Hermes' own: `/opt/hermes/.venv/bin/python`; otherwise `python3`):
    ```
    <python> ${HERMES_SKILL_DIR}/scripts/render.py <post folder>/final/spec.json --out <post folder>/final
    ```
    Video slides need ffmpeg; if the script says it's missing, run `<python> -m pip install imageio-ffmpeg` once and retry.
+   For the Pen slide: write its brief and run `scripts/pen_design.py` as in `references/pen.md`; name it like the slide it replaces (`<name>-01.png`) so the set stays in order. Render the full spec with `render.py` (so counters stay 01/08 …), then overwrite that slide's PNG with the Pen PNG.
 7. **Look at every PNG and every `-poster.png`** with your vision tool. Check: nothing cut off, no boxes instead of letters, text readable at phone size and not on a busy part of the picture, the media crop shows the product (adjust `focus` if not), slide order matches the post. Fix and render again.
-8. Append one line to the design log: `<date> · <post folder name> · <layouts in order> · <themes> · media: <ids>`. Set the used media to `status: used <week>` in `library.md`.
+8. Append one line to the design log: `<date> · <post folder name> · <layouts in order, "pen" for Pen slides> · <themes> · media: <ids>`. Set the used media to `status: used <week>` in `library.md`.
 9. Deliver:
    - On a Kanban card: attach every PNG and MP4 with `hermes kanban attach $HERMES_KANBAN_TASK <file>`, then ask for review with: post folder, the slide plan line, anything you cut.
    - In a chat: list the files and the same notes.
@@ -50,6 +51,7 @@ The feed must not look automated. Before choosing, compare with the design log.
 - Last slide is always `cta`. Thursday FAQ and Sunday offer posts use the WhatsApp button "Escribe ANUNCIO por WhatsApp".
 
 ## Notes
+- Pen runs and generation share one monthly cap (US$100, ledger `$HERMES_HOME/rodado/library/spend.csv`). If `pen_design.py` refuses or fails twice, use `render.py` and say so.
 - Renderer: `scripts/render.py` (Pillow + ffmpeg, no network). Fonts bundled: `assets/fonts/InstrumentSerif-Regular.ttf`, `assets/fonts/InstrumentSerif-Italic.ttf`, `assets/fonts/Inter-Regular.ttf`, `assets/fonts/Inter-SemiBold.ttf`, `assets/fonts/JetBrainsMono-Regular.ttf`. Latin only: no emoji or arrows in slide text.
 - Brand: ink #16130F, paper #F5EFE4, sand #E9E0D1, red #E23D2A; Instrument Serif titles, Inter body, JetBrains Mono labels. The renderer applies it; new looks are new layouts in `render.py`, not one-off hacks.
 - Instagram carousels accept mixed PNG and MP4 slides, all 4:5.

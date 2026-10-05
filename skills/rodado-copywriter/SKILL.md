@@ -28,7 +28,7 @@ Produces one complete post brief (hook, structure, CTA, caption, assets, checkli
 2. Read only the reference file for the chosen format.
 3. Write 3 hook options in Spanish, then pick the strongest and say why in one line (English). A hook must work in 2 seconds, without sound, for a marketing manager at a mid-size Dominican brand.
 4. Fill `assets/post-template.md` exactly: frontmatter, hook, structure (timings for Reels, slide-by-slide for carousels), one CTA, full caption, asset list, checklist.
-5. Plan the **Media** (the atoms the producer makes and the designer composes). Statics: optional, one image or clip for a quote over media. Carousels: 1–3 atoms (a clip for the cover or the "show the work" slide, an image per example). Describe each in one concrete sentence: what we see, not how it feels. Prefer moments a manager recognizes (product being poured, a before/after, a DR setting). Never real brands; client products only as "source: client".
+5. Plan the **Media** (the atoms the producer makes and the designer composes). Statics: optional, one image or clip for a quote over media. Carousels: 1–3 atoms (a clip for the cover or the "show the work" slide, an image per example). Describe each in one concrete sentence: what we see, not how it feels. Prefer moments a manager recognizes (product being poured, a before/after, a DR setting). Never real brands; client products only as "source: client". The host (Rodado's AI avatar) is "source: host"; if she speaks, write her exact line in Spanish (≤ 2.5 words per second) right in the Media item.
 6. Self-check against the checklist at the end of `references/brand.md`. Fix anything that fails before answering.
 
 ## Output

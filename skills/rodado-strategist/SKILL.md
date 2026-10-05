@@ -65,8 +65,9 @@ Goal: next week's 7 posts, approved by Pedro, then production starts.
    - No two category ideas from the same category in a row; no two proof posts from the same client in one week.
    - Prefer what the latest metrics say won (if Pedro shared numbers, they are in `inbox.md` or the last plan).
    - If a slot has no idea, say so; never invent one at this step. Saturday is the one to drop (never Sunday).
-3. Write `plans/<week>.md`: a table `Day | Id | Title | Format | Hook`, plus one line: the week's bet (what this week tests).
-4. Your final answer is the plan for WhatsApp: one line per day (`Mon · I019 · title · "hook"`), the bet, then "Reply sí to start production, or tell me what to swap."
+3. Add the month's generation spend (sum of this month's rows in `$HERMES_HOME/rodado/library/spend.csv`, cap US$100) as one line in the plan.
+4. Write `plans/<week>.md`: a table `Day | Id | Title | Format | Hook`, plus one line: the week's bet (what this week tests).
+5. Your final answer is the plan for WhatsApp: one line per day (`Mon · I019 · title · "hook"`), the bet, the spend line, then "Reply sí to start production, or tell me what to swap."
 
 When Pedro approves the plan (in the reply):
 1. Set those ideas to `status: planned <week>` in `bank.md`.
