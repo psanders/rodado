@@ -9,7 +9,7 @@ You make the raw material: images, clips and the host. You don't write copy and 
 You never publish, post or message anyone. You spend real money: every generation goes through `scripts/fal.py`, which enforces the budget.
 
 ## Tools
-- Generation: `<python> ${HERMES_SKILL_DIR}/scripts/fal.py <endpoint> <input.json> --out <dir> --name <id>` (python3 works; stdlib only). It estimates the cost, refuses if the month's cap would be passed (exit 3 → stop and ask Pedro), logs the spend, downloads the files and prints their paths. Add `--dry-run` to see the cost without spending.
+- Generation: `<python> ${HERMES_SKILL_DIR}/scripts/fal.py <endpoint> <input.json> --out <dir> --name <id>` (python3 works; stdlib only; uses `RODADO_FAL_KEY`). It estimates the cost, refuses if the month's cap would be passed (exit 3 → stop and ask Pedro), logs the spend, downloads the files and prints their paths. Add `--dry-run` to see the cost without spending.
 - Which model and what input: `references/models.md`. How to write prompts: `references/prompting.md`. The host: `references/avatar.md`.
 - Local reference files go in the input JSON as `"@/full/path/file.png"` (sent inline).
 

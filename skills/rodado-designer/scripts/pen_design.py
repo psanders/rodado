@@ -9,7 +9,7 @@ Usage:
 - Writes <dir>/<stem>.pen (editable in Pencil) and <dir>/<stem>.png, plus <stem>-usage.json.
 - Shares the producer's ledger and monthly cap (spend.csv): refuses (exit 3) if the cap would be passed.
 
-Env: PEN_CLI_KEY (pen.dev auth), ANTHROPIC_API_KEY (the design agent), PEN_BIN (optional path to `pen`),
+Env: PEN_CLI_KEY (pen.dev auth), PEN_AGENT_API_KEY (Anthropic key for Pen's design agent; Hermes strips ANTHROPIC_API_KEY from scripts), PEN_BIN (optional path to `pen`),
      RODADO_MONTHLY_CAP (default 100), RODADO_LEDGER (default $HERMES_HOME/rodado/library/spend.csv).
 """
 import csv

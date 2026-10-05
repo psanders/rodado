@@ -12,7 +12,7 @@ Usage:
 - Saves <name>.<ext> (and <name>-2.<ext> … for several outputs) plus <name>.json (full response).
   Prints one line per saved file, then "cost≈US$x.xx month≈US$y.yy/cap".
 
-Env: FAL_KEY (required), RODADO_MONTHLY_CAP (default 100), RODADO_MAX_CALL (default 10),
+Env: RODADO_FAL_KEY (required; Hermes strips FAL_KEY from scripts), RODADO_MONTHLY_CAP (default 100), RODADO_MAX_CALL (default 10),
      RODADO_LEDGER (default $HERMES_HOME/rodado/library/spend.csv).
 Stdlib only.
 """
@@ -164,7 +164,7 @@ def main(argv):
         print(f"dry-run ok · {endpoint} · cost≈US${est:.2f} month≈US${spent:.2f}/{cap:.0f}")
         return
 
-    key = os.environ.get("FAL_KEY") or die("FAL_KEY is not set.")
+    key = os.environ.get("RODADO_FAL_KEY") or os.environ.get("FAL_KEY") or die("RODADO_FAL_KEY is not set (add it to /opt/hermes/.env and restart).")
     sub = http("POST", f"{QUEUE}/{endpoint}", key, inline_files(inp))
     rid = sub.get("request_id", "")
     status_url = sub.get("status_url") or f"{QUEUE}/{endpoint}/requests/{rid}/status"

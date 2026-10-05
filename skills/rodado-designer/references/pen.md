@@ -9,6 +9,8 @@ Pen is an AI design agent that builds an editable design file (.pen, opens in Pe
 - Cost: one run ≈ US$0.50–2 in model usage (logged from Pen's usage report into the same ledger and cap as the producer).
 
 ## How
+Needs `PEN_CLI_KEY` and `PEN_AGENT_API_KEY` in the environment (Hermes hides its own `ANTHROPIC_API_KEY` from scripts) and the CLI at `$HERMES_HOME/tools/pen`.
+
 1. Write `<post folder>/final/pen-brief.md` from the template below. Exact Spanish text, the approved media file names, the layout idea in one or two sentences, and what to avoid (the last 6 designs in the design log).
 2. Run:
    ```
