@@ -11,7 +11,7 @@ Tool: `scripts/publish.py`, run as `<python> ${HERMES_SKILL_DIR}/scripts/publish
 
 | Command | Does |
 | --- | --- |
-| `queue <post folder> [--at "YYYY-MM-DD HH:MM"]` | Reads `post.md` (date, time, format, caption) and `final/` (slides in order; a clip replaces its slide; Reels: the newest MP4), converts PNG to JPEG, adds it to the queue. Santo Domingo time. |
+| `queue <post folder> [--at "YYYY-MM-DD HH:MM"]` | Reads `post.md` (date, time, format, caption) and `final/` (slides in order; a clip replaces its slide; Reels: the editor's MP4 plus its `-cover.jpg`), converts PNG to JPEG, adds it to the queue. Santo Domingo time. |
 | `list` | What's scheduled (and anything that failed). |
 | `cancel <id>` | Takes a post off the queue. |
 | `run-due` | Publishes what's due; runs every 10 min from a scheduled job. Don't run it by hand unless Pedro says "post it now" (then `queue … --at` a minute ahead and run it). |
@@ -23,7 +23,7 @@ Everything this skill reads and writes lives under `$CONTENT_DATA` (set in the e
 ## On a Kanban card (after the design is approved)
 1. Post folder: from the card body or a parent's result (`Post folder: <path>`).
 2. Refuse to queue, and block the card with the reason, if:
-   - the format is a Reel and `final/` has no approved MP4,
+   - the format is a Reel and `final/` has no MP4 from the editor,
    - the post shows the host (`source: host` in post.md → Media): Instagram's API can't set the AI label, so Pedro posts these himself. Send him the files and caption instead.
    - the date/time is in the past: ask Pedro for a new slot.
 3. Run `queue`. Read the output line.

@@ -95,8 +95,10 @@ def media_of(folder, fmt):
     if fmt.startswith("reel"):
         vids = [p for p in files if p.suffix.lower() in VIDEO]
         if not vids:
-            die("Reel: no .mp4 in final/.")
-        return [max(vids, key=lambda p: p.stat().st_mtime)]
+            die("Reel: no .mp4 in final/ (the editor makes it).")
+        reel = max(vids, key=lambda p: p.stat().st_mtime)
+        cover = final / f"{reel.stem}-cover.jpg"
+        return [reel] + ([cover] if cover.exists() else [])
     slides = {}
     for p in files:
         if p.name.endswith("-poster.png") or p.suffix.lower() not in {".png", ".jpg", ".jpeg"} | VIDEO:
@@ -246,8 +248,10 @@ def publish(e, uid):
             shutil.copy2(f, pub / Path(f).name)
             urls.append((f"{base.rstrip('/')}/rodado/{slot}/{urllib.parse.quote(Path(f).name)}", Path(f).suffix.lower() in VIDEO))
         if e["kind"] == "reel":
-            cid = call("POST", f"{API}/{uid}/media", {"media_type": "REELS", "video_url": urls[0][0],
-                                                    "caption": e["caption"], "share_to_feed": "true"})["id"]
+            p = {"media_type": "REELS", "video_url": urls[0][0], "caption": e["caption"], "share_to_feed": "true"}
+            if len(urls) > 1:
+                p["cover_url"] = urls[1][0]
+            cid = call("POST", f"{API}/{uid}/media", p)["id"]
             wait_ready(cid, "the reel")
         elif e["kind"] == "carousel":
             kids = []

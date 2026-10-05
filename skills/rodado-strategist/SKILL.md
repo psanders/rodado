@@ -78,17 +78,19 @@ When Pedro approves the plan (in the reply):
    - Copywriter card, always:
      `hermes kanban create "<Day> <week> · copy: <title>" --assignee default --skill rodado-copywriter --json --body "<the full brief from bank.md>. Format: <format>. Date: <post date>. Post folder: <post folder>."`
      Keep the `id` from the JSON output.
-   - Producer card, only for `carousel-framework`, `carousel-faq` and `static-quote`, waiting on the copy (makes the images/clips the post lists; finishes on its own if none):
+   - Producer card, every post, waiting on the copy (makes the images/clips the post lists; finishes on its own if none):
      `hermes kanban create "<Day> <week> · media: <title>" --assignee default --skill rodado-producer --parent <copywriter card id> --json --body "Make the media for the approved post. Post folder: <post folder>."`
      Keep its `id`.
-   - Designer card, same formats, waiting on the media:
+   - Designer card, only for `carousel-framework`, `carousel-faq` and `static-quote`, waiting on the media:
      `hermes kanban create "<Day> <week> · design: <title>" --assignee default --skill rodado-designer --parent <producer card id> --json --body "Compose the approved post. Post folder: <post folder>."`
      Keep its `id`.
-   - Reels (`reel-storyboard`, `reel-category`, `reel-cta`) get the copywriter card and a producer card (clips for the Reel, with sound); Pedro edits the video for now and saves the final MP4 in the post's `final/`.
-   - Publisher card, every post, waiting on the last card of its chain (designer; for Reels the producer):
-     `hermes kanban create "<Day> <week> · publish: <title>" --assignee default --skill rodado-publisher --parent <designer or producer card id> --body "Schedule the approved post. Post folder: <post folder>."`
+   - Reels (`reel-storyboard`, `reel-category`, `reel-cta`): copywriter card → producer card (clips for the Reel, 9:16, with sound) → editor card, waiting on the producer:
+     `hermes kanban create "<Day> <week> · edit: <title>" --assignee default --skill rodado-editor --parent <producer card id> --json --body "Cut the Reel from the approved clips. Post folder: <post folder>."`
+     Keep its `id`.
+   - Publisher card, every post, waiting on the last card of its chain (designer; for Reels the editor):
+     `hermes kanban create "<Day> <week> · publish: <title>" --assignee default --skill rodado-publisher --parent <designer or editor card id> --body "Schedule the approved post. Post folder: <post folder>."`
    Add `--board <name>` only if Pedro uses a named board.
-3. Reply with one line: "<N> cards in Kanban. You approve in order: copy, then media, then the finished slides; approved slides get scheduled automatically."
+3. Reply with one line: "<N> cards in Kanban. You approve in order: copy, then media, then the finished slides; approved slides and Reels get scheduled automatically."
 
 After a week is published, Pedro may say "W42 is out": set those ideas to `status: used <week>`.
 

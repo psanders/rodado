@@ -1,0 +1,5 @@
+{"name":"example-reel","clips":[
+ {"file":"clip-1.mp4","in":0,"out":4.5,"text":"Así venderíamos un snack dominicano","pos":"top"},
+ {"file":"clip-2.mp4","in":0.5,"out":5,"text":"en 15 segundos. Sin rodaje, con tu producto real.","pos":"bottom","style":"caption"}],
+ "end_card":{"title":"¿Lo probamos con tu producto?","button":"Escribe ANUNCIO por WhatsApp","note":"US$299 · 30, 20 y 15 s","seconds":2.5},
+ "cover":{"clip":0,"at":1.0,"title":"Así venderíamos un snack dominicano en 15 s"}}
