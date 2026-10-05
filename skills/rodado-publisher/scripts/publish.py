@@ -42,8 +42,7 @@ VIDEO = {".mp4", ".mov"}
 
 
 def die(msg, code=2):
-    print(msg, file=sys.stderr)
-    sys.exit(code)
+    raise SystemExit(msg)          # message travels with the exception; printed if uncaught
 
 
 def now():
@@ -211,7 +210,9 @@ def call(method, url, params, raw=False):
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")
         try:
-            body = json.loads(body).get("error", {}).get("message", body)
+            err = json.loads(body).get("error", {})
+            body = " · ".join(str(x) for x in (err.get("message"), err.get("error_user_msg"),
+                                                  f"code {err.get('code')}/{err.get('error_subcode')}") if x)
         except Exception:
             pass
         die(f"Instagram API {e.code}: {body[:600]}")
@@ -297,7 +298,7 @@ def cmd_run_due(_):
                     shutil.rmtree(BASE / "ready" / e["id"], ignore_errors=True)
                     out.append(f"Published: {e['title']} · {link}")
                 except SystemExit as err:
-                    e.update(status="failed", error=str(err.code if isinstance(err.code, str) else err))
+                    e.update(status="failed", error=str(err.code))
                     out.append(f"FAILED to publish {e['title']} (id {e['id']}): {e['error']}")
             save_queue(q)
         if out:
