@@ -32,6 +32,13 @@ Reels are not covered (that's the editor, later). You never publish or send file
 
 Changes from Pedro: copy change → back to the copywriter (say so); media change → back to the producer; layout, theme, crop → you, in `spec.json`, render again.
 
+
+## Approval gate (Kanban)
+Pedro approves every card's output before the next step starts. So on a Kanban card you **never** finish with `kanban_complete`:
+- Use `kanban_request_review` with your summary (if your Hermes has it).
+- If it doesn't exist, use `kanban_block` with the reason `Waiting for Pedro's review: <summary>`.
+Pedro approving (moving the card to Done) is what starts the next card. The only exception is the producer's "No media needed", which completes directly.
+
 ## Variety rules
 The feed must not look automated. Before choosing, compare with the design log.
 

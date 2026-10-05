@@ -30,6 +30,13 @@ Folder: `$HERMES_HOME/rodado/library/` (create; index from `assets/library.md` i
 7. **Ask for approval.** Kanban: `hermes kanban attach $HERMES_KANBAN_TASK <file>` for each, then review with one line per atom: `A014 · clip 5 s 720p · coffee pour · US$2.40`, plus the month total from the script. Chat: send the files with the same lines.
 8. Approved → `status: approved`. Rejected → `status: rejected` + reason; a new version gets a new id.
 
+
+## Approval gate (Kanban)
+Pedro approves every card's output before the next step starts. So on a Kanban card you **never** finish with `kanban_complete`:
+- Use `kanban_request_review` with your summary (if your Hermes has it).
+- If it doesn't exist, use `kanban_block` with the reason `Waiting for Pedro's review: <summary>`.
+Pedro approving (moving the card to Done) is what starts the next card. The only exception is the producer's "No media needed", which completes directly.
+
 ## Budget
 - Monthly cap: US$100 (`RODADO_MONTHLY_CAP`), per call max US$10 (`RODADO_MAX_CALL`). Enforced by the script; never work around it.
 - Per post: ~US$5. Host talking clips: at most 1 per week unless Pedro asks.

@@ -18,7 +18,9 @@ Write prompts in English, in this order: subject → action/moment → setting �
 - Animate an approved still when you can (`image-to-video`): the prompt then describes only motion and camera ("slow push-in, steam rising, a drop of condensation runs down the bottle").
 - Several angles of the same product, or the avatar → `reference-to-video` and name the refs in the prompt (`@Image1`, `@Image2`).
 - One motion per clip. Slow, smooth, commercial: push-in, orbit, pour, splash, reveal, light sweep. No cuts unless asked.
-- Product clips: 4–6 s, `generate_audio: false`. Loops nicely if the last second is calm.
+- Clips for carousels and statics: 4–6 s, `generate_audio: false` (they play muted in the feed).
+- Clips for Reels: `generate_audio: true`, always. Seedance makes the sound with the picture at no extra cost, so write it into the prompt as its own sentence: what we hear, in order. Example: "Sound: waves and wind, the crunch of a chip at 0:03, a light upbeat Caribbean guitar groove underneath, no voice." Speech only for the host or when the copy has an exact line. No copyrighted songs, no famous-artist styles.
+- After a Reel clip, check the audio too: extract it (`ffmpeg -i A0NN.mp4 -vn /tmp/a.wav`) and confirm it isn't silent (`ffmpeg -i /tmp/a.wav -af volumedetect -f null - 2>&1 | grep mean_volume`, should be above -40 dB). Silent → regenerate once with a stronger "Sound:" line.
 
 ## Images (Seedream 5)
 - Same product in a new scene → `edit` with the product photo(s) as `image_urls`, prompt: "The product from @Image1 on …". Keep label, shape and color exact.

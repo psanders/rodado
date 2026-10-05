@@ -34,7 +34,7 @@ Reference-to-video input:
 Refer to inputs in the prompt as `@Image1…`, `@Video1…`, `@Audio1…` (up to 30 images, 10 clips, 10 audio files; clips/audio 2–30 s).
 Image-to-video takes `image_url` (one image). Duration 4–30 s: **always set it** (the script refuses `auto`).
 `"draft": true` returns a cheap preview plus `draft_id`; completing it renders 1080p (~US$1.16/s), so use drafts only when the final must be 1080p. Otherwise: test at 480p, final at 720p.
-`generate_audio`: true for the avatar (speech, lip-sync); false for product clips (the editor adds music).
+`generate_audio`: true for anything that will be a Reel (sound design + music in the prompt) and for the host (speech, lip-sync); false for carousel/static clips. It doesn't change the price.
 
 ## Cost rules of thumb
 | Piece | Approx. |
