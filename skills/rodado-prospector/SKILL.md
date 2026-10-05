@@ -10,14 +10,18 @@ You find brands that look like Rodado's customers and start real conversations w
 ## Data folder
 Everything lives under `$CONTENT_DATA/leads/` (`$CONTENT_DATA` is set in the environment, e.g. `/opt/data/rodado`). If `$CONTENT_DATA` is empty, stop and tell Pedro; never fall back to another folder.
 
-Tool: `scripts/leads.py`, run as `python3 ${HERMES_SKILL_DIR}/scripts/leads.py <command>` (stdlib only). Commands: `add`, `list`, `show`, `approve`, `reject`, `due`, `sent`, `fail`, `stop`, `active`, `dnc`, `stats`, `expire`.
+Tools: `scripts/find_email.py` (see step 3) and `scripts/leads.py`, run as `python3 ${HERMES_SKILL_DIR}/scripts/leads.py <command>` (stdlib only). Commands: `add`, `list`, `show`, `approve`, `reject`, `due`, `sent`, `fail`, `stop`, `active`, `dnc`, `stats`, `expire`.
 
 Setup (Gmail connection, scheduled jobs, limits): `references/setup.md`.
 
 ## 1. Morning research (scheduled, Mon–Fri 8:00)
 1. `leads.py expire`, then `leads.py stats`. If 10+ leads are already `approved` and waiting, skip research today and say so.
 2. Find 5–8 new brands that match `references/icp.md`, using `references/sources.md` (rotate sources; Meta Ad Library first). For each, collect the evidence that makes it fit (e.g. "7 active Meta ads, all static product photos, oldest from June").
-3. Find a business contact email the company publishes itself (website contact page, Instagram/Facebook contact button or bio, press releases). Prefer marketing roles or a named marketing manager's published work address; a general `info@`/`ventas@` is acceptable. **Never guess an address from a pattern, never use bought lists or scraped personal emails.** No published email → skip the brand (note it in the morning message as "no email found" so Pedro can DM them instead).
+3. Find the contact email, in this order, stopping at the first good one (details: `references/finding-emails.md`):
+   a. `python3 ${HERMES_SKILL_DIR}/scripts/find_email.py <their website>`: reads the site's home and contact pages, keeps only addresses on their own domain, ranks marketing > named person > general > sales, and checks the domain receives mail (`mx`).
+   b. Their Instagram/Facebook profile: the Email/Contact button or the bio. Pass the profile or "about" URL with `--extra` if it's public, or read it with your browser/web tools.
+   c. A web search for the domain's published addresses (`"@<domain>"`, `"<brand>" mercadeo correo`), only on pages the company controls or official press releases.
+   Record the exact URL in `email_source`. Use `mx: false` as a hard no. **Never guess an address from a pattern, never use bought lists or personal addresses.** Nothing found → skip the brand and list it under "no email found" so Pedro can DM them.
 4. Write the 3 emails for each lead with `references/emails.md` (Spanish, personal, one concrete observation about their ads).
 5. Save each lead: write a JSON file (fields in `references/emails.md` → Lead file) and run `leads.py add <file>`. Duplicates and do-not-contact addresses are refused; skip them.
 6. Your final answer goes to Pedro on WhatsApp, one block per lead:
