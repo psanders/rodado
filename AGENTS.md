@@ -35,8 +35,9 @@ This repo holds the website, design files, the content system and the agent setu
 | `rodado-copywriter` | Copywriter | Writes one post (hook, structure, CTA, caption) in any of the 6 formats |
 | `rodado-producer` | Producer | Makes images and clips (Seedance) for a post; library of approved media |
 | `rodado-designer` | Designer | Composes approved copy + media into varied slides (PNG/MP4) |
+| `rodado-publisher` | Publisher | Schedules approved posts and publishes them to Instagram at their time |
 | `rodado-copy`, `rodado-audit`, `rodado-retro` | — | Repo-based weekly flow (copy all 7, audit, retro) |
 
-Next roles: editor (Reels), publisher, analyst.
+Next roles: editor (Reels), analyst.
 
 Every week starts with a **retro** (skill `rodado-retro`): compare what agents drafted with what Pedro changed and with the metrics, then edit the skills, templates or `voice.md` so next week's first draft is closer. Those edits go to Pedro for review; once he commits them, they're the new rules.

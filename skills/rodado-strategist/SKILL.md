@@ -79,10 +79,13 @@ When Pedro approves the plan (in the reply):
      `hermes kanban create "<Day> <week> · media: <title>" --assignee default --skill rodado-producer --parent <copywriter card id> --json --body "Make the media for the approved post. Post folder: <post folder>."`
      Keep its `id`.
    - Designer card, same formats, waiting on the media:
-     `hermes kanban create "<Day> <week> · design: <title>" --assignee default --skill rodado-designer --parent <producer card id> --body "Compose the approved post. Post folder: <post folder>."`
-   - Reels (`reel-storyboard`, `reel-category`, `reel-cta`) get the copywriter card and a producer card (clips for the Reel); Pedro edits the video for now.
+     `hermes kanban create "<Day> <week> · design: <title>" --assignee default --skill rodado-designer --parent <producer card id> --json --body "Compose the approved post. Post folder: <post folder>."`
+     Keep its `id`.
+   - Reels (`reel-storyboard`, `reel-category`, `reel-cta`) get the copywriter card and a producer card (clips for the Reel, with sound); Pedro edits the video for now and saves the final MP4 in the post's `final/`.
+   - Publisher card, every post, waiting on the last card of its chain (designer; for Reels the producer):
+     `hermes kanban create "<Day> <week> · publish: <title>" --assignee default --skill rodado-publisher --parent <designer or producer card id> --body "Schedule the approved post. Post folder: <post folder>."`
    Add `--board <name>` only if Pedro uses a named board.
-3. Reply with one line: "<N> cards in Kanban. You approve in order: copy, then media, then the finished slides."
+3. Reply with one line: "<N> cards in Kanban. You approve in order: copy, then media, then the finished slides; approved slides get scheduled automatically."
 
 After a week is published, Pedro may say "W42 is out": set those ideas to `status: used <week>`.
 
