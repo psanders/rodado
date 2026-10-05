@@ -16,7 +16,7 @@ Setup (Gmail connection, scheduled jobs, limits): `references/setup.md`.
 
 ## 1. Morning research (scheduled, Mon–Fri 8:00)
 1. `leads.py expire`, then `leads.py stats`. If 10+ leads are already `approved` and waiting, skip research today and say so.
-2. Find 5–8 new brands that match `references/icp.md`, using `references/sources.md` (rotate sources; Meta Ad Library first). For each, collect the evidence that makes it fit (e.g. "7 active Meta ads, all static product photos, oldest from June").
+2. Find 5–8 new brands that match `references/icp.md`, using `references/sources.md` (rotate sources). You can't read the Meta Ad Library; add its link per lead for Pedro. For each, collect the evidence that makes it fit (e.g. "7 active Meta ads, all static product photos, oldest from June").
 3. Find the contact email, in this order, stopping at the first good one (details: `references/finding-emails.md`):
    a. `python3 ${HERMES_SKILL_DIR}/scripts/find_email.py <their website>`: reads the site's home and contact pages, keeps only addresses on their own domain, ranks marketing > named person > general > sales, and checks the domain receives mail (`mx`).
    b. Their Instagram/Facebook profile: the Email/Contact button or the bio. Pass the profile or "about" URL with `--extra` if it's public, or read it with your browser/web tools.
@@ -28,6 +28,7 @@ Setup (Gmail connection, scheduled jobs, limits): `references/setup.md`.
    ```
    *1. <Brand>* · <category> · <city>
    Why: <evidence in one line>
+   Ads: <Ad Library link for the brand>
    To: <email> (<where you found it>)
    Subject: <subject>
    "<first 2 lines of the email>…"

@@ -23,7 +23,7 @@ Opt-out line (last line, exactly): `Si no es para ti, respóndeme "no" y no te e
 ```
 Hola <Nombre>,
 
-Vi que <Marca> tiene <N> anuncios activos en Instagram y Facebook, casi todos <observación concreta: fotos de producto / el mismo video desde junio / …>.
+Vi <observación concreta y verificable: el lanzamiento de <producto> en Instagram / que sus publicaciones son casi todas fotos de producto / que ya están en Sirena y Nacional / …>.
 
 Hago anuncios en video para marcas dominicanas a partir de fotos del producto real, sin rodaje: un anuncio en 3 duraciones (30, 20 y 15 s) en 7 días hábiles.
 

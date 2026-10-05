@@ -14,15 +14,7 @@ Hermes sends and reads through an MCP server that runs inside the Hermes contain
 6. Test from WhatsApp: "Use rodado-prospector: search my Gmail for the last email I sent and tell me its subject."
 (Exact flags can change between workspace-mcp versions; `uvx workspace-mcp --help` shows the current ones.)
 
-## 2. Meta Ad Library access (Meta Ads MCP)
-Meta's official MCP server includes `ads_library_search`, which returns active ads in the Dominican Republic (the plain Ad Library API only covers political ads outside the EU). It needs a Meta account with at least one active ad account.
-```bash
-docker compose exec -it -u hermes hermes hermes mcp add meta-ads --url https://mcp.facebook.com/ads --auth oauth
-docker compose exec -u hermes hermes hermes mcp test meta-ads
-```
-Sign in with the Facebook account that manages Rodado's ad account when the link appears. Only `ads_library_search` is needed; you can turn the other Meta tools off with `hermes mcp configure meta-ads`.
-
-## 3. Scheduled jobs (from the WhatsApp chat, so replies stay in context)
+## 2. Scheduled jobs (from the WhatsApp chat, so replies stay in context)
 > Create these scheduled jobs, delivered to this chat, with attach_to_session on:
 > 1) "Leads research", Mon–Fri 8:00, skill rodado-prospector, prompt "Run the morning research."
 > 2) "Leads send 9:30", Mon–Fri 9:30, skill rodado-prospector, prompt "Run a send run."
@@ -31,5 +23,5 @@ Sign in with the Facebook account that manages Rodado's ad account when the link
 
 Send runs need the agent (they read Gmail), so they're normal jobs, not scripts. They stay silent when nothing happened.
 
-## 4. Limits
+## 3. Limits
 `$CONTENT_DATA/leads/settings.json` is created on first use: 15 emails/day, 5 new/day, 5 per run, follow-ups day 3 and day 8, Mon–Fri 8:30–17:30. Raise slowly (e.g. +5/day per week) only if replies come and nothing bounces.
