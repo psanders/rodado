@@ -12,8 +12,9 @@ Times are Santo Domingo time. Instagram has no API scheduling, so `run-due` publ
 run-due prints only when something happened (empty output = silent cron).
 
 Env: IG_ACCESS_TOKEN (Instagram Login token with instagram_business_content_publish; seeds the token file),
-     PUBLIC_MEDIA_BASE (e.g. https://media.roda.do), IG_API_VERSION (default v23.0).
-Files: $HERMES_HOME/rodado/publish/{queue.json, token.json, public/<random>/...}
+     PUBLIC_MEDIA_BASE (URL of the public file server, e.g. https://files.example.com),
+     PUBLIC_MEDIA_DIR (folder it serves; default $HERMES_HOME/public), IG_API_VERSION (default v23.0).
+Files: $HERMES_HOME/rodado/publish/{queue.json, token.json}; public copies in $PUBLIC_MEDIA_DIR/rodado/<random>/ while publishing
 `queue` needs Pillow (PNG -> JPEG; Instagram accepts JPEG only). Everything else is stdlib.
 """
 import datetime as dt
@@ -35,7 +36,7 @@ HOME = Path(os.environ.get("HERMES_HOME") or os.path.expanduser("~/.hermes"))
 BASE = HOME / "rodado" / "publish"
 QUEUE = BASE / "queue.json"
 TOKEN = BASE / "token.json"
-PUBLIC = BASE / "public"
+PUBLIC = Path(os.environ.get("PUBLIC_MEDIA_DIR") or HOME / "public") / "rodado"   # served at PUBLIC_MEDIA_BASE
 API = os.environ.get("IG_API_BASE", "https://graph.instagram.com") + "/" + os.environ.get("IG_API_VERSION", "v23.0")
 VIDEO = {".mp4", ".mov"}
 
@@ -240,7 +241,7 @@ def publish(e, uid):
         urls = []
         for f in e["files"]:
             shutil.copy2(f, pub / Path(f).name)
-            urls.append((f"{base.rstrip('/')}/{slot}/{urllib.parse.quote(Path(f).name)}", Path(f).suffix.lower() in VIDEO))
+            urls.append((f"{base.rstrip('/')}/rodado/{slot}/{urllib.parse.quote(Path(f).name)}", Path(f).suffix.lower() in VIDEO))
         if e["kind"] == "reel":
             cid = call("POST", f"{API}/{uid}/media", {"media_type": "REELS", "video_url": urls[0][0],
                                                     "caption": e["caption"], "share_to_feed": "true"})["id"]
@@ -313,7 +314,7 @@ def cmd_check(_):
     probe.mkdir(parents=True, exist_ok=True)
     (probe / "ok.txt").write_text("ok")
     try:
-        with urllib.request.urlopen(f"{base.rstrip('/')}/check/ok.txt", timeout=20) as r:
+        with urllib.request.urlopen(f"{base.rstrip('/')}/rodado/check/ok.txt", timeout=20) as r:
             print(f"Public URL OK · {base}" if r.read().strip() == b"ok" else "Public URL answered but with the wrong content")
     except Exception as err:
         print(f"Public URL NOT reachable ({base}): {err}")

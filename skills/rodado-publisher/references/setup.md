@@ -8,18 +8,18 @@
 (Meta renames these screens often; the parts that matter are "Instagram API with Instagram Login" and the content-publish permission.)
 
 ## 2. Public file server
-Instagram downloads each image/video from a public URL when publishing.
-1. DNS: an A record `media.roda.do` → the server's IP.
-2. Check ports 80/443 are free on the server: `ss -ltnp | grep -E ':(80|443) '` (no output = free). If something already serves them, add `media.roda.do` to that proxy instead (root: `/opt/hermes/data/rodado/publish/public`).
-3. `/opt/hermes/.env`: `MEDIA_DOMAIN=media.roda.do` and `PUBLIC_MEDIA_BASE=https://media.roda.do`.
-4. `docker compose --profile publish up -d` (starts the `media` service from compose.yaml next to Hermes).
+Instagram downloads each image/video from a public URL when publishing. Hermes' compose has a generic `media` service (Caddy) that serves `/opt/hermes/data/public` over HTTPS; the publisher puts files in `data/public/rodado/<random>/` only while publishing.
+1. Pick a hostname you control and add a DNS A record for it → the server's IP.
+2. Check ports 80/443 are free: `ss -ltnp | grep -E ':(80|443) '` (no output = free). If another proxy already uses them, point that hostname at `/opt/hermes/data/public` there instead.
+3. `/opt/hermes/.env`: `MEDIA_DOMAIN=<hostname>` and `PUBLIC_MEDIA_BASE=https://<hostname>`.
+4. `mkdir -p data/public && chown 10000:10000 data/public && docker compose --profile media up -d`
 
 ## 3. Check and schedule the job
 ```bash
 cd /opt/hermes
 docker compose up -d --force-recreate        # picks up the new .env values
 docker compose exec -u hermes hermes python3 /opt/data/skills/rodado-publisher/scripts/publish.py check
-# expected: "Token OK · @rodado.creativo …" and "Public URL OK · https://media.roda.do"
+# expected: "Token OK · @rodado.creativo …" and "Public URL OK · https://<hostname>"
 mkdir -p data/scripts && cat > data/scripts/rodado-publish-due.sh <<'SH'
 #!/bin/bash
 exec python3 /opt/data/skills/rodado-publisher/scripts/publish.py run-due
