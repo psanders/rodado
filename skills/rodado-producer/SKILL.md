@@ -36,6 +36,7 @@ Folder: `$HERMES_HOME/rodado/library/` (create; index from `assets/library.md` i
 - Weekly, in the Sunday plan reply, the strategist reports the month's spend from `spend.csv`.
 
 ## Never
+- Read or edit `.env` files, print keys, or call fal any other way than `scripts/fal.py` (it holds the budget check). If the script says a key is missing or gets a 401, stop and tell Pedro.
 - Real brands, logos, celebrities or real people's likeness. Client products only from client photos Pedro provides (source: client), logo replaced.
 - Rodado's typography inside images or clips (the designer sets all type).
 - Using an atom before it's approved, or the host saying an unapproved line.

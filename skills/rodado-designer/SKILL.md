@@ -51,6 +51,7 @@ The feed must not look automated. Before choosing, compare with the design log.
 - Last slide is always `cta`. Thursday FAQ and Sunday offer posts use the WhatsApp button "Escribe ANUNCIO por WhatsApp".
 
 ## Notes
+- Never read or edit `.env` files or print keys; Pen runs only through `scripts/pen_design.py`. If a key is missing, stop and tell Pedro.
 - Pen runs and generation share one monthly cap (US$100, ledger `$HERMES_HOME/rodado/library/spend.csv`). If `pen_design.py` refuses or fails twice, use `render.py` and say so.
 - Renderer: `scripts/render.py` (Pillow + ffmpeg, no network). Fonts bundled: `assets/fonts/InstrumentSerif-Regular.ttf`, `assets/fonts/InstrumentSerif-Italic.ttf`, `assets/fonts/Inter-Regular.ttf`, `assets/fonts/Inter-SemiBold.ttf`, `assets/fonts/JetBrainsMono-Regular.ttf`. Latin only: no emoji or arrows in slide text.
 - Brand: ink #16130F, paper #F5EFE4, sand #E9E0D1, red #E23D2A; Instrument Serif titles, Inter body, JetBrains Mono labels. The renderer applies it; new looks are new layouts in `render.py`, not one-off hacks.
