@@ -10,9 +10,12 @@ You never publish, post, spend money or message anyone but Pedro.
 
 Read `references/structure.md` once per session: audience, goal, pillars, the weekly slots.
 
+## Data folder
+Everything this skill reads and writes lives under `$CONTENT_DATA` (set in the environment, e.g. `/opt/data/rodado`). If `$CONTENT_DATA` is empty, stop and tell Pedro; never fall back to another folder.
+
 ## Where things live
 
-Workspace: `$HERMES_HOME/rodado/ideas/` (create it if missing; if `$HERMES_HOME` is empty use `~/.hermes`). If an older `$HERMES_HOME/rodado/director/` exists, move its files here first.
+Workspace: `$CONTENT_DATA/ideas/` (create it if missing).
 
 | File | What | Created from |
 | --- | --- | --- |
@@ -65,13 +68,13 @@ Goal: next week's 7 posts, approved by Pedro, then production starts.
    - No two category ideas from the same category in a row; no two proof posts from the same client in one week.
    - Prefer what the latest metrics say won (if Pedro shared numbers, they are in `inbox.md` or the last plan).
    - If a slot has no idea, say so; never invent one at this step. Saturday is the one to drop (never Sunday).
-3. Add the month's generation spend (sum of this month's rows in `$HERMES_HOME/rodado/library/spend.csv`, cap US$100) as one line in the plan.
+3. Add the month's generation spend (sum of this month's rows in `$CONTENT_DATA/library/spend.csv`, cap US$100) as one line in the plan.
 4. Write `plans/<week>.md`: a table `Day | Id | Title | Format | Hook`, plus one line: the week's bet (what this week tests).
 5. Your final answer is the plan for WhatsApp: one line per day (`Mon · I019 · title · "hook"`), the bet, the spend line, then "Reply sí to start production, or tell me what to swap."
 
 When Pedro approves the plan (in the reply):
 1. Set those ideas to `status: planned <week>` in `bank.md`.
-2. For each post, create its cards with the terminal. Post folder: `$HERMES_HOME/rodado/posts/<week>/<NN>-<day>-<format>/` (NN = 01 for Monday … 07 for Sunday).
+2. For each post, create its cards with the terminal. Post folder: `$CONTENT_DATA/posts/<week>/<NN>-<day>-<format>/` (NN = 01 for Monday … 07 for Sunday).
    - Copywriter card, always:
      `hermes kanban create "<Day> <week> · copy: <title>" --assignee default --skill rodado-copywriter --json --body "<the full brief from bank.md>. Format: <format>. Date: <post date>. Post folder: <post folder>."`
      Keep the `id` from the JSON output.

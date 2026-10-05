@@ -8,12 +8,12 @@ Usage:
   (use it for local reference images/audio). Remote https URLs pass through unchanged.
 - Cost is estimated from references/models.md prices (built into PRICES below) or --est.
   The call is refused (exit 3) if this month's spend + estimate would pass the cap.
-- Every call is logged to <ledger> (default $HERMES_HOME/rodado/library/spend.csv).
+- Every call is logged to $CONTENT_DATA/library/spend.csv; limits come from budget.json next to it.
 - Saves <name>.<ext> (and <name>-2.<ext> … for several outputs) plus <name>.json (full response).
   Prints one line per saved file, then "cost≈US$x.xx month≈US$y.yy/cap".
 
-Env: RODADO_FAL_KEY (required; Hermes strips FAL_KEY from scripts), RODADO_MONTHLY_CAP (default 100), RODADO_MAX_CALL (default 10),
-     RODADO_LEDGER (default $HERMES_HOME/rodado/library/spend.csv).
+Env: CONTENT_DATA (required: the data folder), FAL_API_KEY (Hermes hides FAL_KEY from scripts; FAL_KEY is used
+     if present, e.g. outside Hermes). Budget: $CONTENT_DATA/library/budget.json {"monthly_cap": 100, "max_call": 10}.
 Stdlib only.
 """
 import base64
@@ -69,11 +69,22 @@ def estimate(endpoint, inp, override):
     return est
 
 
+def library():
+    d = os.environ.get("CONTENT_DATA") or die("CONTENT_DATA is not set (the data folder, e.g. /opt/data/rodado). Tell Pedro.")
+    return Path(d) / "library"
+
+
 def ledger_path():
-    if os.environ.get("RODADO_LEDGER"):
-        return Path(os.environ["RODADO_LEDGER"])
-    home = os.environ.get("HERMES_HOME") or os.path.expanduser("~/.hermes")
-    return Path(home) / "rodado" / "library" / "spend.csv"
+    return library() / "spend.csv"
+
+
+def budget():
+    p = library() / "budget.json"
+    if not p.exists():
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(json.dumps({"monthly_cap": 100, "max_call": 10}, indent=2))
+    b = json.loads(p.read_text())
+    return float(b.get("monthly_cap", 100)), float(b.get("max_call", 10))
 
 
 def month_spend(path):
@@ -152,8 +163,7 @@ def main(argv):
 
     inp = json.loads(inp_path.read_text(encoding="utf-8"))
     est = estimate(endpoint, inp, est_override)
-    cap = float(os.environ.get("RODADO_MONTHLY_CAP", "100"))
-    max_call = float(os.environ.get("RODADO_MAX_CALL", "10"))
+    cap, max_call = budget()
     led = ledger_path()
     spent = month_spend(led)
     if est > max_call:
@@ -164,7 +174,7 @@ def main(argv):
         print(f"dry-run ok · {endpoint} · cost≈US${est:.2f} month≈US${spent:.2f}/{cap:.0f}")
         return
 
-    key = os.environ.get("RODADO_FAL_KEY") or os.environ.get("FAL_KEY") or die("RODADO_FAL_KEY is not set (add it to /opt/hermes/.env and restart).")
+    key = os.environ.get("FAL_API_KEY") or os.environ.get("FAL_KEY") or die("FAL_API_KEY is not set (add it to /opt/hermes/.env and restart).")
     sub = http("POST", f"{QUEUE}/{endpoint}", key, inline_files(inp))
     rid = sub.get("request_id", "")
     status_url = sub.get("status_url") or f"{QUEUE}/{endpoint}/requests/{rid}/status"

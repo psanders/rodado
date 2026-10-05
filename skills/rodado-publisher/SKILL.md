@@ -17,6 +17,9 @@ Tool: `scripts/publish.py`, run as `<python> ${HERMES_SKILL_DIR}/scripts/publish
 | `run-due` | Publishes what's due; runs every 10 min from a scheduled job. Don't run it by hand unless Pedro says "post it now" (then `queue … --at` a minute ahead and run it). |
 | `check` | Token works, which account, public file URL reachable. |
 
+## Data folder
+Everything this skill reads and writes lives under `$CONTENT_DATA` (set in the environment, e.g. `/opt/data/rodado`). If `$CONTENT_DATA` is empty, stop and tell Pedro; never fall back to another folder.
+
 ## On a Kanban card (after the design is approved)
 1. Post folder: from the card body or a parent's result (`Post folder: <path>`).
 2. Refuse to queue, and block the card with the reason, if:

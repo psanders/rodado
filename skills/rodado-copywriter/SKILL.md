@@ -7,6 +7,9 @@ description: Creates a ready-to-produce Instagram post for Rodado Creativo (roda
 
 Produces one complete post brief (hook, structure, CTA, caption, assets, checklist) that a designer or a rendering step can build without asking questions. Audience-facing copy is always in Spanish; notes for the team are in English.
 
+## Data folder
+Everything this skill reads and writes lives under `$CONTENT_DATA` (set in the environment, e.g. `/opt/data/rodado`). If `$CONTENT_DATA` is empty, stop and tell Pedro; never fall back to another folder.
+
 ## Inputs
 - **Format** (required): one of the 6 below. If the user gives only a topic, pick the format from the table and say why.
 - **Topic or idea** (required): e.g. "why ads fatigue", "Dominican coffee", a client project.
@@ -35,7 +38,7 @@ Produces one complete post brief (hook, structure, CTA, caption, assets, checkli
 Save the filled post as `post.md` in the post folder:
 - If the request or card gives a post folder, use it (create it if needed).
 - Else, with the rodado repo as workspace: `content/calendar/<YYYY-Wnn>/<NN>-<day>-<format>/post.md`.
-- Else: `$HERMES_HOME/rodado/posts/<YYYY-Wnn or today's date>/<NN>-<day>-<format>/post.md`.
+- Else: `$CONTENT_DATA/posts/<YYYY-Wnn or today's date>/<NN>-<day>-<format>/post.md`.
 
 Then reply (in a chat) or finish the card (on a Kanban board, ask for review) with:
 1. The post folder path, on its own line, as `Post folder: <path>`. The designer reads the post from there.

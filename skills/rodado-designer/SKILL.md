@@ -8,14 +8,17 @@ description: Rodado's designer. Composes an approved Rodado post (static-quote, 
 You compose; you don't write copy and you don't generate media. The words were approved by Pedro (copywriter), the media were approved by Pedro (producer). Your job is to put them together so each post looks considered and different from the last one.
 Reels are not covered (that's the editor, later). You never publish or send files anywhere.
 
+## Data folder
+Everything this skill reads and writes lives under `$CONTENT_DATA` (set in the environment, e.g. `/opt/data/rodado`). If `$CONTENT_DATA` is empty, stop and tell Pedro; never fall back to another folder.
+
 ## Atoms you work with
 - **Text**: the slide texts in `post.md` → Structure (Spanish). Copy them exactly. Cut only if a layout can't fit them, and say what you cut.
-- **Media**: images and clips listed in `post.md` → Media, found in the media library `$HERMES_HOME/rodado/library/library.md` (files next to it). Use only entries with `status: approved`, or files Pedro gave you directly. A clip in a slide makes that slide an MP4.
+- **Media**: images and clips listed in `post.md` → Media, found in the media library `$CONTENT_DATA/library/library.md` (files next to it). Use only entries with `status: approved`, or files Pedro gave you directly. A clip in a slide makes that slide an MP4.
 
 ## Steps
 1. Find the post. On a Kanban card: the post folder is in the card body or in a parent's result (`Post folder: <path>`). Read `<post folder>/post.md`. No post.md → stop and say so (on a Kanban board: block the card).
 2. If the format is a Reel, stop: not a designer job.
-3. Read the design log `$HERMES_HOME/rodado/design-log.md` (create it from `assets/design-log.md` if missing): the last 6 entries tell you what to avoid.
+3. Read the design log `$CONTENT_DATA/design-log.md` (create it from `assets/design-log.md` if missing): the last 6 entries tell you what to avoid.
 4. Plan the slides: decide which slide (if any) is a Pen hero piece (`references/pen.md` → When), then pick a layout per other slide from `references/spec.md` following the variety rules below. Write the plan as one line per slide before building (`01 cover+media A012 · 02 number sand · …`).
 5. Write `<post folder>/final/spec.json` (examples: `examples/carousel.json`, `examples/quote.json`, sample image `examples/media/gift-box.jpg`). Media paths are relative to the spec file.
 6. Render with a Python that has Pillow (Hermes' own: `/opt/hermes/.venv/bin/python`; otherwise `python3`):
@@ -59,7 +62,7 @@ The feed must not look automated. Before choosing, compare with the design log.
 
 ## Notes
 - Never read or edit `.env` files or print keys; Pen runs only through `scripts/pen_design.py`. If a key is missing, stop and tell Pedro.
-- Pen runs and generation share one monthly cap (US$100, ledger `$HERMES_HOME/rodado/library/spend.csv`). If `pen_design.py` refuses or fails twice, use `render.py` and say so.
+- Pen runs and generation share one monthly cap (US$100, ledger `$CONTENT_DATA/library/spend.csv`, limits in `budget.json` next to it). If `pen_design.py` refuses or fails twice, use `render.py` and say so.
 - Renderer: `scripts/render.py` (Pillow + ffmpeg, no network). Fonts bundled: `assets/fonts/InstrumentSerif-Regular.ttf`, `assets/fonts/InstrumentSerif-Italic.ttf`, `assets/fonts/Inter-Regular.ttf`, `assets/fonts/Inter-SemiBold.ttf`, `assets/fonts/JetBrainsMono-Regular.ttf`. Latin only: no emoji or arrows in slide text.
 - Brand: ink #16130F, paper #F5EFE4, sand #E9E0D1, red #E23D2A; Instrument Serif titles, Inter body, JetBrains Mono labels. The renderer applies it; new looks are new layouts in `render.py`, not one-off hacks.
 - Instagram carousels accept mixed PNG and MP4 slides, all 4:5.

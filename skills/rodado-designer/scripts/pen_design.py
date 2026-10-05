@@ -10,7 +10,7 @@ Usage:
 - Shares the producer's ledger and monthly cap (spend.csv): refuses (exit 3) if the cap would be passed.
 
 Env: PEN_CLI_KEY (pen.dev auth), PEN_AGENT_API_KEY (Anthropic key for Pen's design agent; Hermes strips ANTHROPIC_API_KEY from scripts), PEN_BIN (optional path to `pen`),
-     RODADO_MONTHLY_CAP (default 100), RODADO_LEDGER (default $HERMES_HOME/rodado/library/spend.csv).
+     CONTENT_DATA (data folder: ledger $CONTENT_DATA/library/spend.csv, limits in budget.json next to it).
 """
 import csv
 import datetime as dt
@@ -32,10 +32,13 @@ def arg(name, default=None):
 
 
 def ledger():
-    if os.environ.get("RODADO_LEDGER"):
-        return Path(os.environ["RODADO_LEDGER"])
-    home = os.environ.get("HERMES_HOME") or os.path.expanduser("~/.hermes")
-    return Path(home) / "rodado" / "library" / "spend.csv"
+    d = os.environ.get("CONTENT_DATA") or die("CONTENT_DATA is not set (the data folder, e.g. /opt/data/rodado). Tell Pedro.")
+    return Path(d) / "library" / "spend.csv"
+
+
+def monthly_cap():
+    p = ledger().parent / "budget.json"
+    return float(json.loads(p.read_text()).get("monthly_cap", 100)) if p.exists() else 100.0
 
 
 def month_spend(p):
@@ -58,10 +61,10 @@ def log(p, row):
 
 def pen_bin():
     for c in (os.environ.get("PEN_BIN"), shutil.which("pen"),
-              str(Path(os.environ.get("HERMES_HOME", "~/.hermes")).expanduser() / "tools/pen/node_modules/.bin/pen")):
+              "/opt/data/tools/pen/node_modules/.bin/pen"):
         if c and Path(c).exists():
             return c
-    die("pen CLI not found. Install: npm i --prefix $HERMES_HOME/tools/pen @pen.dev/cli (Node >= 22.19).")
+    die("pen CLI not found. Install: npm i --prefix /opt/data/tools/pen @pen.dev/cli, or set PEN_BIN (Node >= 22.19).")
 
 
 def find_cost(obj):
@@ -90,7 +93,7 @@ def main():
             die(f"media not found: {m}")
         if Path(m).suffix.lower() in {".mp4", ".mov", ".webm"}:
             die("Pen can't place video: use render.py for slides with clips.")
-    cap = float(os.environ.get("RODADO_MONTHLY_CAP", "100"))
+    cap = monthly_cap()
     led = ledger()
     spent = month_spend(led)
     if spent + est > cap:

@@ -13,8 +13,9 @@ run-due prints only when something happened (empty output = silent cron).
 
 Env: IG_ACCESS_TOKEN (Instagram Login token with instagram_business_content_publish; seeds the token file),
      PUBLIC_MEDIA_BASE (URL of the public file server, e.g. https://files.example.com),
-     PUBLIC_MEDIA_DIR (folder it serves; default $HERMES_HOME/public), IG_API_VERSION (default v23.0).
-Files: $HERMES_HOME/rodado/publish/{queue.json, token.json}; public copies in $PUBLIC_MEDIA_DIR/rodado/<random>/ while publishing
+     PUBLIC_MEDIA_DIR (the folder that URL serves, e.g. /opt/data/public), CONTENT_DATA (data folder),
+     IG_API_VERSION (default v23.0).
+Files: $CONTENT_DATA/publish/{queue.json, token.json}; public copies in $PUBLIC_MEDIA_DIR/rodado/<random>/ while publishing
 `queue` needs Pillow (PNG -> JPEG; Instagram accepts JPEG only). Everything else is stdlib.
 """
 import datetime as dt
@@ -32,11 +33,12 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 TZ = ZoneInfo("America/Santo_Domingo")
-HOME = Path(os.environ.get("HERMES_HOME") or os.path.expanduser("~/.hermes"))
-BASE = HOME / "rodado" / "publish"
+if not os.environ.get("CONTENT_DATA"):
+    sys.exit("CONTENT_DATA is not set (the data folder, e.g. /opt/data/rodado). Tell Pedro.")
+BASE = Path(os.environ["CONTENT_DATA"]) / "publish"
 QUEUE = BASE / "queue.json"
 TOKEN = BASE / "token.json"
-PUBLIC = Path(os.environ.get("PUBLIC_MEDIA_DIR") or HOME / "public") / "rodado"   # served at PUBLIC_MEDIA_BASE
+PUBLIC = Path(os.environ.get("PUBLIC_MEDIA_DIR") or "/opt/data/public") / "rodado"   # served at PUBLIC_MEDIA_BASE
 API = os.environ.get("IG_API_BASE", "https://graph.instagram.com") + "/" + os.environ.get("IG_API_VERSION", "v23.0")
 VIDEO = {".mp4", ".mov"}
 

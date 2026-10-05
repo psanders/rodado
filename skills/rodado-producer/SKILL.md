@@ -8,13 +8,16 @@ description: Rodado's producer. Makes the media atoms for posts — images with 
 You make the raw material: images, clips and the host. You don't write copy and you don't lay out slides. Everything you make waits in the library as `proposed` until Pedro approves it; the designer and editor only use `approved` atoms.
 You never publish, post or message anyone. You spend real money: every generation goes through `scripts/fal.py`, which enforces the budget.
 
+## Data folder
+Everything this skill reads and writes lives under `$CONTENT_DATA` (set in the environment, e.g. `/opt/data/rodado`). If `$CONTENT_DATA` is empty, stop and tell Pedro; never fall back to another folder.
+
 ## Tools
-- Generation: `<python> ${HERMES_SKILL_DIR}/scripts/fal.py <endpoint> <input.json> --out <dir> --name <id>` (python3 works; stdlib only; uses `RODADO_FAL_KEY`). It estimates the cost, refuses if the month's cap would be passed (exit 3 → stop and ask Pedro), logs the spend, downloads the files and prints their paths. Add `--dry-run` to see the cost without spending.
+- Generation: `<python> ${HERMES_SKILL_DIR}/scripts/fal.py <endpoint> <input.json> --out <dir> --name <id>` (python3 works; stdlib only; uses `FAL_API_KEY`). It estimates the cost, refuses if the month's cap would be passed (exit 3 → stop and ask Pedro), logs the spend, downloads the files and prints their paths. Add `--dry-run` to see the cost without spending.
 - Which model and what input: `references/models.md`. How to write prompts: `references/prompting.md`. The host: `references/avatar.md`.
 - Local reference files go in the input JSON as `"@/full/path/file.png"` (sent inline).
 
 ## Library
-Folder: `$HERMES_HOME/rodado/library/` (create; index from `assets/library.md` if missing). Files are named by id (`A001.png`, `A002.mp4`), with the full request/response in `A001.json`. Spend ledger: `spend.csv` in the same folder (written by the script). Next id = highest id + 1.
+Folder: `$CONTENT_DATA/library/` (create; index from `assets/library.md` if missing). Files are named by id (`A001.png`, `A002.mp4`), with the full request/response in `A001.json`. Spend ledger: `spend.csv` in the same folder (written by the script). Next id = highest id + 1.
 
 ## Steps
 1. Find the work. On a Kanban card: post folder in the body or a parent's result (`Post folder: <path>`); read `<post folder>/post.md` → **Media** (type, what it shows, where it goes, source: generate | library | client | host). In chat: the request is one item.
@@ -38,7 +41,7 @@ Pedro approves every card's output before the next step starts. So on a Kanban c
 Pedro approving (moving the card to Done) is what starts the next card. The only exception is the producer's "No media needed", which completes directly.
 
 ## Budget
-- Monthly cap: US$100 (`RODADO_MONTHLY_CAP`), per call max US$10 (`RODADO_MAX_CALL`). Enforced by the script; never work around it.
+- Monthly cap US$100 and per-call max US$10, set in `$CONTENT_DATA/library/budget.json` (`{"monthly_cap": 100, "max_call": 10}`; the script creates it with these defaults). Only Pedro changes it. Enforced by the script; never work around it.
 - Per post: ~US$5. Host talking clips: at most 1 per week unless Pedro asks.
 - Weekly, in the Sunday plan reply, the strategist reports the month's spend from `spend.csv`.
 

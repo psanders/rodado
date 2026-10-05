@@ -9,7 +9,7 @@ One recurring character who presents Rodado's ideas on Instagram. She is openly 
 - Always the same face, hair, voice and look: reuse the approved references every time; never regenerate her from text alone.
 
 ## Files
-`$HERMES_HOME/rodado/avatar/<name>/`:
+`$CONTENT_DATA/avatar/<name>/`:
 - `bible.md` — who she is (from `assets/avatar-bible.md`), approved by Pedro.
 - `refs/` — approved reference images: `front.png`, `three-quarter.png`, `profile.png`, `full.png`, `smile.png`, `explaining.png` (+ outfit variants).
 - `voice/voice.m4a` — approved 6–15 s voice reference (her voice, clean, no music).
