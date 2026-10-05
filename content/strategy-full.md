@@ -86,7 +86,7 @@ Post at 12:00 or 19:00 Santo Domingo time; test which wins in weeks 1–2, then 
 
 Ideas are never made up on the day. Hermes runs this with the skill `rodado-strategist`:
 
-1. **Daily pitch (9:00, WhatsApp):** Hermes pitches one idea at a time; Pedro answers sí / no / a tweak, until 3 are approved. Each pitch says what the post looks like, where the idea came from, why it works, why it fits Rodado, and its format and slot.
+1. **Idea pitch (Mon, Wed, Fri 9:00, WhatsApp):** Hermes pitches one idea at a time; Pedro answers sí / no / a tweak, until 3 are approved. Each pitch says what the post looks like, where the idea came from, why it works, why it fits Rodado, and its format and slot.
 2. **Bank:** approved ideas go to the idea bank in Hermes (`$HERMES_HOME/rodado/ideas/bank.md`). Every pitch and every "no" is logged so nothing is pitched twice.
 3. **Sunday plan (17:00, WhatsApp):** Hermes picks next week's 7 from the bank, one per slot. Pedro approves; Hermes creates a copywriter card per post (`rodado-copywriter`), ending in Review; carousels and statics also get a designer card (`rodado-designer`) that starts once the copy is approved.
 4. **Inbox:** anything Pedro sends Hermes (an idea, a link, a screenshot, a client's question) is saved and pitched first.

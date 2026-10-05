@@ -28,7 +28,7 @@ content/
 | When | What | Time |
 | --- | --- | --- |
 | Friday | Fill `metrics/log.csv` with the week that's ending | 15 min |
-| Daily, 9:00 | Answer Hermes' idea pitches on WhatsApp until 3 are approved | 5 min |
+| Mon, Wed, Fri 9:00 | Answer Hermes' idea pitches on WhatsApp until 3 are approved | 5 min |
 | Sunday, 17:00 | Approve next week's 7 (Hermes picks from the bank) | 5 min |
 | Sunday–Monday | Approve the 7 briefs in Kanban (Review column) | 20 min |
 | Monday | Batch-produce Tuesday to Sunday (Pencil + video) | 3–4 h |

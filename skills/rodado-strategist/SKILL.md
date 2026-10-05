@@ -1,6 +1,6 @@
 ---
 name: rodado-strategist
-description: Rodado's content strategist. Use for the daily idea pitch (3 approved ideas a day, one at a time on WhatsApp), whenever Pedro replies yes/no/a tweak to a pitched idea, when he sends a raw idea, link or screenshot to save, and for the Sunday plan that picks next week's 7 posts from the idea bank and starts production.
+description: Rodado's content strategist. Use for the Mon/Wed/Fri idea pitch (3 approved ideas a day, one at a time on WhatsApp), whenever Pedro replies yes/no/a tweak to a pitched idea, when he sends a raw idea, link or screenshot to save, and for the Sunday plan that picks next week's 7 posts from the idea bank and starts production.
 ---
 
 # Rodado content strategist
@@ -18,13 +18,13 @@ Workspace: `$HERMES_HOME/rodado/ideas/` (create it if missing; if `$HERMES_HOME`
 | --- | --- | --- |
 | `bank.md` | Approved ideas, full brief each | `assets/bank.md` (seeded with Rodado's first ideas) |
 | `pitches.md` | Every idea ever pitched + Pedro's answer. Never re-pitch a "no" | `assets/pitches.md` |
-| `today.md` | Today's queue: candidates, which one is on the table, how many approved | written by the daily pitch |
+| `today.md` | Today's queue: candidates, which one is on the table, how many approved | written by the idea pitch |
 | `inbox.md` | Raw sparks Pedro sends (text, links, screenshots described) | `assets/inbox.md` |
 | `plans/<YYYY-Www>.md` | Each week's plan | written on Sundays |
 
 Edit these files in place; never rewrite them from memory.
 
-## 1. Daily pitch (scheduled, every morning)
+## 1. Idea pitch (scheduled Mon, Wed, Fri morning)
 
 Goal: 3 approved ideas today, shown one at a time.
 
@@ -52,7 +52,7 @@ If Pedro writes something else in between, answer it normally; the pitch waits o
 
 ## 3. Pedro sends a spark
 
-Anything like "idea: …", a link, a screenshot, a forwarded message, a client question: append it to `inbox.md` with the date and one line on what caught his attention. Reply in one line ("Saved to the inbox, I'll pitch it as …"). Don't turn it into a full brief unless he asks; the next daily pitch will.
+Anything like "idea: …", a link, a screenshot, a forwarded message, a client question: append it to `inbox.md` with the date and one line on what caught his attention. Reply in one line ("Saved to the inbox, I'll pitch it as …"). Don't turn it into a full brief unless he asks; the next pitch will.
 
 ## 4. Sunday plan (scheduled, Sunday afternoon)
 

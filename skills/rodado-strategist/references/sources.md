@@ -3,20 +3,16 @@
 An idea without a concrete source doesn't get pitched. Work the list in this order every day:
 
 1. **Inbox** (`inbox.md`), always first. Pedro's sparks, client questions, screenshots. Anything older than 14 days that was never pitched: pitch it or drop it with a note.
-2. **Today's rotation** (below): 2 sources, by weekday.
+2. **Today's rotation** (below): 3 sources, by pitch day.
 3. **Bank gaps**: the slots with the fewest ideas decide which source to push harder.
 
 ## Rotation
 
-| Day | Sources |
+| Pitch day | Sources |
 | --- | --- |
-| Mon | Ad watch · DR calendar |
-| Tue | Manager questions · Meta changes |
-| Wed | Category scan · Production notes |
-| Thu | Objections · Ad watch |
-| Fri | Craft & format · DR calendar |
-| Sat | Manager questions · Category scan |
-| Sun | Our own results · Objections |
+| Mon | Ad watch · DR calendar · Manager questions |
+| Wed | Meta changes · Category scan · Objections |
+| Fri | Production notes · Craft & format · Our own results |
 
 ## The sources
 
