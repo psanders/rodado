@@ -22,7 +22,7 @@ This repo holds the website, design files, the content system and the agent setu
 
 ## Rules
 - Audience-facing copy is Spanish (neutral Dominican). Everything else is English.
-- Never publish, spend money or message anyone. Prepare files; Pedro approves.
+- Never publish, spend money or message anyone, except: rodado-publisher publishes what Pedro approved, rodado-producer/designer spend within the monthly cap, and agents message Pedro. Prepare files; Pedro approves.
 - Never commit. Pedro reviews `git diff` and commits.
 - Client brands only with their logo replaced; category ideas use invented brands.
 
