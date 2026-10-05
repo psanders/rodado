@@ -22,7 +22,7 @@ This repo holds the website, design files, the content system and the agent setu
 
 ## Rules
 - Audience-facing copy is Spanish (neutral Dominican). Everything else is English.
-- Never publish, spend money or message anyone, except: rodado-publisher publishes what Pedro approved, rodado-prospector emails only leads Pedro approved (within its daily limits), rodado-producer/designer spend within the monthly cap, and agents message Pedro. Prepare files; Pedro approves.
+- Never publish, spend money or message anyone, except: rodado-publisher publishes what Pedro approved, rodado-producer/designer spend within the monthly cap, and agents message Pedro. Prepare files; Pedro approves.
 - Never commit. Pedro reviews `git diff` and commits.
 - Client brands only with their logo replaced; category ideas use invented brands.
 
@@ -36,7 +36,7 @@ This repo holds the website, design files, the content system and the agent setu
 | `rodado-producer` | Producer | Makes images and clips (Seedance) for a post; library of approved media |
 | `rodado-designer` | Designer | Composes approved copy + media into varied slides (PNG/MP4) |
 | `rodado-editor` | Editor | Cuts approved clips into a finished Reel with text, end card, sound and cover |
-| `rodado-prospector` | Prospector | Finds look-alike brands, emails the ones Pedro approves, follows up twice, stops at any reply |
+| `rodado-prospector` | Prospector | Finds look-alike brands and their published contact, keeps the lead list (collect only; Pedro contacts them) |
 | `rodado-publisher` | Publisher | Schedules approved posts and publishes them to Instagram at their time |
 | `rodado-copy`, `rodado-audit`, `rodado-retro` | — | Repo-based weekly flow (copy all 7, audit, retro) |
 

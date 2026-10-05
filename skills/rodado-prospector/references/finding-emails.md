@@ -18,7 +18,7 @@ The goal is one address the company itself published for business contact, ideal
 | other | rrhh@, facturacion@, soporte@, webmaster@, noreply@ | never |
 
 ## Hard rules
-- No pattern guessing (nombre.apellido@…) and no "email finder" guesses: unverified guesses bounce and hurt Pedro's Gmail reputation.
+- No pattern guessing (nombre.apellido@…) and no "email finder" guesses: unverified guesses bounce and hurt Pedro's sender reputation when he writes.
 - Free webmail (gmail/hotmail) only if it's clearly the brand's official published contact.
 - `mx: false` → don't use the domain. `mx: null` means the check couldn't run; use the address only if it was clearly published.
 - Keep `email_source` = the URL where the address appears. If Pedro asks "where did you get this?", that's the answer.
